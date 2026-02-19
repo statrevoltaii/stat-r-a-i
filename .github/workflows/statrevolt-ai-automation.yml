@@ -1,0 +1,81 @@
+
+name: StatRevoltAI Daily Automation
+
+on:
+  schedule:
+    - cron: '30 15,19 * * *' # Runs at 9:00 PM IST (15:30 UTC) and 1:00 AM IST (19:30 UTC)
+  workflow_dispatch: # Allows manual trigger
+  
+concurrency:
+  group: statrevolt-automation
+  cancel-in-progress: false # We want to finish the current upload before starting a new one
+
+jobs:
+  run-daily-automation:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install Python Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'
+
+    - name: Install Node Dependencies
+      run: npm install
+
+    - name: Run Automation
+      env:
+        POLLINATIONS_API_KEY: ${{ secrets.POLLINATIONS_API_KEY }}
+        AI_MODEL: ${{ secrets.AI_MODEL || 'openai' }}
+        YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+        YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+        YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+        INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+        IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        FACEBOOK_ACCESS_TOKEN: ${{ secrets.FACEBOOK_ACCESS_TOKEN }}
+        FACEBOOK_PAGE_ID: ${{ secrets.FACEBOOK_PAGE_ID }}
+        THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+        TWITTER_API_SECRET: ${{ secrets.TWITTER_API_SECRET }}
+        TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+        TWITTER_ACCESS_SECRET: ${{ secrets.TWITTER_ACCESS_SECRET }}
+        VK_ACCESS_TOKEN: ${{ secrets.VK_ACCESS_TOKEN }}
+        VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
+      run: |
+        # 1. Generate topic first so the dev server uses fresh data
+        node generate_topic.js
+        
+        # 2. Start the dev server in the background
+        npm run dev &
+        
+        # 3. Wait for the server to be ready
+        npx wait-on http://localhost:3000 --timeout 60000
+        
+        # 4. Run the rest of the automation (Recording & Uploading)
+        python daily_workflow.py --skip-generation
+
+    - name: Commit and Push changes
+      if: always() # Run even if previous steps failed (to save history partially)
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add history.json current_topic.json audio_state.json
+        git commit -m "Update automation state [skip ci]" || echo "No changes to commit"
+        git push
