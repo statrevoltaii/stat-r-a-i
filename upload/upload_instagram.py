@@ -103,7 +103,7 @@ def upload_to_instagram(video_path, caption, is_story=False):
 
         # Step 2: Create Instagram container with video URL
         print(f"[instagram] 📦 Step 2: Creating Instagram {media_type} container...")
-        
+
         # New 2025 endpoint for Instagram Login integrations
         container_url = f"https://graph.instagram.com/v21.0/{user_id}/media"
         container_params = {
@@ -111,8 +111,13 @@ def upload_to_instagram(video_path, caption, is_story=False):
             'video_url': video_url,
             'access_token': access_token
         }
-        
-        if not is_story:
+
+        if is_story:
+            # Stories don't support captions in the API, but we still create the container
+            # Story will be published without a caption (as per Instagram API limitations)
+            print(f"[instagram] ℹ️ Note: Instagram Stories don't support captions via API")
+        else:
+            # Reels support full captions and feed sharing options
             container_params['caption'] = caption_limited
             container_params['share_to_feed'] = 'false'
             container_params['thumb_offset'] = '5000' # Set thumbnail to 5 seconds in to avoid dark start
