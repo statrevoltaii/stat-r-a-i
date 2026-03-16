@@ -65,23 +65,25 @@ def main():
     print("\n" + "="*50)
     print("🧠 STEP 2: USING GENERATED METADATA")
     print("="*50)
-    metadata = {
-        "title": topic_title,
-        "tagline": topic_tagline,
-        "hashtags": topic_data.get("instagram_caption", "").split("#")[-1] if "#" in topic_data.get("instagram_caption", "") else "#trends #data",
-        "yt_description": topic_data.get("youtube_description", topic_tagline),
-        "ig_caption": topic_data.get("instagram_caption", topic_tagline),
-        "fb_caption": topic_data.get("facebook_caption", topic_tagline),
-        "threads_caption": topic_data.get("threads_caption", topic_tagline),
-    }
     
-    # Fix hashtag parsing
+    # Fix hashtag parsing first
     full_caption = topic_data.get("instagram_caption", "")
     import re
     tags = re.findall(r"#\w+", full_caption)
-    metadata["hashtags"] = " ".join(tags)
+    hashtags = " ".join(tags)
+    
+    metadata = {
+        "title": topic_title,
+        "tagline": topic_tagline,
+        "hashtags": hashtags if hashtags else "#trends #data",
+        "yt_description": topic_data.get("youtube_description", topic_tagline),
+        "ig_caption": topic_data.get("instagram_caption", f"{topic_title}\n\n{topic_tagline}\n\n{hashtags}"),
+        "fb_caption": topic_data.get("facebook_caption", topic_tagline),
+        "threads_caption": topic_data.get("threads_caption", topic_tagline),
+    }
 
     print("✅ Metadata extracted from current_topic.json")
+    print(f"📝 Instagram Caption Length: {len(metadata['ig_caption'])} characters")
     
     # 3. Record Video
     print("\n" + "="*50)
@@ -129,10 +131,14 @@ def main():
     print("\n📸 [2/5] UPLOADING TO INSTAGRAM...")
     try:
         ig_caption = metadata.get("ig_caption", f"{title}\n\n{topic_tagline}\n\n{hashtags}")
-        # Append likely missing hashtags if not included
+        
+        # Append hashtags if missing (safety fallback)
         if "#" not in ig_caption:
             ig_caption += f"\n\n{hashtags}"
-            
+        
+        print(f"📝 Instagram Caption Preview (first 200 chars): {ig_caption[:200]}...")
+        print(f"📊 Caption Length: {len(ig_caption)} characters")
+
         upload_to_instagram(str(video_path), ig_caption, is_story=False)
         print("✅ Instagram Reel Upload Complete!")
     except Exception as e:

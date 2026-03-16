@@ -54,10 +54,15 @@ async function generateNewTopic() {
     2.  **Entities**: 2-6 entities to compare. MUST use the key "values" for data points list.
     3.  **Timeline**: Start/End Year. Include ${currentYear} data. (20-50 points).
     4.  **METADATA & PLATFORMS**:
-        -   **YouTube Description**: Detailed story, call to action, and 5 hashtags.
-        -   **Instagram Caption**: Punchy hook + 30 high-traffic hashtags.
-        -   **Facebook Caption**: Formal/News-style + 3-5 hashtags.
-        -   **Threads Caption**: Conversational.
+        -   **YouTube Description**: Detailed story with chapters/timestamps, call to action, sources, and 5-10 hashtags.
+        -   **Instagram Caption**: ENGAGING & COMPREHENSIVE (300-500 words). Structure:
+            *   HOOK: First line must grab attention with emoji (e.g., "🚀 The $500B Battle...")
+            *   STORY: 3-5 paragraphs telling the dramatic story with key milestones, numbers, and turning points
+            *   ENGAGEMENT: Ask a specific question to drive comments
+            *   CALL TO ACTION: Tell them to follow/subscribe
+            *   HASHTAGS: Exactly 30 high-traffic, relevant hashtags (mix of broad and niche)
+        -   **Facebook Caption**: Formal/News-style with detailed explanation and 5-10 hashtags.
+        -   **Threads Caption**: Conversational, casual tone.
         -   **Twitter/X**: Short & punchy.
 
     OUTPUT FORMAT (JSON ONLY):
@@ -94,7 +99,7 @@ async function generateNewTopic() {
             body: JSON.stringify({
                 model: MODEL,
                 messages: [
-                    { role: 'system', content: 'You are a data journalist and viral content creator. ALWAYS use the key "values" for entity data arrays. NEVER use "data" as the key. Ensure data is current up to 2025.' },
+                    { role: 'system', content: 'You are a data journalist and viral content creator with expertise in social media engagement. ALWAYS use the key "values" for entity data arrays. NEVER use "data" as the key. Ensure data is current up to 2025. For Instagram captions, write COMPREHENSIVE, ENGAGING content (300-500 words) with a strong hook, detailed storytelling with real numbers/milestones, engagement question, call-to-action, and exactly 30 relevant hashtags.' },
                     { role: 'user', content: prompt }
                 ],
                 response_format: { type: 'json_object' }

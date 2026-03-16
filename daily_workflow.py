@@ -117,12 +117,15 @@ def main():
     print("\n" + "="*50)
     print("🚀 STEP 4: UPLOADING TO SOCIAL MEDIA")
     print("="*50)
-    
+
     # --- YouTube ---
     print("\n🎬 [1/5] UPLOADING TO YOUTUBE...")
     try:
         # YouTube tags need to be a list without # usually, but let's strip
         yt_tags = [t.replace("#", "") for t in hashtags_list]
+        print(f"📝 YouTube Title: {title}")
+        print(f"📝 YouTube Description Length: {len(yt_desc)} characters")
+        print(f"📊 YouTube Tags: {yt_tags[:5]}...")
         upload_to_youtube(
             video_path=video_path,
             title=title,
@@ -137,9 +140,16 @@ def main():
     # --- Instagram ---
     print("\n📸 [2/5] UPLOADING TO INSTAGRAM...")
     try:
+        print(f"📝 Instagram Caption Preview (first 200 chars): {ig_caption[:200]}...")
+        print(f"📊 Caption Length: {len(ig_caption)} characters")
+        
+        # Upload as Reel (NOT to main grid, only to Reels tab)
+        print("\n🎬 Uploading Instagram REEL (with full caption)...")
         upload_to_instagram(str(video_path), ig_caption, is_story=False)
         print("✅ Instagram Reel Upload Complete!")
-        # ADDED: Upload as Story
+        
+        # Upload as Story (Stories don't support captions via API)
+        print("\n📸 Uploading Instagram STORY (no caption - API limitation)...")
         upload_to_instagram(str(video_path), ig_caption, is_story=True)
         print("✅ Instagram Story Upload Complete!")
     except Exception as e:
@@ -149,9 +159,15 @@ def main():
     print("\n📘 [3/5] UPLOADING TO FACEBOOK...")
     try:
         from upload.upload_facebook import upload_to_facebook_story
+        print(f"📝 Facebook Caption Preview (first 200 chars): {fb_caption[:200]}...")
+        print(f"📊 Caption Length: {len(fb_caption)} characters")
+        print(f"📝 Facebook Title: {title}")
+        
         upload_to_facebook(str(video_path), fb_caption, title=title)
         print("✅ Facebook Reel Upload Complete!")
+        
         # ADDED: Upload as Facebook Story
+        print("\n📸 Uploading Facebook Story...")
         upload_to_facebook_story(str(video_path))
         print("✅ Facebook Story Upload Complete!")
     except Exception as e:
@@ -160,6 +176,9 @@ def main():
     # --- Threads ---
     print("\n🧵 [4/5] UPLOADING TO THREADS...")
     try:
+        print(f"📝 Threads Text Preview (first 200 chars): {threads_caption[:200]}...")
+        print(f"📊 Text Length: {len(threads_caption)} characters")
+        
         upload_to_threads(str(video_path), threads_caption)
         print("✅ Threads Upload Complete!")
     except Exception as e:
@@ -169,9 +188,14 @@ def main():
     print("\n🐦 [5/5] UPLOADING TO TWITTER...")
     try:
         # Twitter limit check
+        tw_caption_final = tw_caption[:280]  # Enforce Twitter limit
         if len(tw_caption) > 280:
-             tw_caption = f"{title}\n" + " ".join(hashtags_str.split()[:3])
-        upload_to_twitter(str(video_path), tw_caption)
+             tw_caption_final = f"{title}\n" + " ".join(hashtags_str.split()[:3])
+        
+        print(f"📝 Twitter Text: {tw_caption_final}")
+        print(f"📊 Text Length: {len(tw_caption_final)} characters")
+
+        upload_to_twitter(str(video_path), tw_caption_final)
         print("✅ Twitter Upload Complete!")
     except Exception as e:
         print(f"❌ Twitter upload failed: {e}")
