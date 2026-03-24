@@ -13,6 +13,20 @@ const TOPIC_FILE = path.join(__dirname, 'current_topic.json');
 const HISTORY_FILE = path.join(__dirname, 'history.json');
 
 async function generateNewTopic() {
+    // Validate API key
+    if (!API_KEY || API_KEY === 'your_api_key_here' || API_KEY.length < 10) {
+        console.error('❌ POLLINATIONS_API_KEY is missing or invalid!');
+        console.error('Current value:', API_KEY ? API_KEY.substring(0, 5) + '...' : 'undefined');
+        console.error('');
+        console.error('To fix this:');
+        console.error('1. For GitHub Actions: Go to your repo Settings > Secrets and variables > Actions');
+        console.error('   Add a new secret named POLLINATIONS_API_KEY with your actual API key');
+        console.error('2. For local testing: Create a .env file with POLLINATIONS_API_KEY=your_key');
+        console.error('');
+        console.error('Get your free API key from: https://pollinations.ai/');
+        process.exit(1);
+    }
+
     console.log(`🤖 Using AI Model: ${MODEL}`);
     // 1. Load History
     let history = [];
@@ -110,10 +124,19 @@ async function generateNewTopic() {
 
         if (!data.choices || !data.choices.length) {
             console.error('API Error Response:', JSON.stringify(data, null, 2));
-            throw new Error('Invalid API response');
+            throw new Error(`Invalid API response: ${response.status} ${response.statusText}`);
         }
 
-        const content = JSON.parse(data.choices[0].message.content);
+        console.log('📝 Raw AI Response:', data.choices[0].message.content.substring(0, 500) + '...');
+        
+        let content;
+        try {
+            content = JSON.parse(data.choices[0].message.content);
+        } catch (parseError) {
+            console.error('❌ Failed to parse AI response as JSON:', parseError.message);
+            console.error('Raw response:', data.choices[0].message.content);
+            throw new Error('AI returned invalid JSON');
+        }
 
         // --- DISTINCT NEON COLOR GENERATOR ---
         // Even with many entities, this divides the 360-degree color wheel for maximum contrast
@@ -153,8 +176,26 @@ async function generateNewTopic() {
         content.threads_caption = lowerTags(content.threads_caption);
         content.twitter_caption = lowerTags(content.twitter_caption);
 
-        if (!content.entities || !content.timeline_labels || content.entities.length === 0) {
-            throw new Error("Invalid data structure generated.");
+        // Validate required fields with detailed error messages
+        if (!content.entities) {
+            console.error('❌ AI Response missing "entities" field. Content keys:', Object.keys(content || {}));
+            throw new Error('AI response missing "entities" field');
+        }
+        if (!Array.isArray(content.entities)) {
+            console.error('❌ "entities" is not an array. Type:', typeof content.entities);
+            throw new Error('"entities" must be an array');
+        }
+        if (content.entities.length === 0) {
+            console.error('❌ "entities" array is empty');
+            throw new Error('"entities" array is empty');
+        }
+        if (!content.timeline_labels) {
+            console.error('❌ AI Response missing "timeline_labels" field. Content keys:', Object.keys(content));
+            throw new Error('AI response missing "timeline_labels" field');
+        }
+        if (!Array.isArray(content.timeline_labels)) {
+            console.error('❌ "timeline_labels" is not an array. Type:', typeof content.timeline_labels);
+            throw new Error('"timeline_labels" must be an array');
         }
 
         // 2. Update History

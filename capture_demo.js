@@ -17,6 +17,7 @@ async function capture() {
     const VIDEO_PATH = path.join(__dirname, 'temp_video.mp4');
     const AUDIO_PATH = path.join(__dirname, 'temp_audio.webm');
     const FINAL_PATH = path.join(__dirname, 'recording.mp4');
+    const FINAL_FRAME_PATH = path.join(__dirname, 'final_frame.png');
 
     const browser = await puppeteer.launch({
         headless: 'new',
@@ -129,6 +130,12 @@ async function capture() {
     // Give time for last chunks to arrive
     await new Promise(r => setTimeout(r, 1000));
     await recorder.stop();
+    
+    // Capture the final frame as an image (for thumbnail/preview)
+    console.log('📸 Capturing final frame...');
+    await page.screenshot({ path: FINAL_FRAME_PATH, type: 'png' });
+    console.log(`✅ Final frame saved to ${FINAL_FRAME_PATH}`);
+    
     await browser.close();
 
     console.log('Processing files...');
@@ -149,13 +156,40 @@ async function capture() {
 
     if (fs.existsSync(VIDEO_PATH)) {
         try {
-            // MERGE LOGIC: 
+            // MERGE LOGIC:
             // -stream_loop -1: Loops the audio infinitely
             // -shortest: Cuts the output when the SHORTEST stream (the video) ends
             // Result: Audio repeats if video is longer, and cuts off perfectly if audio is longer.
             if (audioTrackPath && fs.existsSync(audioTrackPath)) {
                 console.log('Merging with Viral Audio (Looping enabled)...');
-                execSync(`"${ffmpeg}" -y -i "${VIDEO_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
+                
+                // Check if final frame exists, if so append it to the end of the video
+                if (fs.existsSync(FINAL_FRAME_PATH)) {
+                    console.log('🖼️ Appending final frame to video for thumbnail preview...');
+                    
+                    // Step 1: Create a 5-second video from the final frame image
+                    const FINAL_FRAME_VIDEO = path.join(__dirname, 'final_frame_video.mp4');
+                    execSync(`"${ffmpeg}" -y -loop 1 -i "${FINAL_FRAME_PATH}" -c:v libx264 -t 5 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" -pix_fmt yuv420p "${FINAL_FRAME_VIDEO}"`);
+                    
+                    // Step 2: Concat the main video with the final frame video
+                    const CONCAT_LIST = path.join(__dirname, 'concat_list.txt');
+                    fs.writeFileSync(CONCAT_LIST, `file '${VIDEO_PATH.replace(/'/g, "'\\''")}'\nfile '${FINAL_FRAME_VIDEO.replace(/'/g, "'\\''")}'`);
+                    
+                    const CONCATENATED_VIDEO = path.join(__dirname, 'concatenated_video.mp4');
+                    execSync(`"${ffmpeg}" -y -f concat -safe 0 -i "${CONCAT_LIST}" -c copy "${CONCATENATED_VIDEO}"`);
+                    
+                    // Step 3: Merge concatenated video with audio
+                    execSync(`"${ffmpeg}" -y -i "${CONCATENATED_VIDEO}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
+                    
+                    // Cleanup temp files
+                    if (fs.existsSync(FINAL_FRAME_VIDEO)) fs.unlinkSync(FINAL_FRAME_VIDEO);
+                    if (fs.existsSync(CONCAT_LIST)) fs.unlinkSync(CONCAT_LIST);
+                    if (fs.existsSync(CONCATENATED_VIDEO)) fs.unlinkSync(CONCATENATED_VIDEO);
+                    if (fs.existsSync(FINAL_FRAME_PATH)) fs.unlinkSync(FINAL_FRAME_PATH);
+                } else {
+                    // Fallback: No final frame, just merge as before
+                    execSync(`"${ffmpeg}" -y -i "${VIDEO_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
+                }
             } else {
                 console.warn('Viral audio not found. Saving video only.');
                 fs.renameSync(VIDEO_PATH, FINAL_PATH);
