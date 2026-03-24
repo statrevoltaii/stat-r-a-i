@@ -204,5 +204,31 @@ def main():
     print("🏁 STATREVOLT-AI DAILY AUTOMATION COMPLETED!")
     print("="*50)
 
+    # === CLEANUP: Delete video files to free GitHub Actions storage ===
+    print("\n🧹 Cleaning up video files to free storage...")
+    import os
+    files_to_delete = [
+        video_path,
+        path.join(__dirname, 'temp_video.mp4'),
+        path.join(__dirname, 'temp_audio.webm'),
+        path.join(__dirname, 'thumb_frame.mp4'),
+        path.join(__dirname, 'thumbnail.png'),
+        path.join(__dirname, 'concat_list.txt'),
+        path.join(__dirname, 'recording_with_thumb.mp4')
+    ]
+    
+    deleted_count = 0
+    for file_path in files_to_delete:
+        try:
+            if os.path.exists(file_path):
+                os.remove(file_path)
+                print(f"   Deleted: {file_path}")
+                deleted_count += 1
+        except Exception as e:
+            print(f"   Warning: Could not delete {file_path}: {e}")
+    
+    print(f"✅ Cleanup complete - {deleted_count} file(s) deleted")
+    print("📊 No videos saved - storage freed!")
+
 if __name__ == "__main__":
     main()
