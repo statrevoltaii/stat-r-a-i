@@ -4,6 +4,7 @@ import json
 import os
 import subprocess
 import time
+import pathlib
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -12,6 +13,9 @@ current_dir = Path(__file__).parent.absolute()
 root_dir = current_dir.parent.absolute()
 sys.path.append(str(current_dir))
 sys.path.append(str(root_dir))
+
+# Use pathlib for path operations
+__dirname = str(current_dir)
 
 # Import upload functions (assuming these exist in root/upload/)
 try:
@@ -206,15 +210,14 @@ def main():
 
     # === CLEANUP: Delete video files to free GitHub Actions storage ===
     print("\n🧹 Cleaning up video files to free storage...")
-    import os
     files_to_delete = [
         video_path,
-        path.join(__dirname, 'temp_video.mp4'),
-        path.join(__dirname, 'temp_audio.webm'),
-        path.join(__dirname, 'thumb_frame.mp4'),
-        path.join(__dirname, 'thumbnail.png'),
-        path.join(__dirname, 'concat_list.txt'),
-        path.join(__dirname, 'recording_with_thumb.mp4')
+        os.path.join(__dirname, 'temp_video.mp4'),
+        os.path.join(__dirname, 'temp_audio.webm'),
+        os.path.join(__dirname, 'thumb_frame.mp4'),
+        os.path.join(__dirname, 'thumbnail.png'),
+        os.path.join(__dirname, 'concat_list.txt'),
+        os.path.join(__dirname, 'recording_with_thumb.mp4')
     ]
     
     deleted_count = 0
