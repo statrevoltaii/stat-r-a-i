@@ -17,7 +17,6 @@ async function capture() {
     const VIDEO_PATH = path.join(__dirname, 'temp_video.mp4');
     const AUDIO_PATH = path.join(__dirname, 'temp_audio.webm');
     const FINAL_PATH = path.join(__dirname, 'recording.mp4');
-    const FINAL_FRAME_PATH = path.join(__dirname, 'final_frame.png');
 
     const browser = await puppeteer.launch({
         headless: 'new',
@@ -117,7 +116,16 @@ async function capture() {
         console.log("Timeout waiting for completion signal, stopping manually.");
     }
 
-    // Extra buffer
+    // Extra buffer for smooth ending
+    await new Promise(r => setTimeout(r, 2000));
+
+    // 🎬 CAPTURE THUMBNAIL: Take screenshot of final frame before stopping
+    console.log('📸 Capturing final frame as thumbnail...');
+    const THUMBNAIL_PATH = path.join(__dirname, 'thumbnail.png');
+    await page.screenshot({ path: THUMBNAIL_PATH, fullPage: false });
+    console.log(`✅ Thumbnail saved to ${THUMBNAIL_PATH}`);
+
+    // Hold on final frame for 2 seconds (for Instagram/Facebook preview)
     await new Promise(r => setTimeout(r, 2000));
 
     // Stop everything
@@ -130,12 +138,6 @@ async function capture() {
     // Give time for last chunks to arrive
     await new Promise(r => setTimeout(r, 1000));
     await recorder.stop();
-    
-    // Capture the final frame as an image (for thumbnail/preview)
-    console.log('📸 Capturing final frame...');
-    await page.screenshot({ path: FINAL_FRAME_PATH, type: 'png' });
-    console.log(`✅ Final frame saved to ${FINAL_FRAME_PATH}`);
-    
     await browser.close();
 
     console.log('Processing files...');
@@ -162,38 +164,33 @@ async function capture() {
             // Result: Audio repeats if video is longer, and cuts off perfectly if audio is longer.
             if (audioTrackPath && fs.existsSync(audioTrackPath)) {
                 console.log('Merging with Viral Audio (Looping enabled)...');
-                
-                // Check if final frame exists, if so append it to the end of the video
-                if (fs.existsSync(FINAL_FRAME_PATH)) {
-                    console.log('🖼️ Appending final frame to video for thumbnail preview...');
-                    
-                    // Step 1: Create a 5-second video from the final frame image
-                    const FINAL_FRAME_VIDEO = path.join(__dirname, 'final_frame_video.mp4');
-                    execSync(`"${ffmpeg}" -y -loop 1 -i "${FINAL_FRAME_PATH}" -c:v libx264 -t 5 -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" -pix_fmt yuv420p "${FINAL_FRAME_VIDEO}"`);
-                    
-                    // Step 2: Concat the main video with the final frame video
-                    const CONCAT_LIST = path.join(__dirname, 'concat_list.txt');
-                    fs.writeFileSync(CONCAT_LIST, `file '${VIDEO_PATH.replace(/'/g, "'\\''")}'\nfile '${FINAL_FRAME_VIDEO.replace(/'/g, "'\\''")}'`);
-                    
-                    const CONCATENATED_VIDEO = path.join(__dirname, 'concatenated_video.mp4');
-                    execSync(`"${ffmpeg}" -y -f concat -safe 0 -i "${CONCAT_LIST}" -c copy "${CONCATENATED_VIDEO}"`);
-                    
-                    // Step 3: Merge concatenated video with audio
-                    execSync(`"${ffmpeg}" -y -i "${CONCATENATED_VIDEO}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
-                    
-                    // Cleanup temp files
-                    if (fs.existsSync(FINAL_FRAME_VIDEO)) fs.unlinkSync(FINAL_FRAME_VIDEO);
-                    if (fs.existsSync(CONCAT_LIST)) fs.unlinkSync(CONCAT_LIST);
-                    if (fs.existsSync(CONCATENATED_VIDEO)) fs.unlinkSync(CONCATENATED_VIDEO);
-                    if (fs.existsSync(FINAL_FRAME_PATH)) fs.unlinkSync(FINAL_FRAME_PATH);
-                } else {
-                    // Fallback: No final frame, just merge as before
-                    execSync(`"${ffmpeg}" -y -i "${VIDEO_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
-                }
+                execSync(`"${ffmpeg}" -y -i "${VIDEO_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
             } else {
                 console.warn('Viral audio not found. Saving video only.');
                 fs.renameSync(VIDEO_PATH, FINAL_PATH);
             }
+            
+            // 🎬 APPEND THUMBNAIL FRAME: Add static thumbnail at end for Instagram/Facebook preview
+            if (fs.existsSync(THUMBNAIL_PATH)) {
+                console.log('🖼️ Appending thumbnail as final frame (2 seconds)...');
+                const TEMP_FINAL = path.join(__dirname, 'recording_with_thumb.mp4');
+                
+                // Create a 2-second video from the thumbnail image with proper encoding (silent)
+                execSync(`"${ffmpeg}" -y -loop 1 -i "${THUMBNAIL_PATH}" -c:v libx264 -t 2 -pix_fmt yuv420p -vf "scale=1080:1920:force_original_aspect_ratio=decrease,pad=1080:1920:(ow-iw)/2:(oh-ih)/2" -r 60 -an "${path.join(__dirname, 'thumb_frame.mp4')}"`);
+                
+                // Concatenate using concat filter (video + audio from first, video only from second)
+                execSync(`"${ffmpeg}" -y -i "${FINAL_PATH}" -i "${path.join(__dirname, 'thumb_frame.mp4')}" -filter_complex "[0:v:0][1:v:0]concat=n=2:v=1:a=0[outv]" -map "[outv]" -map 0:a:0 -c:v libx264 -c:a aac -pix_fmt yuv420p -r 60 "${TEMP_FINAL}"`);
+                
+                // Replace original with new version
+                fs.renameSync(TEMP_FINAL, FINAL_PATH);
+                
+                // Cleanup temp files
+                if (fs.existsSync(path.join(__dirname, 'thumb_frame.mp4'))) fs.unlinkSync(path.join(__dirname, 'thumb_frame.mp4'));
+                if (fs.existsSync(THUMBNAIL_PATH)) fs.unlinkSync(THUMBNAIL_PATH);
+                
+                console.log('✅ Thumbnail frame appended successfully!');
+            }
+            
             console.log(`✅ Success! Video saved to ${FINAL_PATH}`);
             if (fs.existsSync(VIDEO_PATH)) fs.unlinkSync(VIDEO_PATH);
             if (fs.existsSync(AUDIO_PATH)) fs.unlinkSync(AUDIO_PATH);

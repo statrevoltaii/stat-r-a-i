@@ -13,20 +13,6 @@ const TOPIC_FILE = path.join(__dirname, 'current_topic.json');
 const HISTORY_FILE = path.join(__dirname, 'history.json');
 
 async function generateNewTopic() {
-    // Validate API key
-    if (!API_KEY || API_KEY === 'your_api_key_here' || API_KEY.length < 10) {
-        console.error('❌ POLLINATIONS_API_KEY is missing or invalid!');
-        console.error('Current value:', API_KEY ? API_KEY.substring(0, 5) + '...' : 'undefined');
-        console.error('');
-        console.error('To fix this:');
-        console.error('1. For GitHub Actions: Go to your repo Settings > Secrets and variables > Actions');
-        console.error('   Add a new secret named POLLINATIONS_API_KEY with your actual API key');
-        console.error('2. For local testing: Create a .env file with POLLINATIONS_API_KEY=your_key');
-        console.error('');
-        console.error('Get your free API key from: https://pollinations.ai/');
-        process.exit(1);
-    }
-
     console.log(`🤖 Using AI Model: ${MODEL}`);
     // 1. Load History
     let history = [];
@@ -124,18 +110,19 @@ async function generateNewTopic() {
 
         if (!data.choices || !data.choices.length) {
             console.error('API Error Response:', JSON.stringify(data, null, 2));
-            throw new Error(`Invalid API response: ${response.status} ${response.statusText}`);
+            throw new Error('Invalid API response');
         }
 
-        console.log('📝 Raw AI Response:', data.choices[0].message.content.substring(0, 500) + '...');
-        
-        let content;
-        try {
-            content = JSON.parse(data.choices[0].message.content);
-        } catch (parseError) {
-            console.error('❌ Failed to parse AI response as JSON:', parseError.message);
-            console.error('Raw response:', data.choices[0].message.content);
-            throw new Error('AI returned invalid JSON');
+        const content = JSON.parse(data.choices[0].message.content);
+
+        // --- FIX: Convert 'data' to 'values' BEFORE any other processing ---
+        if (content.entities && Array.isArray(content.entities)) {
+            content.entities.forEach(entity => {
+                if (!entity.values && entity.data) {
+                    entity.values = entity.data;
+                    delete entity.data;
+                }
+            });
         }
 
         // --- DISTINCT NEON COLOR GENERATOR ---
@@ -156,11 +143,6 @@ async function generateNewTopic() {
                     return Math.round(255 * color).toString(16).padStart(2, '0');
                 };
                 entity.color = `#${f(0)}${f(8)}${f(4)}`;
-
-                if (!entity.values && entity.data) {
-                    entity.values = entity.data;
-                    delete entity.data;
-                }
             });
         }
 
@@ -176,27 +158,41 @@ async function generateNewTopic() {
         content.threads_caption = lowerTags(content.threads_caption);
         content.twitter_caption = lowerTags(content.twitter_caption);
 
-        // Validate required fields with detailed error messages
+        // --- VALIDATION WITH DETAILED ERROR LOGGING ---
         if (!content.entities) {
-            console.error('❌ AI Response missing "entities" field. Content keys:', Object.keys(content || {}));
-            throw new Error('AI response missing "entities" field');
+            console.error('❌ Validation failed: Missing "entities" key');
+            console.error('Generated content keys:', Object.keys(content));
+            throw new Error("Invalid data structure generated: Missing entities");
         }
         if (!Array.isArray(content.entities)) {
-            console.error('❌ "entities" is not an array. Type:', typeof content.entities);
-            throw new Error('"entities" must be an array');
+            console.error('❌ Validation failed: "entities" is not an array');
+            console.error('Entities value:', content.entities);
+            throw new Error("Invalid data structure generated: Entities is not an array");
         }
         if (content.entities.length === 0) {
-            console.error('❌ "entities" array is empty');
-            throw new Error('"entities" array is empty');
+            console.error('❌ Validation failed: "entities" array is empty');
+            console.error('Full content:', JSON.stringify(content, null, 2));
+            throw new Error("Invalid data structure generated: Empty entities");
         }
         if (!content.timeline_labels) {
-            console.error('❌ AI Response missing "timeline_labels" field. Content keys:', Object.keys(content));
-            throw new Error('AI response missing "timeline_labels" field');
+            console.error('❌ Validation failed: Missing "timeline_labels" key');
+            console.error('Generated content keys:', Object.keys(content));
+            throw new Error("Invalid data structure generated: Missing timeline_labels");
         }
         if (!Array.isArray(content.timeline_labels)) {
-            console.error('❌ "timeline_labels" is not an array. Type:', typeof content.timeline_labels);
-            throw new Error('"timeline_labels" must be an array');
+            console.error('❌ Validation failed: "timeline_labels" is not an array');
+            console.error('Timeline labels value:', content.timeline_labels);
+            throw new Error("Invalid data structure generated: Timeline labels is not an array");
         }
+
+        // Validate each entity has 'values'
+        content.entities.forEach((entity, index) => {
+            if (!entity.values || !Array.isArray(entity.values)) {
+                console.error(`❌ Validation failed: Entity ${index} (${entity.name}) missing valid 'values'`);
+                console.error('Entity:', JSON.stringify(entity, null, 2));
+                throw new Error(`Invalid data structure: Entity ${index} missing values`);
+            }
+        });
 
         // 2. Update History
         history.push(content.topic);
