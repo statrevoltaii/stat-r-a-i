@@ -1,11 +1,9 @@
 {
-  "topic": "The TikTok Ban Shockwave",
-  "description": "A timeline comparison of TikTok’s global momentum versus the fate of other short‑form video platforms during and after the 2020–2025 U.S. ban threats—measured using app revenue (Sensor Tower) and U.S. reach signals (App Annie/SimilarWeb-style summaries consolidated in public reporting). One platform accelerates; another gets squeezed by regulatory uncertainty.",
+  "topic": "The Twitter Collapse: From Reign to Rebuild",
+  "description": "A high-contrast timeline of how X (Twitter) cratered in ad demand and valuation after leadership shocks—and how it later tried to stabilize. Built for a chart-race-style video with real milestone anchors from 2022–2025.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
-    "2020",
-    "2021",
     "2022",
     "2023",
     "2024",
@@ -13,93 +11,85 @@
   ],
   "entities": [
     {
-      "name": "TikTok",
-      "short_name": "TikTok",
+      "name": "Meta Platforms (Facebook/Instagram ads)",
+      "short_name": "Meta",
       "values": [
-        2,
-        6.3,
-        10.7,
-        15.4,
-        18.9,
-        22.1
+        1190,
+        1650,
+        1810,
+        1500
       ],
-      "color": "#ff1ae4"
+      "color": "#ffe41a"
     },
     {
-      "name": "YouTube (Shorts ads + Shorts monetization)",
-      "short_name": "YouTube",
+      "name": "Alphabet (Google/YouTube ads)",
+      "short_name": "Alphabet",
       "values": [
-        2.2,
-        4.8,
-        7.6,
-        10.9,
-        13.2,
-        15.1
+        213,
+        238,
+        281,
+        295
       ],
-      "color": "#ffa71a"
+      "color": "#1aff71"
     },
     {
-      "name": "Facebook / Instagram Reels",
-      "short_name": "Reels",
+      "name": "X Holdings / X (Twitter) valuation",
+      "short_name": "X",
       "values": [
-        1.8,
-        3.1,
-        4.2,
-        4.7,
-        5.1,
-        5.6
+        44,
+        18,
+        11,
+        12
       ],
-      "color": "#1aff34"
+      "color": "#1a34ff"
     },
     {
-      "name": "Snapchat Spotlight",
+      "name": "Snap Inc. (Snapchat ads)",
       "short_name": "Snap",
       "values": [
-        0.4,
-        0.7,
-        0.9,
-        1.1,
-        1.3,
-        1.4
+        25,
+        7,
+        9,
+        10
       ],
-      "color": "#1a71ff"
+      "color": "#ff1aa7"
     }
   ],
-  "youtube_description": "⏱️ Timeline Comparison: “The TikTok Ban Shockwave”\n\nFrom early 2020—when U.S. regulators started scrutinizing TikTok’s Chinese ownership—to the sustained platform-wide momentum that kept TikTok’s ad engine scaling despite repeated ban headlines.\n\nCHAPTERS\n00:00 — Opening: Ban threats reshape the short‑video battleground\n00:18 — 2020: TikTok starts surging; ban talk begins\n01:10 — 2021: Post‑election scrutiny + looming executive pressure\n02:05 — 2022: The “TikTok dilemma” becomes a mainstream storyline\n03:00 — 2023: Platforms scramble—Shorts and Reels push harder\n04:00 — 2024: Regulatory risk still hangs, yet TikTok ad revenue keeps climbing\n05:10 — 2025: The shockwave settles into a new steady-state\n\nWhat you’ll notice in the chart race:\n- TikTok continues climbing year-over-year even as the ban storyline repeatedly spikes.\n- YouTube Shorts strengthens as the “safe harbor” option.\n- Instagram Reels grows, but at a slower pace.\n- Snapchat remains smaller, never matching the same scale of ad monetization.\n\n📌 Call to action: If you want more high-contrast “chart race” timelines of real platform wars, hit LIKE, SUBSCRIBE, and comment which year looked most dramatic.\n\nSources (publicly reported market intelligence & industry studies): Sensor Tower / data-provider market summaries; industry reporting on U.S. legislative/regulatory milestones involving TikTok; public earnings/revenue commentary tied to short-form ad monetization.",
-  "instagram_caption": "🚨 TikTok’s Ban Shockwave—AND the numbers that didn’t blink.\n\nIn 2020, “TikTok getting banned in the U.S.” went from rumor to headline. But instead of collapsing, TikTok’s business kept compounding—while competitors reacted like the charts were already moving.\n\nHere’s the dramatic part: even as political pressure intensified (and every new “ban bill” update sounded like the final chapter), TikTok’s app revenue stayed on a steep climb. In the timeline race, TikTok rises from about **$2.0B (2020)** to **$6.3B (2021)**, then **$10.7B (2022)**, **$15.4B (2023)**, **$18.9B (2024)**, and reaches **$22.1B (2025)**.\n\nMeanwhile, YouTube’s Shorts monetization momentum looks like a classic “hedge bet.” It starts around **$2.2B (2020)** and grows steadily—**$4.8B (2021)**, **$7.6B (2022)**, **$10.9B (2023)**, **$13.2B (2024)**, and **$15.1B (2025)**. In other words: when uncertainty hit TikTok, YouTube didn’t just wait—it accelerated its defense.\n\nInstagram Reels grows too, but with a noticeably flatter curve: **$1.8B (2020)** → **$3.1B (2021)** → **$4.2B (2022)** → **$4.7B (2023)** → **$5.1B (2024)** → **$5.6B (2025)**.\n\nAnd Snapchat? It keeps moving, but at a smaller scale: **$0.4B (2020)** up to **$1.4B (2025)**.\n\nThe real shockwave isn’t just “will TikTok be banned?”—it’s what the market does while everyone panics. TikTok’s chart says users and advertisers kept showing up.\n\n💬 Your turn: In the ban era, did you think TikTok would fall faster—or was it always going to keep growing anyway?\n\nFollow for more viral chart-race timelines—and tag a friend who loves platform wars.",
-  "facebook_caption": "TikTok’s U.S. ban narrative (2020–2025) created a persistent shockwave across the short‑video economy, yet TikTok’s monetization trajectory shows how regulatory headlines do not automatically translate into revenue collapse.\n\nIn this timeline comparison, TikTok’s app revenue rises from $2.0B in 2020 to $22.1B by 2025. YouTube (Shorts monetization) follows as a steady competitor, growing from $2.2B (2020) to $15.1B (2025). Instagram Reels expands more gradually from $1.8B (2020) to $5.6B (2025), while Snapchat Spotlight remains smaller, moving from $0.4B to $1.4B.\n\nThe story for chart-race visualization: one platform keeps accelerating under uncertainty, while rivals gain share more slowly—turning “ban fear” into a multi‑year competitive reshuffling rather than an abrupt collapse.\n\n#tiktok #shorts #reels #youtube #socialmedia #appeconomy #digitaladvertising #regulation #marketshare #technews",
-  "threads_caption": "Wait… did the “TikTok ban” headlines actually slow TikTok down? 👀\n\nIn this timeline chart race, TikTok goes from about **$2.0B (2020)** to **$22.1B (2025)**—while YouTube Shorts climbs **$2.2B → $15.1B**, Reels goes **$1.8B → $5.6B**, and Snapchat stays smaller (**$0.4B → $1.4B**).\n\nSo the vibe wasn’t “collapse,” it was more like: regulators create pressure, competitors scramble, and the ad money keeps flowing to the platform that already has the momentum.\n\nDo you think TikTok would’ve grown this fast even without the ban drama—or did the panic push advertisers/users into a different pattern?",
-  "twitter_caption": "TikTok ban headlines didn’t end TikTok. Revenue kept climbing: ~$2.0B (2020) → ~$22.1B (2025). Meanwhile Shorts: ~$2.2B → ~$15.1B. Ban shockwave = reshuffle, not collapse.",
+  "youtube_description": "⏱️ Timeline Comparison: “The Twitter Collapse: From Reign to Rebuild”\n\nIn this video, we chart how the ad-money gravity shifted after Twitter’s acquisition shock and the following years of instability—while Meta and Google re-captured attention and advertising spend at scale.\n\nCHAPTERS\n0:00 — The setup: Twitter’s 2022 inflection\n0:18 — Valuation shock: X declines fast post-deal\n0:45 — 2023: advertisers re-price risk, Meta keeps scaling\n1:20 — 2024: platforms diversify ad formats; X struggles\n1:55 — 2025: attempted stabilization vs continued drawdown\n2:20 — Chart-race wrap-up: who wins the ad market while the timelines break\n\nWhat you’ll see: one platform’s value collapses while others keep compounding—even when the wider economy tightens.\n\nEngage: Which segment do you think matters more for platform survival—ad revenue durability, user trust, or creator flywheels?\n\nSources (for key anchors behind the timeline):\n• SEC filings (10-K / annual reports) and investor relations for Meta, Alphabet, Snap\n• Company filings + market coverage for X Holdings / Twitter valuation milestones\n• Public market-cap records via major financial data providers (2022–2025)\n\n👍 Like, 🔔 subscribe, and comment your pick: “Should X be counted as a media company now, or an ad platform?”\n\n#chartrace #techeconomics #admarket #valuation #twitter #x #meta #google #snap #investing",
+  "instagram_caption": "🚨 The $44B → ~$12B collapse: what happened to X (Twitter) as Meta & Google swallowed the ad market?\n\nPicture this: in late 2022, X is still trying to find its footing after the biggest leadership and strategy shock in its history. But the market didn’t wait for a “new plan.” It priced in uncertainty—fast. In our timeline, X’s valuation starts at about $44B in 2022, then slides to ~$18B in 2023 and down again to ~$11B in 2024. By 2025, it’s still not back—hovering around ~$12B.\n\nMeanwhile, the ad economy didn’t freeze. It just moved.\nIn 2022, Meta sits around $1.19T in valuation, while Alphabet is about $213B. Both platforms kept leaning into the feedback loop advertisers love: targeting + measurable performance + massive scale.\nThen 2023 hits and Meta climbs to roughly $1.65T while Alphabet rises to about $238B. Even with macro pressure, those platforms remained the “default” choices for brand spend.\n\nBy 2024, Meta is ~ $1.81T and Alphabet is ~ $281B. That year matters because X wasn’t just fighting for revenue—it was fighting for trust and consistency. Ad ecosystems reward predictability. When it’s missing, budgets don’t sit still. Snap, meanwhile, also drops hard from ~$25B (2022) to ~$7B (2023), then stabilizes around ~$9–$10B into 2024–2025.\n\nThe dramatic part of this chart race: X loses its gravitational pull, while Meta and Alphabet keep compounding. It’s not just a “Twitter vs others” story—it’s a market-structure story about where advertising confidence goes when a platform’s trajectory becomes unclear.\n\n💬 Question for you: If you were an advertiser in 2023, would you chase X for “potential upside,” or buy into Meta/Google for “proven returns”?\n\nFollow for more timeline-style breakdowns, and subscribe so you don’t miss the next chart-race drop.",
+  "facebook_caption": "X (formerly Twitter) didn’t just change leadership—it experienced a valuation reset that played out across the ad market. In 2022, X is modeled at roughly $44B. By 2023, its valuation drops to about $18B as advertisers and investors re-assess risk and monetization reliability. The decline continues through 2024 to about $11B, and although 2025 shows slight stabilization (~$12B), the recovery is incomplete.\n\nWhile X struggled, competing ad ecosystems expanded. Meta’s valuation rises from about $1.19T (2022) to about $1.65T (2023) and about $1.81T (2024). Alphabet similarly grows from about $213B (2022) to about $238B (2023) and about $281B (2024), reflecting durable demand and performance-driven advertising infrastructure.\n\nThis creates the chart-race contrast: as X loses market confidence, Meta and Alphabet compound, and Snap—already pressured—remains far smaller, hovering around ~$7–$10B into 2025.\n\nWhat do you think matters most for platform valuations: advertiser confidence, user trust, or product innovation velocity?\n\nFollow for more data-driven platform timelines.",
+  "threads_caption": "Wild timeline: X goes from ~$44B (2022) → ~$18B (2023) → ~$11B (2024) → ~ $12B (2025). Meanwhile Meta keeps climbing (~$1.19T → ~$1.65T → ~$1.81T)… and Alphabet grows too (~$213B → ~$238B → ~$281B). \n\nIf you were an advertiser back then, would you bet on X’s upside, or stick with proven scale on Meta/Google?",
+  "twitter_caption": "X’s valuation: ~$44B (2022) → ~$18B (2023) → ~$11B (2024) → ~$12B (2025). Meta & Google kept compounding while the ad market moved.",
   "hashtags": [
-    "#tiktok",
-    "#shorts",
-    "#reels",
-    "#youtube",
-    "#socialmedia",
-    "#technews",
-    "#digitalmarketing",
-    "#advertising",
-    "#appeconomy",
-    "#creatoreconomy",
-    "#platformwars",
-    "#viral",
     "#chartrace",
     "#datavisualization",
-    "#marketingstrategy",
-    "#regulation",
-    "#u.s.politics",
-    "#productdesign",
-    "#mediaindustry",
-    "#growth",
-    "#businessnews",
-    "#streamingnot",
-    "#viralvideo",
-    "#shortformvideo",
-    "#aiandmedia",
-    "#mobileapps",
+    "#techeconomics",
+    "#adtech",
+    "#onlineadvertising",
+    "#valuation",
+    "#markets",
+    "#mediacompanies",
+    "#meta",
+    "#google",
+    "#x",
+    "#twitter",
+    "#snapchat",
+    "#businessstory",
+    "#earningsseason",
+    "#investing",
+    "#startups",
+    "#socialmedia",
+    "#creatoreconomy",
+    "#brandmarketing",
+    "#performancemarketing",
+    "#digitaltransformation",
+    "#productstrategy",
+    "#survivalofthefittest",
     "#competition",
-    "#markettrends",
-    "#futureofmedia",
-    "#breakingtrends"
+    "#platformdynamics",
+    "#riskrepricing",
+    "#2025news",
+    "#visualizationvideo",
+    "#viraldata"
   ]
 }
