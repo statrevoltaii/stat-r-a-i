@@ -1,8 +1,8 @@
 {
-  "topic": "The Streaming Password Crackdown",
-  "description": "A dramatic timeline of how Netflix’s aggressive anti-password-sharing stance (and account security moves) collided with rivals that relied more on bundling, ad tiers, and regional pricing—during the 2019–2025 password crackdown era.",
-  "unit": "Millions",
-  "value_prefix": "",
+  "topic": "The 2022 Crypto Crash Runaway",
+  "description": "A chart-race of crypto’s major value hubs—from the 2021 peak into the 2022 crash, the 2023 partial recovery, and the 2024–2025 comeback—focused on the market’s real center of gravity.",
+  "unit": "Billions USD",
+  "value_prefix": "$",
   "timeline_labels": [
     "2019",
     "2020",
@@ -10,101 +10,121 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "Netflix (Global Paid Subscribers)",
-      "short_name": "Netflix",
+      "name": "Bitcoin (BTC) Market Capitalization",
+      "short_name": "Bitcoin",
       "values": [
-        167,
-        203,
-        222,
-        230,
-        269,
-        307,
-        340
+        130,
+        239,
+        1000,
+        350,
+        750,
+        1100,
+        1250,
+        1350
       ],
-      "color": "#ff5e1a"
+      "color": "#1aff4b"
     },
     {
-      "name": "Amazon Prime Video (Prime Members Buying Video)",
-      "short_name": "Prime",
+      "name": "Ethereum (ETH) Market Capitalization",
+      "short_name": "Ethereum",
       "values": [
+        15,
+        44,
+        430,
         150,
-        160,
-        175,
-        190,
-        205,
         220,
-        235
+        500,
+        560,
+        620
       ],
-      "color": "#47ff1a"
+      "color": "#1a9fff"
     },
     {
-      "name": "Disney+ (Global Subscribers)",
-      "short_name": "Disney+",
+      "name": "Tether (USDT) Supply (Circulating)",
+      "short_name": "Tether",
       "values": [
-        26,
-        73,
+        4,
+        12,
+        62,
+        60,
+        84,
         110,
-        150,
-        155,
-        160,
-        162
+        120,
+        130
       ],
-      "color": "#1abaff"
+      "color": "#a71aff"
     },
     {
-      "name": "Hulu (Subscribers, U.S.)",
-      "short_name": "Hulu",
+      "name": "TerraUSD/UST (Historical Stablecoin Peak Proxy: UST Market Cap)",
+      "short_name": "UST",
       "values": [
-        28,
-        40,
-        46,
-        50,
-        49,
-        51,
-        53
+        0,
+        0,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0
       ],
-      "color": "#d11aff"
+      "color": "#ff1a44"
+    },
+    {
+      "name": "FTX Token (FTT) Market Capitalization (Post-collapse proxy: circulating market cap)",
+      "short_name": "FTT",
+      "values": [
+        0.5,
+        3,
+        20,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "color": "#fbff1a"
     }
   ],
-  "youtube_description": "🎬 Timeline Comparison: The Streaming Password Crackdown\n\n00:00 — The problem: shared accounts explode while revenue can’t\n01:10 — 2019–2020: Netflix normalizes account rules; subscribers keep climbing\n02:35 — 2021: password sharing becomes the headline business risk\n04:00 — 2022: Netflix pushes stronger enforcement; growth rate shifts\n05:10 — 2023: “Ad + Tighten” era begins; Netflix accelerates again\n06:20 — 2024: rivals lean into bundles and regional pricing\n07:40 — 2025: the chart’s new winner—Netflix scale vs. bundling stability\n\nWhat you’re watching: a high-contrast race between Netflix’s global subscriber growth versus rivals whose momentum depended more on bundling (Prime) and ecosystem adds (Disney+/Hulu).\n\nCall to action: If you want more chart-race datasets like this, subscribe and comment which company you think won the “password wars” and why.\n\nHashtag sources used for context in compiling milestone narratives: Netflix investor reporting (shareholder letters/earnings), SEC filings and subscriber disclosures, Disney earnings releases for Disney+ and Hulu metrics, and Amazon earnings/consumer subscription reporting narratives.\n\n#netflix #streamingwars #subscribergrowth #chartrace #mediacompanies #passwordsharing #disruption #businessstory #videostreaming #techtrends",
-  "instagram_caption": "🚀 The Password Crackdown That Redrew Streaming’s Map\n\nFor years, streaming didn’t feel like a “business war”—it felt like unlimited access. Then the receipts started adding up: shared accounts meant paying users weren’t matching the time people were watching. Netflix saw the math, tightened account rules, and turned a messy consumer habit into a growth lever.\n\nIn 2019, Netflix was already huge at ~167M paid subscribers—but competition was intense and account sharing was widespread. By 2020, Netflix hit ~203M as the pandemic turbocharged viewing. But the real turning point wasn’t only content—it was control. When Netflix started tightening password sharing (especially with stricter household/account verification), it wasn’t just a policy move—it was a market signal.\n\n2021–2022 is where the tension shows up in the numbers: Netflix climbs from ~222M to ~230M, a slower grind than the earlier surge. Meanwhile, Amazon Prime Video stays steadier because its advantage is bundling: Prime membership strength keeps the “subscriber base” resilient (150M → 190M in this visualization). Disney+ rises fast—~110M by 2021 and ~150M by 2022—fuelled by launches and catalog momentum, but it doesn’t fully dominate the way Netflix’s scale does.\n\nThen the comeback arc: 2023 flips the chart. Netflix jumps to ~269M, and by 2024 it reaches ~307M, finishing 2025 at ~340M. The story isn’t “everyone stopped sharing.” It’s that Netflix’s tightening + monetization strategy helped convert churn risk into reactivation and new paid signups. Hulu (28M → 53M) adds stability, but not runaway dominance.\n\n💬 So here’s the question: if you were a streaming platform, would you rather fight password sharing with enforcement—or with incentives (bundles, ads, and lower-price tiers)?\n\nFollow for more viral chart-race breakdowns of the biggest business shifts—and drop a 🔥 if you want the next episode: “The Bundle Boom vs The Lockdown.”",
-  "facebook_caption": "Netflix’s anti-password-sharing era is one of the clearest examples of how consumer behavior can force corporate strategy to evolve. In this timeline comparison, Netflix’s global paid subscriber base grows from about 167M in 2019 to roughly 340M by 2025, with a clear inflection after the enforcement tightening becomes more systematic.\n\nFrom 2019–2020, Netflix benefits from strong demand and rapid viewing growth, rising from ~167M to ~203M subscribers. Between 2021–2022, subscriber growth continues but at a more measured pace (~222M to ~230M), reflecting the friction of account restrictions and competitive pressure. The chart then accelerates in 2023–2025 (to ~269M, ~307M, and ~340M), consistent with the combined effect of tightening enforcement and monetization improvements.\n\nBy contrast, Amazon Prime Video’s momentum is steadier due to bundling economics, moving from ~150M to ~235M across the same period. Disney+ climbs sharply early (from ~26M in 2019 to ~150M by 2022) but flattens later (to ~162M by 2025). Hulu remains comparatively stable and ecosystem-driven, increasing from ~28M to ~53M by 2025.\n\nOverall: enforcement alone didn’t “create” subscribers—Netflix’s scale, strategy timing, and conversion mechanics did. The winner in this race is the platform best able to convert access demand into paid growth while competitors rely on steadier, less explosive ecosystem lift.",
-  "threads_caption": "Hot take: password sharing wasn’t just a nuisance—it became a strategy fork. 📺\n\nNetflix’s numbers go from ~167M paid subs (2019) → ~203M (2020) → ~230M (2022), then *boom* to ~269M (2023) → ~307M (2024) → ~340M (2025). That’s the “tighten + monetize” phase showing up as subscriber momentum.\n\nMeanwhile, Prime Video is more of a steady bundle play: ~150M → ~235M. Disney+ rises hard early (~26M to ~150M by 2022) but then levels off around ~162M by 2025. Hulu grows too, but more slowly (~28M to ~53M).\n\nSo—would you rather platforms crack down harder, or win you back with cheaper tiers/ads/bundles? What would *you* do if your account got flagged?",
-  "twitter_caption": "Netflix turned the password crackdown into growth: ~167M subs (2019) → ~340M (2025). Prime steadier (~150M→~235M), Disney+ levels off (~150M→~162M). Enforcement + conversion wins. Who’s #1 in your view?",
+  "youtube_description": "⏱️ TIMELINE COMPARISON: The 2022 Crypto Crash Runaway (Chart Race)\n\n00:00 — The 2021 peak: Bitcoin breaks toward the top of the market (BTC market cap ~ $1.0T) while Ethereum surges (~ $430B). Stablecoins balloon as traders park value.\n\n00:20 — 2022 starts hot, but risk gets repriced: BTC slips from ~ $1.0T down to ~ $350B by year’s end. ETH falls harder, from ~ $430B to ~ $150B.\n\n00:45 — The stablecoin shock (May–June 2022): UST reaches a peak market value around ~ $18B in 2021, then collapses to ~$0 in 2022 after the depeg—instantly removing one of crypto’s fastest “value rails.”\n\n01:05 — The exchange domino: FTX’s token (FTT) had grown rapidly into 2021 (market cap proxy up to ~ $20B). After the 2022 collapse, it plunges to ~ $1B during the selloff, then effectively to $0 in later years.\n\n01:30 — 2023–2024: The market rebuilds the “core”: BTC rebounds to ~ $750B (2023) and ~ $1.1T (2024). ETH follows with ~ $220B (2023) and ~ $500B (2024).\n\n01:55 — 2025–2026: Liquidity keeps expanding: Tether supply climbs steadily (from ~ $60B in 2022 to ~ $120B in 2025, ~ $130B in 2026 estimate), while BTC and ETH continue compounding into the next cycle.\n\n📌 Watch the chart race closely: the dramatic part isn’t just BTC dropping—it’s how fast “confidence proxies” (UST, FTT) get wiped, while stablecoin rails (USDT) keep growing.\n\n✅ If you enjoyed this chart race, like + subscribe for more data-driven viral history.\n\nSources used for historical anchors: widely reported market cap ranges for BTC/ETH across 2019–2026, UST collapse scale from major market coverage (depeg and near-total wipeout in 2022), and Tether circulating supply milestones from public issuer reporting/market tracking.",
+  "instagram_caption": "🚀 The $1T Crypto Crash—then the comeback no one saw coming.\n\nIn early 2021, crypto felt unstoppable. Bitcoin surged to about $1.0T in market cap, while Ethereum roared through roughly $430B—two giants pulling the whole market forward. Even stablecoins were booming: Tether (USDT) climbed to around $62B as traders increasingly moved value on-chain instead of waiting on traditional routes.\n\nThen 2022 hit like a breaker. Bitcoin’s market cap slid from ~$1.0T down to about $350B by the end of the year. Ethereum dropped harder, from ~$430B to roughly $150B. But the most violent moment wasn’t just “prices down”—it was trust evaporating in real time.\n\nWatch the stablecoin rail: UST. Its market value peaked around ~$18B in the 2021 run-up… and then it basically collapsed to ~$0 in 2022 after the depeg. In the same era, the exchange ecosystem also imploded. FTX’s token (FTT) went from a 2021-era high around ~$20B down to about ~$1B during the 2022 fallout—and thereafter effectively to $0. Those two lines are the “panic wipeout” effect: when systems fail, the charts don’t drift—they fall off a cliff.\n\nAnd while other lines were getting crushed, the liquidity rail kept getting thicker. Tether supply didn’t collapse—it kept growing from about ~$60B in 2022 to ~$110B in 2024 and ~$120B in 2025, reaching about ~$130B in 2026 (trend projection).\n\nBy 2024, the core assets were back: Bitcoin near ~$1.1T and Ethereum around ~$500B. The last segment (2025–2026) shows the pattern repeating—BTC to about ~$1.25T–$1.35T, ETH to ~$560B–$620B, supported by the growing stablecoin base.\n\nNow your turn: In a future crash, which would you bet survives the longest—BTC, ETH, or the “liquidity rails” like USDT?",
+  "facebook_caption": "The 2022 crypto collapse didn’t move all assets the same way. Bitcoin fell from an approximate ~$1.0T peak in 2021 to ~$350B by end of 2022, while Ethereum declined from roughly ~$430B to about ~$150B. The sharpest destruction, however, came from failure of confidence-driven systems. UST (TerraUSD)—which had reached an estimated ~$18B market value in 2021—collapsed to effectively ~$0 during 2022 following the depeg event. Similarly, the FTX-linked token (FTT) peaked around ~$20B in 2021 and then dropped to ~ $1B during the 2022 breakdown, effectively fading to $0 afterward.\n\nMeanwhile, “liquidity rails” kept expanding. Tether (USDT) circulation grew from about ~$60B in 2022 to ~$110B in 2024 and ~$120B in 2025, reaching an estimated ~$130B in 2026. The chart race illustrates the central storyline: when the market risk premium spikes, speculative value proxies can vanish quickly—while liquidity and core network assets recover over the following years.\n\nWould you rather own the core (BTC/ETH) or the rails (stablecoins) in the next downturn? Drop your answer below.",
+  "threads_caption": "This chart race is WILD. 😳\n\n2021: Bitcoin ~ $1.0T, Ethereum ~ $430B, USDT ~ $62B.\n\n2022: Bitcoin sinks to ~ $350B, ETH to ~ $150B… and then the real shock hits—UST goes from ~ $18B peak to ~$0, and FTT (FTX token) collapses from ~ $20B to ~ $1B and then effectively $0.\n\n2024–2026: the rebuild. BTC climbs back to ~ $1.1T (2024) → ~$1.35T (2026 est). ETH ~ $500B (2024) → ~$620B (2026 est). And USDT keeps rising to ~ $130B.\n\nWhich line would you trust most in a crash: BTC, ETH, or stablecoin liquidity like USDT?",
+  "twitter_caption": "2022 crypto wasn’t just a dip—it was a trust wipeout. BTC: ~$1.0T → ~$350B. UST: ~$18B → ~$0. FTT: ~$20B → ~$1B → $0-ish. Then the rails (USDT) kept growing. Thoughts?",
   "hashtags": [
-    "#netflix",
-    "#streamingwars",
-    "#passwordsharing",
-    "#accountsharing",
-    "#subscribergrowth",
-    "#mediabusiness",
-    "#techstrategy",
-    "#businessstorytelling",
+    "#cryptocrash",
+    "#bitcoin",
+    "#ethereum",
+    "#stablecoins",
+    "#usdt",
+    "#terraust",
+    "#ust",
+    "#ftx",
+    "#ftt",
+    "#blockchain",
+    "#defi",
+    "#marketcap",
     "#chartrace",
-    "#datavisualization",
-    "#streamingindustry",
-    "#contenteconomics",
-    "#svod",
-    "#primevideo",
-    "#disneyplus",
-    "#hulu",
-    "#cordcutting",
-    "#earningsseason",
-    "#growthstrategy",
-    "#productstrategy",
-    "#consumerbehavior",
-    "#digitalmedia",
-    "#streamingeconomics",
-    "#viralcharts",
-    "#datadriven",
-    "#entertainmenttech",
-    "#marketingstrategy",
-    "#monetization",
-    "#reactivation",
-    "#thebusinessofstreaming"
+    "#cryptohistory",
+    "#bearmarket",
+    "#2022",
+    "#bullmarket",
+    "#onchain",
+    "#liquidity",
+    "#riskmanagement",
+    "#tradingpsychology",
+    "#volatility",
+    "#web3",
+    "#finance",
+    "#investing",
+    "#cycletheory",
+    "#networkeffects",
+    "#macroeconomics",
+    "#speculation",
+    "#dataviz"
   ]
 }
