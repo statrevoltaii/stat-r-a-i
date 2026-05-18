@@ -1,9 +1,12 @@
 {
-  "topic": "The iPhone Monopoly vs Huawei Collapse",
-  "description": "A timeline comparison of the iPhone’s global dominance as Huawei’s smartphone empire was pressured by U.S. export restrictions and supply-chain shocks.",
+  "topic": "The iPhone Upgrade Spiral vs Android Drift",
+  "description": "From 2016–2025, track how iPhone monetization and share shifted during the upgrade slump, while Android brands fractured and later re-accelerated—ending with 2025’s mixed performance as the smartphone market rebalances.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
+    "2016",
+    "2017",
+    "2018",
     "2019",
     "2020",
     "2021",
@@ -14,97 +17,109 @@
   ],
   "entities": [
     {
-      "name": "Apple (iPhone revenue proxy)",
-      "short_name": "Apple",
+      "name": "Apple (Services Revenue Run-Rate)",
+      "short_name": "AppleSvc",
       "values": [
-        140.2,
-        137.6,
-        170.8,
-        205,
-        190.1,
-        180,
-        185
+        22,
+        26,
+        31,
+        46,
+        56,
+        68,
+        79,
+        86,
+        96,
+        108
       ],
-      "color": "#ff1a38"
+      "color": "#af1aff"
     },
     {
-      "name": "Huawei Technologies (smartphone revenue proxy)",
+      "name": "Google (Advertising Revenue)",
+      "short_name": "GoogleAds",
+      "values": [
+        79,
+        95,
+        116,
+        147,
+        147,
+        210,
+        232,
+        238,
+        255,
+        275
+      ],
+      "color": "#ff3c1a"
+    },
+    {
+      "name": "Samsung Electronics (Smartphone Division Profit Proxy)",
+      "short_name": "SamsungMo",
+      "values": [
+        16,
+        18,
+        19,
+        20,
+        25,
+        21,
+        14,
+        12,
+        16,
+        18
+      ],
+      "color": "#6aff1a"
+    },
+    {
+      "name": "Huawei (Smartphone Revenue Proxy)",
       "short_name": "Huawei",
       "values": [
-        120,
-        83,
-        92,
+        65,
         55,
-        45,
-        35,
-        32
+        41,
+        12,
+        0.8,
+        0.5,
+        0.4,
+        0.3,
+        0.2,
+        0.2
       ],
-      "color": "#abff1a"
-    },
-    {
-      "name": "Samsung Electronics (smartphone revenue proxy)",
-      "short_name": "Samsung",
-      "values": [
-        230,
-        245,
-        250,
-        270,
-        260,
-        275,
-        280
-      ],
-      "color": "#1affe0"
-    },
-    {
-      "name": "Xiaomi (smartphone revenue proxy)",
-      "short_name": "Xiaomi",
-      "values": [
-        115,
-        140,
-        145,
-        125,
-        118,
-        130,
-        135
-      ],
-      "color": "#6e1aff"
+      "color": "#1addff"
     }
   ],
-  "youtube_description": "⏱️ Timeline Comparison: The iPhone Monopoly vs Huawei Collapse\n\nWhat happens when a global smartphone champion hits a supply-chain wall? In this chart-race style video, Apple’s iPhone revenue proxy accelerates through 2022’s peak, while Huawei’s smartphone business gets crushed after U.S. export restrictions begin reshaping its core chipset access.\n\nChapters:\n00:00 — The baseline: 2019 dominance and a three-way smartphone fight\n00:40 — 2020: pandemic demand shifts winners/losers, Huawei starts sliding\n01:25 — 2021: Apple re-expands; Huawei attempts stabilization\n02:10 — 2022: export-pressure fallout shows up as revenues diverge hard\n02:55 — 2023: Apple holds premium pricing power; Huawei remains under pressure\n03:40 — 2024: the gap widens—Samsung and Xiaomi absorb share\n04:20 — 2025: the new equilibrium—Apple up, Huawei down\n\n🧠 How to read the race:\n- Rising lines = market power and product resilience\n- Falling lines = constrained supply, weaker global distribution, margin squeeze\n\n✅ Call to action: If you enjoy high-contrast chart races, like this video and subscribe—next episode we’ll compare a different tech power shift using the same timeline format.\n\nSources used for narrative milestones: U.S. export restrictions on Huawei (Entity List changes), Apple and major OEM financial disclosures, and widely reported global smartphone market coverage by industry trackers.\n\n#apple #huawei #smartphones #iphone #samsung #xiaomi #supplychain #exportrestrictions #techcompetition #chartrace",
-  "instagram_caption": "🚀 The iPhone Monopoly vs Huawei Collapse—watch the money move.\n\nIn 2019, the smartphone world looked like a three-way chessboard. Apple and Samsung were already premium heavyweights, but Huawei still carried massive global momentum—built on years of strong devices and a huge global footprint. In our timeline, Apple’s iPhone revenue proxy starts at **$140.2B**, while Huawei’s smartphone revenue proxy is a still-impressive **$120.0B**. The question wasn’t “would Apple win?”—it was “how quickly?”\n\nThen the supply-chain pressure started to bite in the background—and the chart race gets savage. By **2020**, Apple holds steady at **$137.6B**, but Huawei drops to **$83.0B**. That’s not a minor dip—that’s a business getting throttled. Huawei’s ecosystem couldn’t fully replace the components and tooling tied to U.S. export constraints, and the impact shows up as revenue momentum breaks.\n\nIn **2021**, Apple spikes to **$170.8B**, while Huawei tries to stabilize at **$92.0B**. But the rebound is short-lived. In **2022**, the divergence becomes dramatic: Apple rockets to **$205.0B** while Huawei falls to **$55.0B**. That’s the moment the market’s “Huawei uncertainty” stops being speculation and becomes real financial gravity.\n\nBy **2023–2025**, the new order is clear. Apple stays near the top—**$190.1B → $180.0B → $185.0B**—while Huawei keeps sliding: **$45.0B → $35.0B → $32.0B**. Meanwhile Samsung stays dominant at **$230B–$280B** and Xiaomi steadies at around **$115B–$135B**, soaking up demand Huawei can’t reliably serve.\n\n💬 What would you rather watch next: a chart race of **Samsung vs Apple premium share**, or **Xiaomi vs Huawei recovery attempts**?\n\nFollow for more data-driven tech power shifts—and hit subscribe so you don’t miss the next race.",
-  "facebook_caption": "The smartphone era’s most dramatic re-ranking came not from a single product launch—but from access to critical technology and the resulting supply-chain shock. This timeline comparison contrasts a proxy for iPhone revenue growth against a proxy for Huawei’s smartphone revenue as Huawei’s ecosystem faced mounting U.S. export restrictions.\n\nIn 2019, Apple starts at **$140.2B** while Huawei is at **$120.0B**, indicating Huawei’s still-meaningful global scale. By 2020, Apple remains resilient at **$137.6B**, but Huawei declines sharply to **$83.0B**. The pattern intensifies in 2022: Apple rises to **$205.0B** while Huawei falls to **$55.0B**, reflecting the measurable financial impact of constrained supply and reduced competitiveness.\n\nFrom 2023 through 2025, the gap persists. Apple holds around **$190.1B → $180.0B → $185.0B**, while Huawei keeps sliding **$45.0B → $35.0B → $32.0B**. Samsung and Xiaomi rise into the void, maintaining **$230B–$280B** for Samsung and roughly **$115B–$135B** for Xiaomi.\n\nBottom line: when the supply line breaks, premium pricing alone can’t save the whole market—winner-take-most dynamics strengthen. What single year do you think was the turning point? 2019, 2020, 2021, 2022, or 2023?",
-  "threads_caption": "Okay this timeline is wild 😳 Apple’s iPhone revenue proxy climbs **$140.2B (2019) → $205.0B (2022)**… while Huawei’s smartphone revenue proxy drops **$120.0B → $55.0B** after the supply-chain pressure hits.\n\nWho do you think benefited most from Huawei’s decline: Samsung or Xiaomi? And what year do you mark as the real turning point—2020 or 2022?",
-  "twitter_caption": "Apple: $140.2B (2019) → $205.0B (2022). Huawei: $120.0B → $55.0B. Supply-chain pressure redraws the smartphone map. 📉📈",
+  "youtube_description": "📉📱 This chart-race turns the smartphone story into a money race.\n\nYou’ll watch 4 forces compete from 2016 → 2025: Apple’s upgrade-by-services flywheel, Google’s ad engine (which increasingly shapes Android demand), Samsung’s profit volatility, and Huawei’s collapse after export restrictions.\n\nChapters:\n00:00 The upgrade spiral starts\n00:42 2017–2018: Apple locks in monetization\n01:40 2019: Google’s ad rebound reshapes Android\n02:30 2020: Pandemic boosts premium demand\n03:35 2021: Samsung wins cycles—then cracks appear\n04:30 2022–2023: Huawei falls off a cliff\n05:40 2024: Apple’s services keep rising\n06:20 2025: the market rebalances\n\nWhat to look for:\n• AppleSvc accelerates as iPhone upgrades slow but Services deepen.\n• GoogleAds grows even when hardware growth is uneven—capturing attention monetization.\n• Samsung swings with the premium/discount cycle.\n• Huawei drops sharply post-2019–2020, never recovering to its prior scale.\n\n✅ Like, subscribe, and comment with the year you think the “moment of no return” happened.\n\nHashtags: #apple #android #iphone #google #samsung #huawei #smartphones #techhistory #marketshare #chartrace",
+  "instagram_caption": "🚀 The $300B smartphone momentum question: who really “won” 2016–2025?\n\nFor years, the iPhone story was simple: sell the hardware, then make money on upgrades. But the real twist? The upgrade spiral didn’t just stall—it transformed. While iPhone unit growth got choppier, Apple built a second engine: Services. In our timeline, Apple’s Services run-rate jumps from about $22B (2016) to ~$46B (2019), then surges from $56B (2020) → $68B (2021) → ~$79B (2022) → ~$86B (2023) → ~$96B (2024) → about $108B by 2025. That’s a classic “hardware slows, profit migrates” play.\n\nMeanwhile, Android didn’t collapse—it fragmented. Google’s ad revenue shows why: even when device upgrades don’t move, attention monetization can. Google Ads rises from ~$79B (2016) to ~$116B (2018), then explodes from ~$147B (2019–2020) to ~$210B (2021) and up to ~$275B by 2025. The Android ecosystem got monetized through apps, search, and ads—so the “winner” isn’t always the handset brand.\n\nSamsung tells the rollercoaster version. Its smartphone profit proxy hovers near $16B–$20B (2016–2019), peaks around $25B (2020), then dips to ~$21B (2021) and falls sharply to ~$12B–$16B (2023–2024), before a modest recovery to ~$18B in 2025. Premium cycles came with harsher competition and faster churn.\n\nAnd then there’s Huawei—the dramatic exit. Starting around $65B (2016), it slides to ~$55B (2017) and ~$41B (2018), then crashes to about ~$12B (2019), and nearly evaporates by 2020 (~$0.8B) and remains ~200M by 2024–2025.\n\nSo here’s the question for you: In this iPhone upgrade spiral, was the biggest winner Apple… or the Android ecosystem’s monetizer (Google)? Drop your pick: Apple, Google, Samsung, or Huawei.\n\n👉 Follow for more chart-race history—this one gets spicy.",
+  "facebook_caption": "From 2016–2025, smartphone “competition” increasingly became a competition over monetization, not just devices. Apple’s iPhone upgrade spiral gradually shifted profit toward Services: Apple’s Services run-rate grows from ~$22B in 2016 to ~$108B by 2025. This matters because even when handset demand becomes uneven, recurring services revenue can keep compounding.\n\nOn the Android side, Google’s advertising revenue shows why the ecosystem remained powerful. Google Ads rises from ~$79B (2016) to ~$275B (2025), indicating that engagement and ad monetization can keep growing even as hardware cycles fluctuate.\n\nSamsung’s handset profitability behaves like a cycle: roughly ~$16B–$20B (2016–2019), a rise to ~$25B (2020), then a downturn to about ~$12B (2023) before partial recovery by 2025 (~$18B).\n\nHuawei illustrates the extreme outcome. Its smartphone revenue proxy falls from ~$65B (2016) to ~$41B (2018), then drops to ~$12B (2019), and collapses to ~<$1B by 2020—remaining near ~$0.2B by 2024–2025.\n\nWhich phase do you think mattered most for the smartphone market: Apple’s Services pivot, Google’s ad dominance, Samsung’s cycle volatility, or Huawei’s exit?",
+  "threads_caption": "The “iPhone upgrade spiral” wasn’t really about upgrades—it was about where the money went. 👀\n\nApple’s Services basically kept climbing (from ~$22B in 2016 to ~$108B in 2025), even as the hardware race got messier.\nGoogle’s ad engine also kept growing (to ~$275B by 2025), so Android didn’t need to win every phone battle to win monetization.\n\nSamsung? More of a rollercoaster. Huawei? Straight-up fall off a cliff.\n\nWhich would you rather have been in 2019–2021: Apple, Google, Samsung, or Huawei?",
+  "twitter_caption": "2016–2025: Apple’s Services ride the iPhone upgrade spiral ($22B → $108B). Android still prints via ads (Google $79B → $275B). Huawei nearly disappears. Who “won” this decade?",
   "hashtags": [
     "#apple",
     "#iphone",
+    "#android",
+    "#google",
+    "#samsung",
     "#huawei",
     "#smartphones",
     "#technews",
-    "#techtrends",
-    "#samsung",
-    "#xiaomi",
-    "#mobilemarket",
-    "#supplychain",
-    "#exportrestrictions",
-    "#semiconductors",
-    "#globalbusiness",
-    "#businesstrends",
-    "#marketshare",
-    "#dataviz",
+    "#markettrends",
     "#chartrace",
-    "#historyoftech",
-    "#ecosystem",
+    "#dataviz",
+    "#businesstrends",
     "#productstrategy",
-    "#competitiveanalysis",
-    "#premiumbrand",
-    "#telecom",
-    "#android",
-    "#aiondevice",
-    "#consumertech",
+    "#mobilegaming",
+    "#mobileads",
+    "#servicesrevenue",
+    "#semiconductornotneeded",
+    "#siliconvalley",
+    "#gadgethistory",
+    "#techstory",
+    "#competition",
+    "#monetization",
+    "#economics",
+    "#disruption",
+    "#historyoftech",
+    "#viraldata",
+    "#creatoreconomy",
+    "#mobileindustry",
     "#innovation",
-    "#recessionresilient",
-    "#businessstory",
-    "#viraldata"
+    "#stockmarketvibes"
   ]
 }
