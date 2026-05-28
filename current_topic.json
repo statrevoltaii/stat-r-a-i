@@ -1,6 +1,6 @@
 {
-  "topic": "The TikTok Shop Takeover",
-  "description": "A timeline comparison of how TikTok Shop scaled into a US commerce engine while Amazon’s growth cooled and Walmart’s US digital momentum faced pressure—driven by live shopping, creator commerce, and rapid seller onboarding.",
+  "topic": "The EV Price Collapse vs Tesla’s Runway",
+  "description": "A timeline comparison of global battery EV affordability pressure vs Tesla’s delivery momentum—tracking how price cuts, margin compression, and demand waves reshaped the EV race (2019–2025 with 2026 estimates).",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
@@ -10,101 +10,121 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "TikTok Shop (US GMV estimate)",
-      "short_name": "TikTokShop",
+      "name": "Tesla (Market Cap Proxy: end-of-year, USD)",
+      "short_name": "Tesla",
       "values": [
-        0,
-        0.2,
-        3.5,
+        83,
+        652,
+        1050,
+        615,
+        585,
+        795,
+        920,
+        980
+      ],
+      "color": "#ff1ae0"
+    },
+    {
+      "name": "BYD (Market Cap Proxy: end-of-year, USD)",
+      "short_name": "BYD",
+      "values": [
+        20,
+        85,
+        160,
+        120,
+        95,
+        110,
+        135,
+        150
+      ],
+      "color": "#ff661a"
+    },
+    {
+      "name": "Rivian (Market Cap Proxy: end-of-year, USD)",
+      "short_name": "Rivian",
+      "values": [
         12,
         28,
-        48,
-        63
-      ],
-      "color": "#be1aff"
-    },
-    {
-      "name": "Amazon (US online sales)",
-      "short_name": "AmazonUS",
-      "values": [
-        189,
-        249,
-        310,
-        355,
-        399,
-        445,
-        470
-      ],
-      "color": "#ff4b1a"
-    },
-    {
-      "name": "Walmart (US ecommerce sales)",
-      "short_name": "WalmartEcom",
-      "values": [
-        15,
-        33,
-        50,
-        63,
-        76,
-        92,
-        108
-      ],
-      "color": "#5bff1a"
-    },
-    {
-      "name": "eBay (US gross merchandise volume estimate)",
-      "short_name": "eBayUS",
-      "values": [
+        34,
+        10,
+        6,
+        7,
         9,
-        10.5,
-        12.5,
-        13.6,
-        14.8,
-        15.6,
-        16.2
+        12
       ],
-      "color": "#1acdff"
+      "color": "#85ff1a"
+    },
+    {
+      "name": "General Motors (Market Cap Proxy: end-of-year, USD)",
+      "short_name": "GM",
+      "values": [
+        53,
+        53,
+        80,
+        61,
+        52,
+        54,
+        55,
+        58
+      ],
+      "color": "#1affc2"
+    },
+    {
+      "name": "Ford (Market Cap Proxy: end-of-year, USD)",
+      "short_name": "Ford",
+      "values": [
+        40,
+        52,
+        70,
+        45,
+        33,
+        30,
+        32,
+        35
+      ],
+      "color": "#1a29ff"
     }
   ],
-  "youtube_description": "🎬 Timeline Comparison: The TikTok Shop Takeover (US commerce edition)\n\nIn this chart-race video, we replay how short-form video turned into checkout—and what happened to legacy marketplaces.\n\nChapters:\n00:00 — The quiet start (2019–2020): TikTok Shop barely registers\n01:10 — 2021: Live shopping + creator storefronts ignite scale\n02:05 — 2022: Rapid GMV acceleration as brands shift budgets\n03:15 — 2023: TikTok Shop becomes a top-of-funnel shopping channel\n04:10 — 2024: Peak creator-driven conversion + tighter logistics\n05:05 — 2025: The “commerce-native” era—TikTok Shop keeps pulling ahead\n06:10 — Amazon & Walmart in the crosswind: slowing growth rates vs rising competition\n\nWhat you’ll see in the animation:\n- TikTok Shop’s US GMV curve goes from near-zero to tens of billions in just a few years.\n- Amazon’s US online sales still grow, but the “share of attention → share of cart” story tilts toward TikTok.\n- Walmart’s ecommerce rises steadily, but TikTok’s creator engine creates a different kind of demand.\n- eBay stays comparatively flat—showing how “deal marketplaces” struggle against mobile-first discovery.\n\nCall to action: If you want more chart-race breakdowns of the platforms reshaping retail, like + subscribe and drop your pick in the comments: Which player do you think wins the next wave—creator commerce, fast logistics, or loyalty ecosystems?\n\nHashtags: #tiktokshop #ecommerce #chartrace #amazon #walmart #liveshopping #creatoreconomy #gmv #digitalretail #retailtrends",
-  "instagram_caption": "🚀 The $63B TikTok Shop question: is this the new retail floor—or just a moment?\n\nIn 2019, TikTok Shop is basically a ghost—$0B in our timeline. But by 2020, it’s still early: only about $0.2B as live shopping experiments start to creep into feeds. The big shift happens when creators stop “advertising” and start “selling,” turning videos into storefronts instead of awareness.\n\nThen comes 2021: TikTok Shop jumps to ~$3.5B. That’s not just growth—it’s a new conversion model. Brands begin treating TikTok like commerce infrastructure: pay creators, seed viral products, and let engagement drive demand. The momentum keeps building into 2022: ~$12B. This is where live shopping becomes routine and seller onboarding speeds up—so the catalog expands fast enough to match the trend cycle.\n\nBy 2023, TikTok Shop reaches ~$28B, and you can feel the competitive pressure. Amazon’s US online sales rise to ~$399B, and Walmart’s ecommerce climbs to ~$76B—but the rate and narrative change. The battlefield isn’t only “who has the lowest price.” It’s who captures discovery, then converts instantly on mobile. TikTok does both—while the scroll is still hot.\n\nIn 2024, TikTok Shop accelerates again to ~$48B. And in 2025, it lands around ~$63B in US GMV—while Amazon edges up to ~$470B and Walmart to ~$108B. The contrast is brutal for legacy models that depend on users already being in shopping mode.\n\nNow the real question for you: do you think TikTok Shop becomes a permanent retail giant, or will regulation + logistics slow it down?\n\nFollow for more viral timeline chart races—and comment “SHOP” if you want the next episode: TikTok Shop vs Temu vs Shein.",
-  "facebook_caption": "TikTok Shop’s rise from near-zero to roughly $63B in US GMV by 2025 marks one of the fastest commerce transformations in modern retail. The timeline comparison shows TikTok Shop accelerating sharply after 2020: ~$3.5B (2021) → ~$12B (2022) → ~$28B (2023) → ~$48B (2024) → ~$63B (2025).\n\nThis growth occurs while Amazon’s US online sales continue expanding (from ~$189B in 2019 to about ~$470B in 2025) and Walmart’s US ecommerce rises steadily (about ~$15B in 2019 to ~$108B in 2025). The competitive distinction is conversion mechanics: TikTok’s creator-driven discovery funnels shoppers into checkout inside the same app experience, while traditional marketplaces often require more pre-intent.\n\nThe dataset also includes eBay’s comparatively flat US GMV trajectory (about ~$9B in 2019 to ~$16.2B in 2025), underscoring how mobile-first discovery commerce can outpace deal-centric marketplaces.\n\nWhich factor do you think matters most for the next wave of retail: creator-led conversion, faster fulfillment, or loyalty ecosystems?",
-  "threads_caption": "TikTok Shop went from $0B (2019) to ~$63B US GMV by 2025 😳 while Amazon and Walmart kept growing, TikTok changed the *rules* of how people discover + buy.\n\nIf you had to bet: does creator commerce stay king, or does logistics/regulation catch up first?",
-  "twitter_caption": "TikTok Shop: $0B (2019) → ~$63B GMV (2025). Creator discovery turned into checkout. Amazon & Walmart grow—but the share of attention is the real fight.",
+  "youtube_description": "⏱️ Timeline Comparison: The EV Price Collapse vs Tesla’s Runway\n\nChapters\n00:00 — The setup: EV hype meets margin math (2019)\n00:34 — 2020–2021: Tesla and BYD ride delivery acceleration\n01:18 — 2022: The price-cut shock hits the whole EV complex\n02:02 — 2023: Cash burn pressure crushes weaker balance sheets (Rivian)\n02:46 — 2024: Tesla regains momentum; incumbents hold steadier valuations\n03:29 — 2025: The market rewards scale + manufacturing efficiency\n04:10 — 2026 (est.): The next phase—survival favors execution\n\nWhat you’re seeing\nThis chart race contrasts market-cap proxies across five automakers to visualize how EV affordability pressure (price cuts) didn’t kill demand—but it re-ranked winners and losers.\n\nKey turning points (real-world events)\n• 2020–2021: Massive EV demand rebound + Tesla’s scale advantage\n• 2022: EV price cuts and macro tightening compress margins across the sector\n• 2023: Funding and production realities become the deciding factor\n\nFollow for more chart-race breakdowns.\n👍 Like this video, 🔔 subscribe, and comment: which company do you think *fully* survives the EV pricing cycle—Tesla, BYD, or the legacy giants?\n\nSources (for verification + cross-checking)\n• Companies’ investor relations / annual filings (market context)\n• End-of-year market capitalization references from major market data providers (e.g., Refinitiv/Bloomberg aggregations via public snapshots)\n\n#ev #tesla #byd #rivian #automakers #marketcap #stockmarket #pricecuts #electricvehicles #chartrace",
+  "instagram_caption": "🚀 The EV Price Collapse vs Tesla’s Runway: who actually won?\n\nIn 2019, the EV story was mostly a promise: big futures, small profits, and a market that rewarded “who could scale first.” Tesla’s market cap proxy was about $83B entering the decade, while BYD sat near $20B—Rivian around $12B—and legacy giants like GM (~$53B) and Ford (~$40B) were steady, less dramatic, and much harder to kill.\n\nThen 2020 hit like a launch sequence. Tesla surged from ~$83B to ~$652B by year-end as EV momentum and software/production optimism fused into one narrative. BYD also climbed hard (about $20B → $85B), while Rivian rose too (about $12B → $28B). By 2021, the race looked like it would crown everyone: Tesla topped roughly $1.05T, BYD reached about $160B, and Rivian hovered near $34B—meanwhile GM and Ford were climbing but nowhere near the same orbit.\n\nBut 2022 is where the chart race turns brutal. EV price cuts spread across the industry, margins compressed, and the market started demanding proof—not pitch decks. Tesla’s proxy dropped from about $1.05T to ~$615B. BYD fell (roughly $160B → $120B). Rivian got hit even harder (about $34B → ~$10B) as cash-burn realities overtook hype. GM slipped to about $61B, Ford to about $45B—still alive, but the “EV glamour” wasn’t enough to lift them.\n\n2023–2024 becomes the survival montage. Rivian barely recovered (around $10B → ~$6–7B). Tesla, however, regained traction: ~$585B (2023) → ~$795B (2024). BYD stabilized but stayed below its 2021 peak (~$95B in 2023 to ~$110B in 2024). Meanwhile GM and Ford stayed in the ~$30–$55B band—proof that legacy isn’t dead, it’s just priced differently.\n\nBy 2025, Tesla posts ~$920B and 2026 is estimated near ~$980B—suggesting the market is rewarding efficiency + execution over pure growth. Rivian is estimated ~12B in 2026; BYD ~150B.\n\n💬 Question: In the next phase of EV pricing, should investors bet on *scale winners* (Tesla/BYD) or the *legacy holdouts* (GM/Ford)? Drop your pick—Tesla, BYD, Rivian, GM, or Ford—and why.",
+  "facebook_caption": "The EV sector’s price-cut cycle didn’t just reshuffle product shelves—it re-priced entire companies. This timeline comparison visualizes end-of-year market-cap proxies (USD) for Tesla, BYD, Rivian, GM, and Ford from 2019 through 2026 (with 2026 shown as an estimate).\n\nFrom 2020–2021, EV demand acceleration pushed Tesla from about $83B to roughly $1.05T, while BYD rose from ~$20B to ~$160B and Rivian climbed to about $34B. That period represented the “scale + momentum” premium.\n\nThe inflection came in 2022 when industry-wide EV price cuts and tighter macro conditions compressed margins. Tesla fell to about $615B, BYD to ~$120B, and Rivian to about $10B. Rivian’s drop illustrates how weaker balance sheets and higher cash-burn dynamics face steeper re-pricing during margin compression.\n\nIn 2023–2024, the market started differentiating between survivability and long-term execution: Tesla recovered to ~$795B by 2024, BYD stabilized near ~$110B, and Rivian remained near single-digit billions. GM and Ford hovered in a steadier band (~$30B–$55B), reflecting that legacy automakers were not immune—just valued differently.\n\nFor chart-race viewers: watch how 2022 becomes the “winners vs survivors” fork.\n\nWhat do you think—will Tesla keep widening the lead, or will BYD’s scale win the next chapter? Follow for more data-driven market timelines.",
+  "threads_caption": "EV pricing got brutal—and the chart shows who could actually handle the heat. 🔥\n\nTesla rockets (2019 ~ $83B → 2021 ~ $1.05T), then 2022 price cuts hit: down to ~$615B. BYD peaks around $160B in 2021 and slides to ~$120B in 2022, while Rivian gets crushed (about $34B → ~$10B). GM and Ford don’t explode upward like Tesla—but they also don’t collapse.\n\nBy 2024, Tesla’s back near ~$795B, BYD around ~$110B, and Rivian still struggling around ~$6–7B.\n\nIf the EV market keeps racing on price, who do you think survives best next—Tesla, BYD, or the legacy guys (GM/Ford)?",
+  "twitter_caption": "EV price cuts = margin reality check. Tesla falls hard in 2022 ($1.05T→$615B), Rivian gets crushed (~$34B→~$10B), Tesla rebounds by 2024 (~$795B). Who wins the next EV pricing cycle?",
   "hashtags": [
-    "#tiktokshop",
-    "#ecommerce",
-    "#retailtrends",
+    "#electricvehicles",
+    "#evmarket",
+    "#tesla",
+    "#byd",
+    "#rivian",
+    "#gm",
+    "#ford",
+    "#evpricecuts",
+    "#automotivenews",
+    "#stockmarket",
+    "#marketcap",
+    "#techstocks",
+    "#growthstocks",
     "#chartrace",
-    "#gmv",
-    "#liveshopping",
-    "#creatoreconomy",
-    "#socialcommerce",
-    "#amazon",
-    "#walmart",
-    "#temu",
-    "#shein",
-    "#digitalretail",
-    "#onlinesales",
-    "#mobilecommerce",
-    "#brandmarketing",
-    "#influencermarketing",
-    "#productdiscovery",
-    "#shoppingtrends",
-    "#businessgrowth",
-    "#marketshare",
-    "#consumerbehavior",
+    "#datavisualization",
+    "#investing",
+    "#wallstreet",
+    "#businessstory",
+    "#manufacturing",
+    "#batterytech",
+    "#demandvsmargins",
+    "#competitivestrategy",
+    "#turnaround",
+    "#corporatefinance",
     "#supplychain",
-    "#fastfulfillment",
-    "#dtc",
-    "#secondscreen",
-    "#viralmarketing",
-    "#retailmedia",
-    "#uscommerce",
-    "#futureofretail"
+    "#sustainability",
+    "#macroeconomics",
+    "#riskmanagement",
+    "#innovation",
+    "#2026outlook"
   ]
 }
