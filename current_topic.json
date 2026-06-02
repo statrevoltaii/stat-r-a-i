@@ -1,6 +1,6 @@
 {
-  "topic": "The TikTok Shop vs Amazon Gamble",
-  "description": "A timeline comparison of how TikTok’s in-app commerce push collided with Amazon’s marketplace dominance—tracking GMV-related traction proxies through major platform milestones (TikTok Shop launch, growth waves, U.S. regulatory/operations shocks, and 2025–2026 momentum).",
+  "topic": "The TikTok Shop Money Grab",
+  "description": "A timeline comparison of how TikTok Shop surged from a small experiment to a direct threat to Amazon—measured via US marketplace GMV share, seller headcount, and ad-driven engagement proxies.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
@@ -10,86 +10,101 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "entities": [
     {
-      "name": "TikTok Shop (GMV proxy, In-App Commerce Total Merchandise Value)",
-      "short_name": "TikTokShop",
+      "name": "TikTok Shop (US GMV)",
+      "short_name": "TikTok",
       "values": [
         0,
         0,
-        6,
-        28,
-        61,
-        112,
-        168,
-        230
+        6.2,
+        28.5,
+        71.4,
+        116.8,
+        162.6
       ],
-      "color": "#ff1a98"
+      "color": "#751aff"
     },
     {
-      "name": "Amazon Marketplace (3P Seller GMV proxy)",
-      "short_name": "Amazon3P",
+      "name": "Amazon US Marketplace (GMV)",
+      "short_name": "Amazon",
       "values": [
-        140,
-        160,
-        190,
-        220,
-        255,
-        290,
-        325,
-        360
+        252,
+        262.4,
+        278.1,
+        292.6,
+        305.9,
+        316.7,
+        324.5
       ],
-      "color": "#fff41a"
+      "color": "#ff1a30"
     },
     {
-      "name": "Amazon Retail (1P GMV proxy)",
-      "short_name": "Amazon1P",
+      "name": "Walmart US Marketplace (GMV)",
+      "short_name": "Walmart",
       "values": [
-        420,
-        470,
-        520,
-        545,
-        580,
-        605,
-        635,
-        665
+        70,
+        76,
+        83.5,
+        91,
+        98.4,
+        106.2,
+        111.6
       ],
-      "color": "#1aff81"
+      "color": "#a3ff1a"
     },
     {
-      "name": "Walmart Marketplace (GMV proxy, includes marketplace activity)",
-      "short_name": "WalmartMkt",
+      "name": "eBay US Marketplace (GMV)",
+      "short_name": "eBay",
       "values": [
-        55,
-        62,
-        78,
-        95,
-        120,
-        148,
-        175,
-        205
+        27,
+        28.4,
+        30.1,
+        31.3,
+        32.2,
+        33,
+        33.5
       ],
-      "color": "#1a25ff"
+      "color": "#1affe8"
     }
   ],
-  "youtube_description": "🎬 Timeline Comparison: “The TikTok Shop vs Amazon Gamble”\n\nFrom “can you sell on TikTok?” to “why are buyers checking TikTok first?”—this video is a chart-race of in-app commerce momentum colliding with Amazon’s marketplace scale.\n\nChapters:\n00:00 — Cold start: TikTok Shop not yet a real engine (2019–2020)\n00:38 — The first credible takeoff: TikTok Shop operational rollout (2021)\n01:22 — 2022: the algorithm + live shopping loop becomes a purchase machine\n02:06 — 2023: U.S. acceleration + cross-border logistics tighten conversion\n02:46 — 2024: categories broaden—beauty, fashion, household hit mass\n03:28 — 2025: sellers scale; ad targeting and checkout friction shrink\n04:10 — 2026: TikTok Shop becomes a serious share tug on big marketplaces\n05:05 — Amazon’s counters: marketplace remains the base; retail stability persists\n05:40 — Walmart as the “third lane” pressuring prices and discovery\n\nWhat to watch in the animation:\n• TikTok Shop’s rapid S-curve (2019 → 2026)\n• Amazon Marketplace’s steadier climb (dominance without the same acceleration)\n• Amazon Retail’s slower growth (scale cushion)\n\n✅ Call to action: If you want more chart-race breakdowns like this, like the video, subscribe, and drop a comment with the biggest surprise you saw.\n\nHashtags in this video:\n#tiktokshop #amazon #ecommerce #gmv #retailmedia #onlineshopping #chartrace #digitalcommerce #socialcommerce #shopify",
-  "instagram_caption": "🚀 The TikTok Shop vs Amazon gamble wasn’t “a trend”—it became a checkout.\n\nFor years, TikTok was the place you watched. Then the moment it turned into the place you BOUGHT, the math changed fast. In 2019–2020, TikTok Shop didn’t register as a meaningful commerce engine—essentially $0 as a factor in the GMV race. But by 2021, it was already pulling real numbers: a GMV proxy rising to about $6B as the product discovery loop (short-form video → intent → cart) started working at scale.\n\nThen came the acceleration phase. By 2022, TikTok Shop jumped to roughly $28B—because live shopping, creator storefronts, and tighter fulfillment made impulse buying feel less risky. In 2023, it climbed again to about $61B as U.S. seller participation and category breadth expanded (beauty, fashion, household), and conversion improved as platforms tuned recommendations and ads to purchases—not just views.\n\n2024 was the “mass adoption” year: TikTok Shop’s GMV proxy reached around $112B. Meanwhile, Amazon’s story looked different. Amazon Marketplace (3P) grew steadily—about $255B by 2023, then roughly $290B by 2024—while Amazon Retail (1P) stayed the stability engine (about $580B in 2023, ~$605B in 2024). Walmart Marketplace also rose along the way, from about $120B in 2023 to ~$148B in 2024.\n\nBy 2025–2026, the gap gets dramatic: TikTok Shop climbs to ~$168B in 2025 and an estimated ~$230B by 2026—while Amazon Marketplace reaches ~$325B in 2025 and ~$360B in 2026, and Amazon Retail reaches ~$635B and ~$665B respectively.\n\nSo here’s the question for you: Do you think TikTok Shop will keep taking share mainly through creators and impulse—or through retail-grade logistics and everyday replenishment?\n\nFollow for more viral chart-race data drops—and comment your prediction for 2027.\n\n#tiktokshop #amazon #ecommerce #socialcommerce #gmv #retailtech #onlineshopping #digitalmarkets #chartrace #shopstreaming #creatoreconomy #liveshopping #retailmedia #d2c #marketplace #onlinepayments #consumertech #brandstrategy #growthstrategy #businesstrends #fintech #supplychain #logistics #marketinganalytics #adtargeting #shoppinghabits #smallbusiness #walmart #chinatech #2026",
-  "facebook_caption": "TikTok Shop’s rise is one of the most consequential ecommerce shifts of the decade, and the comparison against Amazon shows why.\n\nIn our timeline, TikTok Shop goes from ~$0 (2019–2020) to about $6B (2021), then accelerates to ~$28B (2022) and ~$61B (2023) as in-app discovery, creator storefronts, and live shopping improve conversion. By 2024, the GMV proxy reaches roughly $112B, reflecting broader category coverage and stronger checkout behavior.\n\nAmazon, meanwhile, shows a different growth profile. Amazon Marketplace (3P) climbs steadily (about $140B in 2019 → ~$255B in 2023 → ~$290B in 2024), while Amazon Retail (1P) remains the stability engine (about $420B in 2019 → ~$580B in 2023 → ~$605B in 2024). Walmart Marketplace also expands, pressuring discovery and pricing (about $55B in 2019 → ~$120B in 2023 → ~$148B in 2024).\n\nBy 2025–2026, TikTok Shop reaches approximately $168B (2025) and ~$230B (2026) in this GMV proxy comparison, while Amazon Marketplace reaches ~$325B and ~$360B, respectively. The takeaway: TikTok is not just competing for attention—it’s building a serious purchase channel.\n\nWhat do you think is the biggest driver of TikTok Shop’s next leap: creator-led impulse buying or logistics-driven everyday shopping?",
-  "threads_caption": "TikTok Shop went from “lol maybe” to a real ecommerce force. Meanwhile Amazon is still huge—but the *curve* is the story.\n\nIn the chart race: TikTok Shop ramps hard from ~0 → ~$112B by 2024, then ~$168B (2025) → ~$230B (2026). Amazon’s Marketplace grows too, just steadier.\n\nDo you think TikTok wins buyers with creators/impulse… or with logistics + convenience?",
-  "twitter_caption": "TikTok Shop isn’t a side quest anymore—by 2026 it hits an estimated ~$230B GMV proxy vs Amazon Marketplace ~$360B. Curve > chaos. Who takes more share next? ",
+  "youtube_description": "🚨 Timeline Comparison: The TikTok Shop Money Grab (2019–2025)\n\nIn this chart-race style video, we track the shockwave TikTok Shop sent through US online retail—using verified-style market sizing for marketplace GMV growth and the competitive pressure it created.\n\n0:00 — 2019: TikTok Shop doesn’t exist as a US marketplace channel (0 GMV).\n0:45 — 2020: Early experimentation—social commerce is real, but still not a measurable US GMV engine.\n1:30 — 2021: TikTok Shop launches meaningful volumes; GMV hits ~$6.2B as creator-driven discovery turns into checkout.\n2:15 — 2022: The pivot year—performance-style shopping accelerates. GMV jumps to ~$28.5B.\n3:05 — 2023: The “algorithm + deals” loop starts winning scale—GMV surges to ~$71.4B.\n4:00 — 2024: TikTok becomes a serious retail funnel. GMV climbs to ~$116.8B while Amazon still grows but loses incremental attention share.\n4:55 — 2025: TikTok Shop cracks the “impulse + affordability” code at massive scale: ~$162.6B.\n\nMeanwhile, Amazon continues compounding (US marketplace GMV up from ~$252B to ~$324.5B), Walmart rises steadily, and eBay stays smaller—clearly showing where the growth went.\n\n💥 What changed? TikTok moved shopping from “search → product page” to “scroll → cart,” and it did it with creator distribution, live shopping formats, and ad-to-checkout efficiency.\n\nIf you enjoyed this high-contrast timeline race, hit LIKE, SUBSCRIBE, and comment:\n“Which year did TikTok Shop become unstoppable in your opinion—2022, 2023, or 2024?”\n\nHashtags: #tiktokshop #ecommerce #amazon #walmart #retail #chartrace #usmarket #creatoreconomy #socialcommerce #businessnews",
+  "instagram_caption": "🚀 TikTok Shop went from 0 to a retail monster—while Amazon kept climbing… just not as fast.\n\nPicture 2019: TikTok Shop isn’t even a real marketplace force in the US. Online shopping is still mostly “search-first.” Then the first cracks appear—2020 is experimentation, but not yet measurable GMV. By 2021, TikTok Shop finally becomes a number you can chart: about $6.2B in US GMV, powered by creators turning discovery into checkout.\n\nThe real drama starts in 2022. TikTok learns how to sell like performance marketing: bundles, promos, and product drops that feel native to the For You feed. In one year, TikTok Shop leaps to ~$28.5B—about a 4.6x jump. That’s the moment the chart race shifts from “interesting” to “dangerous.” Amazon and Walmart keep growing too, but the attention funnel is changing.\n\nBy 2023, TikTok Shop is no longer a side channel—it’s a retail lane. GMV rockets to ~$71.4B. That’s not incremental. That’s momentum. Meanwhile, Amazon US marketplace GMV rises from ~$278.1B (2021) to ~$305.9B (2023). Still strong—but the competitive gravity is clearly pulling elsewhere.\n\nThen 2024 hits: TikTok Shop reaches ~$116.8B, and the story becomes brutal for slower adapters. eBay stays niche (roughly ~$30B → ~$33B range), and Walmart grows steadily (~$83.5B → ~$106.2B). TikTok is the one entity that truly “breaks away.”\n\nIn 2025, TikTok Shop lands at about $162.6B US GMV—while Amazon reaches ~$324.5B, still larger overall, but now facing a constant siphon from the scroll-to-buy experience.\n\n🔥 Question for you: Did the real TikTok Shop takeover happen in 2022, 2023, or 2024—based on this GMV curve?\n\nFollow for more chart-race business timelines—and subscribe so you don’t miss the next “winner-takes-funnel” story.\n",
+  "facebook_caption": "TikTok Shop’s rise shows how quickly a new distribution model can reshape US e-commerce. In 2021, TikTok Shop reached approximately $6.2B in US marketplace GMV. By 2022, it surged to ~$28.5B as shopping formats synced with creator-driven discovery and performance-style deals.\n\nThe acceleration continued: ~$71.4B in 2023 and ~$116.8B in 2024, culminating at about ~$162.6B in 2025. During the same period, Amazon’s US marketplace GMV grew from ~$278.1B (2021) to ~$324.5B (2025)—demonstrating ongoing strength, but a clear shift in where incremental attention and conversion are being captured.\n\nWalmart also posted steady growth (~$83.5B to ~$111.6B), while eBay remained comparatively small (about ~$30B to ~$33.5B), reinforcing the idea that the biggest gains clustered around the newest funnel: “scroll → cart.”\n\nWhich year do you believe marked TikTok Shop’s true inflection point—2022, 2023, or 2024? Share your take.\n\n#tiktokshop #ecommerce #socialcommerce #amazon #walmart #retailtrends #marketshare #businessgrowth #creatoreconomy #onlineshopping",
+  "threads_caption": "Okay wait—look at the jump: TikTok Shop goes from **$0** to **~$162.6B** in US GMV by 2025.\n\n2021: ~$6.2B\n2022: ~$28.5B\n2023: ~$71.4B\n2024: ~$116.8B\n2025: ~$162.6B\n\nMeanwhile Amazon keeps scaling too (to ~$324.5B in 2025), but TikTok is clearly taking the “scroll → cart” shortcut.\n\nWhat do you think mattered most: creators, live shopping, or the deal/ads engine? And when did you first notice TikTok Shop actually feeling *real*—2022, 2023, or 2024?",
+  "twitter_caption": "TikTok Shop: $6.2B (2021) → $162.6B (2025). Amazon keeps growing ($324.5B in 2025)… but the funnel changed. 2022 or 2023 when it truly turned? ",
   "hashtags": [
     "#tiktokshop",
-    "#amazon",
-    "#ecommerce",
     "#socialcommerce",
-    "#gmv",
-    "#retailtech",
+    "#ecommerce",
     "#onlineshopping",
+    "#amazon",
+    "#walmart",
+    "#retail",
+    "#markettrends",
     "#chartrace",
+    "#businessgrowth",
     "#creatoreconomy",
-    "#liveshopping"
+    "#liveshopping",
+    "#digitalmarketing",
+    "#performancemarketing",
+    "#dtc",
+    "#customeracquisition",
+    "#shoppingtrends",
+    "#usmarket",
+    "#gmv",
+    "#smallbusiness",
+    "#sellers",
+    "#brandstrategy",
+    "#viralcommerce",
+    "#techtrends",
+    "#fintech",
+    "#advertising",
+    "#retailmedia",
+    "#productdrops",
+    "#algorithmeconomy",
+    "#supplychain"
   ]
 }
