@@ -1,14 +1,13 @@
-
 name: StatRevoltAI Daily Automation
 
 on:
   schedule:
-    - cron: '30 15,19 * * *' # Runs at 9:00 PM IST (15:30 UTC) and 1:00 AM IST (19:30 UTC)
-  workflow_dispatch: # Allows manual trigger
-  
+    - cron: '30 2,6,10,14,18 * * *'
+  workflow_dispatch:
+
 concurrency:
   group: statrevolt-automation
-  cancel-in-progress: false # We want to finish the current upload before starting a new one
+  cancel-in-progress: false
 
 jobs:
   run-daily-automation:
@@ -59,20 +58,13 @@ jobs:
         VK_ACCESS_TOKEN: ${{ secrets.VK_ACCESS_TOKEN }}
         VK_GROUP_ID: ${{ secrets.VK_GROUP_ID }}
       run: |
-        # 1. Generate topic first so the dev server uses fresh data
         node generate_topic.js
-        
-        # 2. Start the dev server in the background
         npm run dev &
-        
-        # 3. Wait for the server to be ready
         npx wait-on http://localhost:3000 --timeout 60000
-        
-        # 4. Run the rest of the automation (Recording & Uploading)
         python daily_workflow.py --skip-generation
 
     - name: Commit and Push changes
-      if: always() # Run even if previous steps failed (to save history partially)
+      if: always()
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
