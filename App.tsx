@@ -2,11 +2,13 @@
 import React, { useEffect, useRef, useState } from 'react';
 import topicData from './current_topic.json';
 import { audioService } from './services/audioService';
+import confetti from 'canvas-confetti';
 const BRAND_NAME = "StatRevoltAI";
 
 const App: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [duration, setDuration] = useState(15000); // 15 seconds
+  const confettiFiredRef = useRef(false);
   const [isStarted, setIsStarted] = useState(false);
 
   useEffect(() => {
@@ -189,6 +191,15 @@ const App: React.FC = () => {
         ctx.fillText(prefix + Math.round(dVal).toLocaleString(), x, legendY);
       });
 
+      // Year inside chart, just below legend
+      ctx.save();
+      ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+      ctx.font = 'bold 44px "Impact", "Arial Black", sans-serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+      ctx.fillText(String(currentLabel), canvas.width / 2, padding.top - 10);
+      ctx.restore();
+
       if (currentIndex > lastPlayedIndex && currentIndex < totalPoints) {
         audioService.playScan(progress * 100, '#00ffcc');
         lastPlayedIndex = currentIndex;
@@ -268,7 +279,29 @@ const App: React.FC = () => {
       });
 
       if (progress < 1 && isStarted) animationFrame = requestAnimationFrame(draw);
-      else if (progress >= 1) (window as any).isSortingCompleted = true;
+      else if (progress >= 1) {
+        (window as any).isSortingCompleted = true;
+        if (!confettiFiredRef.current) {
+          confettiFiredRef.current = true;
+          confetti({
+            particleCount: 300,
+            spread: 120,
+            origin: { x: 0.5, y: 1 }
+          });
+          setTimeout(() => {
+            confetti({
+              particleCount: 200,
+              spread: 100,
+              origin: { x: 0.2, y: 0.8 }
+            });
+            confetti({
+              particleCount: 200,
+              spread: 100,
+              origin: { x: 0.8, y: 0.8 }
+            });
+          }, 300);
+        }
+      }
     };
 
     if (isStarted) animationFrame = requestAnimationFrame(draw);
