@@ -2,13 +2,13 @@
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
-require('dotenv').config({ path: path.join(__dirname, '../../.env') });
+require('dotenv').config({ path: path.join(__dirname, '../.env') });
 
 const API_KEY = process.env.POLLINATIONS_API_KEY;
 // Use a 'smart' model if possible, defaulting to openai
 const MODEL = 'openai';
 
-const OUTPUT_FILE = path.join(__dirname, '../src/data/current_topic.json');
+const OUTPUT_FILE = path.join(__dirname, '../current_topic.json');
 
 // Ensure data directory exists
 if (!fs.existsSync(path.dirname(OUTPUT_FILE))) {
@@ -16,43 +16,44 @@ if (!fs.existsSync(path.dirname(OUTPUT_FILE))) {
 }
 
 const PROMPT = `
-Generate a valid JSON object for an algorithm visualization.
-Topics: "Neural Network Training Complexity", "Database Indexing Performance", "Sorting Algorithm Stability", "Pathfinding Heuristics", "Encryption Algorithm Speed".
-Focus on visual comparison of 4-6 competing approaches.
+Generate a valid JSON object for a chart race / bar race video.
+Choose a unique, engaging topic from categories like: technology adoption, social media growth, market share shifts, population changes, gaming revenue, streaming services, electric vehicle sales, cryptocurrency trends, or any data-driven competition over time.
+Focus on visual comparison of 4-6 competing entities over 10-17 time periods.
 
 Return ONLY raw JSON. No markdown. No reasoning.
 Rules:
-1. Title must be SHORT, SIMPLE, and catchy (max 4 words). No jargon like "Complexity Analysis". Example: "AI Speed Test", "Fastest Sort?", "Database Race".
-2. **THEME & COLORS**: Generate a UNIQUE, COHESIVE color palette for this specific topic. Avoid generic red/blue/green.
-   - Example 1 (Cyberpunk): #00FFAA, #FF00FF, #FFFF00, #00FFFF
-   - Example 2 (Sunset): #FF4500, #FFD700, #FF1493, #8A2BE2
-   - Example 3 (Forest): #00FF00, #32CD32, #ADFF2F, #228B22
-   - Ensure high contrast against black background.
-3. Formulas: standard JS math. **CRITICAL**: Formulas MUST REFLECT REAL WORLD DIFFERENCES.
-   - Use the FULL range 0-100 on the Y axis.
-   - **DO NOT CLAMP** values to 100 using Math.min. If a value exceeds 100, let it go off the chart naturally (this represents infinite complexity or failure).
-   - Speed/Complexity (Time): Bad algorithms should curve UP and off the top. Good ones stay low.
-   - Accuracy/Score (Quality): Good algorithms should curve UP and asymptote towards 100.
-   - Example 1 O(n^2): "n => 0.015 * n * n" (Goes to ~150 at n=100)
-   - Example 2 O(log n): "n => 20 * Math.log(n + 1)" (Curves gently)
-   - DO NOT make all lines linear or flat. VARIETY IS KEY.
-   - Ensure curves start at appropriate values (e.g. 0 or small number).
-4. Tagline: One short sentence explaining the metric.
+1. "topic" must be SHORT and catchy (max 6 words). Example: "Smartphone Market Share", "EV Sales Race", "Browser Wars".
+2. "description": One short paragraph (1-2 sentences) explaining the chart.
+3. "unit": The measurement unit (e.g. "Millions of Users", "Billions of Dollars", "Percentage (%)").
+4. "value_prefix": Prefix for values (e.g. "$", "", "¥"). Use empty string if none.
+5. "timeline_labels": Array of years or time periods (e.g. ["2015","2016",...,"2025"]). Must have 10-17 items.
+6. "entities": Array of 4-6 objects, each with:
+    - "name": Full name
+    - "short_name": Short display name (1-2 words)
+    - "values": Array of numbers matching timeline length. Values should show realistic growth/decline trends.
+    - "color": Unique hex color
+7. Social media captions: Generate realistic "youtube_description", "instagram_caption", "facebook_caption", "threads_caption", "twitter_caption" and "hashtags".
 Structure:
 {
-  "title": "TITLE",
-  "tagline": "Subtitle",
-  "xAxisLabel": "X Axis Label",
-  "yAxisLabel": "Y Axis Label",
-  "curves": [
+  "topic": "TITLE",
+  "description": "Description",
+  "unit": "Millions of Users",
+  "value_prefix": "",
+  "timeline_labels": ["2015","2016","2017","2018","2019","2020","2021","2022","2023","2024","2025"],
+  "entities": [
     {
-      "id": "1",
-      "label": "Bubble Sort",
-      "color": "#FF00FF",
-      "formula": "n => 0.1 * n * n",
-      "code": "for(i=0;i<n;i++) for(j=0;j<n-i-1;j++)..."
+      "name": "Entity Name",
+      "short_name": "Short",
+      "values": [100, 200, 350, 500, 700, 900, 1200, 1500, 1800, 2100, 2500],
+      "color": "#FF5733"
     }
-  ]
+  ],
+  "youtube_description": "Description for YouTube...",
+  "instagram_caption": "Caption for Instagram...",
+  "facebook_caption": "Caption for Facebook...",
+  "threads_caption": "Caption for Threads...",
+  "twitter_caption": "Caption for Twitter...",
+  "hashtags": ["#tag1", "#tag2"]
 }
 `;
 
@@ -109,12 +110,11 @@ async function fetchTopic() {
                     const topic = JSON.parse(jsonStr);
 
                     // Normalize info
-                    topic.curves.forEach((c, i) => {
-                        if (!c.id) c.id = `curve-${i}`;
-                        if (!c.name) c.name = c.label;
+                    topic.entities.forEach((c, i) => {
+                        if (!c.short_name) c.short_name = c.name.split(' ').slice(0, 2).join(' ');
                     });
 
-                    console.log('Generated Topic:', topic.title);
+                    console.log('Generated Topic:', topic.topic);
                     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(topic, null, 2));
                     console.log(`Saved to ${OUTPUT_FILE}`);
                 } else {
