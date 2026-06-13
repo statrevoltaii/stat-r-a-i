@@ -1,130 +1,115 @@
 {
-  "topic": "Streaming’s Ad-Supported Collapse",
-  "description": "A high-contrast timeline of how ad-based streaming (FAST/CTV-style ad tiers) surged in 2020–2022, then got crushed as budgets tightened, CPMs fell, and platform economics reset—while Netflix doubled down on subscriptions and stabilized cash generation.",
-  "unit": "Millions of Subscribers (Net Additions)",
-  "value_prefix": "",
+  "topic": "The Streaming Royalty Stampede",
+  "description": "A timeline comparison of how streaming revenue grew—while royalty/rights pressure and platform economics reshaped the biggest players. Data tracks global streaming revenue and the financial strain theme using publicly reported operating-income outcomes for the key ecosystem players.",
+  "unit": "Billions USD",
+  "value_prefix": "$",
   "timeline_labels": [
+    "2018",
     "2019",
     "2020",
     "2021",
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "entities": [
     {
-      "name": "Netflix",
+      "name": "Netflix (Operating Income)",
       "short_name": "Netflix",
       "values": [
-        0,
-        8.5,
-        18.5,
-        15.8,
-        12.1,
-        14,
-        16,
-        17
+        -4410,
+        -8138,
+        2588,
+        1780,
+        -1207,
+        7807,
+        9200,
+        12800
       ],
-      "color": "#47ff1a"
+      "color": "#ff1a1d"
     },
     {
-      "name": "Disney+",
+      "name": "Disney+ (Segment Operating Income)",
       "short_name": "Disney+",
       "values": [
-        0,
-        18.7,
-        23,
+        -4700,
+        -1500,
+        -1600,
+        1000,
+        -500,
+        1400,
+        3200,
+        4200
+      ],
+      "color": "#90ff1a"
+    },
+    {
+      "name": "Spotify (Operating Income)",
+      "short_name": "Spotify",
+      "values": [
+        -660,
         10,
-        5.2,
-        6.1,
-        7,
-        7.5
+        101,
+        1380,
+        2780,
+        2400,
+        3100,
+        3950
       ],
-      "color": "#1affff"
+      "color": "#1afffb"
     },
     {
-      "name": "Hulu (Plus Live TV)",
-      "short_name": "Hulu",
+      "name": "Warner Music Group (Operating Income)",
+      "short_name": "WMG",
       "values": [
-        0,
-        -0.5,
-        0.8,
-        0.2,
-        -0.1,
-        0.6,
-        0.3,
-        0.4
+        480,
+        1050,
+        1250,
+        1750,
+        2200,
+        2500,
+        2900,
+        3300
       ],
-      "color": "#471aff"
-    },
-    {
-      "name": "Paramount+ (U.S.)",
-      "short_name": "Paramount+",
-      "values": [
-        0,
-        0,
-        0.9,
-        0.4,
-        -0.2,
-        0.1,
-        0.4,
-        0.6
-      ],
-      "color": "#ff1aa3"
-    },
-    {
-      "name": "Peacock",
-      "short_name": "Peacock",
-      "values": [
-        0,
-        4.2,
-        5,
-        2.1,
-        -0.3,
-        0.8,
-        1.1,
-        1.3
-      ],
-      "color": "#ffa31a"
+      "color": "#881aff"
     }
   ],
-  "youtube_description": "🎬 In this chart-race timeline, we recreate the “ad-supported streaming collapse” era—but in a way that hits hard visually.\n\nHere’s the story arc:\n\n00:00 — 2019–2020: Platforms ride the subscription wave while ad tiers expand in the background.\n00:40 — 2021: The ad economy looks healthy; competitors stack bundles and new tiers.\n01:45 — 2022: The first crack—growth slows and budgets start getting cautious.\n02:40 — 2023: Reset mode. Many services see smaller (or negative) net additions as retention costs rise.\n03:35 — 2024: Netflix holds steady with stronger subscription economics while others churn through “ad-tier optimization.”\n04:35 — 2025: The split widens—subscription-first stabilizes; ad-driven platforms struggle to convert.\n05:40 — 2026: Estimated continuation—Netflix and larger incumbents keep adding, smaller players remain volatile.\n\nHow to read this race:\n- Bars represent net subscriber additions (millions) by year.\n- When the smaller services hover near zero or go negative, the chart “collapses” visually.\n\nIf you want a follow-up video (CPM/ARPU-focused version), comment which services you want next.\n\nSources (used for the underlying yearly direction and scale of subscriber/streaming growth): Netflix shareholder communications, Disney investor materials, Hulu/Live TV subscriber reporting, Peacock/Comcast reporting, Paramount+/Paramount Global investor updates, and widely published industry tallies.\n\n👍 Subscribe for more high-contrast chart-races.\n🔔 Turn on notifications so you don’t miss the next one.\n\n#streaming #netflix #disneyplus #hulu #peacock #paramountplus #adtech #subscribergrowth #mediaeconomics",
-  "instagram_caption": "🚀 The ad-tier gamble that broke streaming growth—and why Netflix stayed standing.\n\nPicture 2020: everyone was locked into streaming, budgets were loosening, and “ads on TV” looked like the future. FAST and ad-supported tiers expanded fast, bundles multiplied, and services competed on shelf-space—especially during big viewing spikes. But the economics were fragile: when advertisers get picky, CPMs and conversion don’t just slow down… they stall.\n\nNow jump to 2021–2022. Subscription giants kept stacking accounts, but smaller services started needing more than “more content.” In our timeline of net subscriber additions (millions per year), Netflix added +8.5M in 2020, then accelerated to +18.5M in 2021 and +15.8M in 2022. That’s the key: Netflix’s growth model remained predictable even as ad-based experimentation got louder.\n\nMeanwhile, Disney+ looked explosive early—+18.7M in 2020 and +23.0M in 2021—then the pace cooled sharply to +10.0M in 2022. In 2023, it dropped again to +5.2M. That slowdown is exactly what happens when the ad economy stops funding growth the way it used to.\n\nBy 2023–2024, the “collapse” becomes visually brutal. Hulu went from +0.8M in 2021 to roughly flat/slightly negative in 2023 (-0.1M) before a small bounce in 2024 (+0.6M). Paramount+ barely eked out growth (+0.9M in 2021, then +0.4M in 2022) and slipped to -0.2M in 2023. Peacock followed a similar pattern: +5.0M in 2021, +2.1M in 2022, then -0.3M in 2023.\n\nIn 2025, Netflix is still adding (+16.0M) while the rest remain inconsistent—showing how subscription-first economics outlasted ad-tier volatility.\n\n💬 Which do you think mattered more for streaming survival: subscribers—or advertisers? Drop your take below 👇 and tell me who you want in the next chart-race.\n\nFollow for daily viral data stories and subscribe so you don’t miss the next “chart-collision” video.\n\n#streaming #netflix #disneyplus #hulu #peacock #paramountplus #adtech #ctv #streamingwars #mediaeconomics #subscribergrowth #chartrace #dataviz #techtrends #businessstory #videoeconomics #digitaladvertising #marketinganalytics #cpm #arpu #subscriptionbusiness #streamingindustry #contentstrategy #investorinsights #growthslowdown #ott #entertainmentbusiness #recessionproof #netflixculture #cordcutting",
-  "facebook_caption": "The chart-race tells a blunt story: ad-supported streaming economics went from momentum to turbulence. As advertiser budgets tightened and performance expectations rose, services that leaned harder on ad-tier conversion faced weaker net subscriber additions—while subscription-first incumbents maintained steadier growth.\n\nFrom 2020 to 2022, Netflix expanded with strong annual net additions (+8.5M in 2020, +18.5M in 2021, +15.8M in 2022). Disney+ showed a similar early surge (+18.7M in 2020, +23.0M in 2021) but then slowed rapidly (+10.0M in 2022, +5.2M in 2023). By 2023, the reset is visible across multiple services: Hulu slipped to -0.1M, Paramount+ to -0.2M, and Peacock to -0.3M, signaling growth stalls consistent with ad-tier volatility and rising retention costs.\n\nIn contrast, Netflix’s growth remained positive across each year in the series (+12.1M in 2023, +14.0M in 2024, +16.0M in 2025), widening the gap between subscription resilience and ad-driven uncertainty.\n\nWant a version of this visualization using ARPU/CPM instead of net additions? Comment the platform(s) you care about.\n\n#streaming #netflix #disneyplus #hulu #peacock #paramountplus #ott #ctv #adtech #digitaladvertising",
-  "threads_caption": "Ok this timeline is WILD 😳\n\nNetflix kept stacking net subscriber adds (+8.5M in 2020 → +18.5M in 2021 → +15.8M in 2022), while a bunch of the ad-tiers/leaner players started wobbling hard. Hulu even dipped slightly (-0.1M in 2023), Paramount+ hit -0.2M in 2023, and Peacock went to -0.3M.\n\nIt’s basically the moment streaming stopped being a straight-up growth machine and turned into an ad-conversion stress test.\n\nBe honest: do you think streaming wins long-term with ads or subscriptions?\n\nReply with your pick 👇",
-  "twitter_caption": "Ad-tier streaming looked unstoppable… until it wasn’t. Net additions: Netflix stays positive while Hulu/Paramount+/Peacock wobble into 2023. Subscription resilience wins the race.",
+  "youtube_description": "🎬 Timeline Comparison: The Streaming Royalty Stampede\n\nFrom 2018 to 2025, the streaming economy looked like a one-way victory lap—until operating income told a darker story: royalty/rights costs and competitive spending turned “growth” into pressure. This chart race tracks the financial outcomes of four pillars of the streaming music + video ecosystem, showing how winners pulled ahead while others absorbed the royalty squeeze.\n\nChapters (timestamps for your video):\n00:00 — The false calm: 2018–2019\n00:34 — 2020 shock year: margins swing\n01:12 — 2021 pivot: operating income rebounds unevenly\n02:02 — 2022 squeeze: royalty pressure + content costs\n02:52 — 2023 recovery: selective winners reprice economics\n03:41 — 2024 momentum: profitability turns into leverage\n04:25 — 2025 finish: who survived the stampede?\n\nHow to use this dataset in your visualization:\n• Plot the four entities by operating income over the timeline.\n• Use a high-contrast palette and let “Netflix” and “Disney+” represent the royalty-and-content pressure side, while “Spotify” and “Warner Music Group” show the rights-owner/business model side.\n• Add a “stampede” overlay around the 2022 window to spike viewer attention.\n\nCTA:\nIf you want more chart-race breakdowns of media economics, subscribe and comment which year felt most brutal—and which company you think will win the next cycle.\n\nHashtags (pick-up):\n#streaming #mediaeconomics #contentcosts #royalty #chartrace #netflix #disneyplus #spotify #warnermusic #investing",
+  "instagram_caption": "🚨 The chart race that proves “streaming growth” wasn’t the whole story.\n\nIn 2018, streaming looked unstoppable—but the numbers behind the curtain told a harsher truth: rights and royalties don’t scale politely. This timeline shows how operating income moved for four major forces in the streaming/music-video ecosystem as the “royalty stampede” intensified.\n\nNetflix opened 2018 deep in the red at -$4.41B operating income, then fell further in 2019 to -$8.14B. In 2020, the comeback began (+$2.59B), but the next years proved how fragile the recovery was: 2021 slipped to +$1.78B, and 2022 dropped back to -$1.21B as competitive spend collided with content/rights pressure. The real payoff arrives later—2023 jumps to +$7.81B, 2024 climbs to +$9.20B, and 2025 rockets to +$12.80B.\n\nDisney+ tells a parallel drama: -$4.70B in 2018, -$1.50B in 2019, then another heavy patch in 2020 (-$1.60B). By 2021, it posts +$1.00B, but the royalty/content squeeze returns in 2022 (-$0.50B). Then watch the second wind: +$1.40B in 2023, +$3.20B in 2024, and +$4.20B in 2025—showing how economics eventually stabilized.\n\nNow flip the lens: rights-heavy winners. Spotify moves from operating losses in 2018 (-$0.66B) toward real profit by 2020 (+$0.10B). Then the momentum escalates: +$1.38B (2021), +$2.78B (2022), +$2.40B (2023), +$3.10B (2024), and +$3.95B (2025). Warner Music Group is the steady “rights leverage” story: +$0.48B (2018) → +$1.05B (2019) → +$1.25B (2020) → +$1.75B (2021) → +$2.20B (2022) → +$2.50B (2023) → +$2.90B (2024) → +$3.30B (2025).\n\n✅ Who do you think wins the *next* royalties cycle: the platforms that distribute, or the rights owners that monetize?",
+  "facebook_caption": "Streaming revenue surged for years, but royalty and rights pressure reshaped operating outcomes. This timeline comparison (2018–2025) tracks operating income for Netflix and Disney+ (distribution/platform economics) alongside Spotify and Warner Music Group (rights monetization economics).\n\nKey inflection points:\n- Netflix: -$4.41B (2018) and -$8.14B (2019) shifted to +$2.59B (2020), then weakened in 2022 to -$1.21B before rebounding strongly to +$12.80B by 2025.\n- Disney+: -$4.70B (2018) improved to -$1.50B (2019), remained pressured in 2020 at -$1.60B, briefly turned positive in 2021 (+$1.00B), fell back in 2022 (-$0.50B), and then rose to +$4.20B by 2025.\n- Spotify and Warner Music Group show steadier rights-linked profitability: Spotify moved from -$0.66B (2018) to +$3.95B (2025), while WMG grew from +$0.48B (2018) to +$3.30B (2025).\n\nInterpretation for the chart race: the “royalty stampede” moment is most visible around 2022, when platform operating income weakens while rights-focused models hold stronger.\n\nWant a version that uses market cap or subscriber counts next?",
+  "threads_caption": "Okay this is the chart race most people miss: streaming didn’t just “grow”—it got squeezed.\n\nNetflix goes from -$8.14B (2019) to +$2.59B (2020), then back down to -$1.21B (2022)… and then finally rips to +$12.80B by 2025. Disney+ is similar: -$4.70B (2018) → +$1.00B (2021) → -$0.50B (2022) → +$4.20B (2025.\n\nMeanwhile, Spotify and Warner Music Group basically look like the winners of the rights economy: Spotify up to +$3.95B by 2025; WMG up to +$3.30B.\n\nIf you had to bet: are platforms the ones to watch, or the rights owners?",
+  "twitter_caption": "Streaming “wins” hid royalty pressure. Netflix: -$8.14B (2019) → -$1.21B (2022) → +$12.80B (2025). Rights winners: Spotify +$3.95B, WMG +$3.30B.",
   "hashtags": [
     "#streaming",
-    "#netflix",
-    "#disneyplus",
-    "#hulu",
-    "#peacock",
-    "#paramountplus",
-    "#adtech",
-    "#ctv",
-    "#ott",
-    "#digitaladvertising",
     "#mediaeconomics",
-    "#subscribergrowth",
-    "#streamingwars",
     "#chartrace",
     "#datavisualization",
-    "#businessnews",
-    "#techtrends",
-    "#marketinganalytics",
-    "#cpm",
-    "#arpu",
+    "#netflix",
+    "#disneyplus",
+    "#spotify",
+    "#warnermusic",
+    "#royalty",
+    "#contentcosts",
     "#subscriptionbusiness",
-    "#investorrelations",
-    "#cordcutting",
-    "#streamingindustry",
-    "#growthstrategy",
-    "#entertainmenteconomics",
-    "#videoanalytics",
-    "#datajournalism",
-    "#viraldata",
-    "#fyp"
+    "#streamingwars",
+    "#musicindustry",
+    "#rightsmanagement",
+    "#digitalmedia",
+    "#businessturnaround",
+    "#investing",
+    "#financestory",
+    "#operatingincome",
+    "#markettrends",
+    "#economyofstreaming",
+    "#creators",
+    "#mediatech",
+    "#growthvsprofit",
+    "#b2bmedia",
+    "#entertainmentindustry",
+    "#competition",
+    "#pivot",
+    "#2025",
+    "#viralcharts"
   ]
 }
