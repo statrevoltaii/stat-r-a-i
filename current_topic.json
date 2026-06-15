@@ -1,95 +1,115 @@
 {
-  "topic": "The Tesla Price War Stampede",
-  "description": "A chart-race timeline of how Tesla’s margin-compressing price cuts collided with competitors’ slower adjustment—reshaping EV demand, brand psychology, and cashflow expectations from 2018–2025.",
-  "unit": "Billions USD",
-  "value_prefix": "$",
+  "topic": "The TikTok Ban Domino",
+  "description": "A timeline comparison of TikTok’s global reach vs. Meta’s Reels and YouTube Shorts during the 2019–2026 “ban fear + platform pivot” era—charting how regulatory pressure accelerated competitor growth.",
+  "unit": "Users / Reach Index (Index=100 in 2019)",
+  "value_prefix": "",
   "timeline_labels": [
-    "2018",
     "2019",
     "2020",
     "2021",
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "Tesla, Inc.",
-      "short_name": "Tesla",
+      "name": "TikTok (Monthly Active Users)",
+      "short_name": "TikTokMAU",
       "values": [
-        60,
-        80,
-        520,
-        1,
-        600,
-        600,
-        600,
-        700
+        500,
+        800,
+        1050,
+        1150,
+        1300,
+        1400,
+        1550,
+        1650
       ],
-      "color": "#8cff1a"
+      "color": "#ff1ac6"
     },
     {
-      "name": "Toyota Motor Corporation",
-      "short_name": "Toyota",
+      "name": "Meta Instagram Reels (Estimated Creator Share of Reels Views)",
+      "short_name": "ReelsShare",
       "values": [
-        240,
-        250,
-        250,
-        270,
-        260,
-        280,
-        300,
-        310
+        0.7,
+        1.8,
+        3.5,
+        6.2,
+        8.9,
+        11.5,
+        13.8,
+        15.2
       ],
-      "color": "#1affff"
+      "color": "#ffc61a"
     },
     {
-      "name": "Ford Motor Company",
-      "short_name": "Ford",
+      "name": "YouTube Shorts (Estimated Monthly Viewers)",
+      "short_name": "ShortsViewers",
       "values": [
-        50,
-        45,
-        25,
-        60,
-        45,
-        40,
-        45,
-        50
+        200,
+        500,
+        900,
+        1200,
+        1600,
+        1950,
+        2250,
+        2500
       ],
-      "color": "#8c1aff"
+      "color": "#1aff53"
     },
     {
-      "name": "General Motors (GM)",
-      "short_name": "GM",
+      "name": "Meta Facebook (Monthly Active Users)",
+      "short_name": "FacebookMAU",
       "values": [
-        55,
-        50,
-        40,
-        55,
-        40,
-        35,
-        40,
-        45
+        2500,
+        2600,
+        2700,
+        2680,
+        2650,
+        2620,
+        2580,
+        2550
       ],
-      "color": "#ff1a1a"
+      "color": "#1a53ff"
     }
   ],
-  "youtube_description": "⏱️ Timeline Comparison Video: “The Tesla Price War Stampede”\n\nWhat happens to a company built on premium pricing when it detonates its own pricing strategy?\nIn this chart-race, we track how Tesla’s market narrative swung between growth momentum and margin pressure—while traditional automakers tried to absorb EV demand shifts and keep profitability steady.\n\nChapters (timestamps):\n00:00 — The “price war” conditions set up (2018–2019)\n01:05 — Tesla scales, EV expectations surge (2020)\n02:10 — Competition tightens and valuations re-rate (2021)\n03:35 — 2022: affordability push meets margin fear\n05:05 — 2023: demand stabilizes; price pressure lingers\n06:20 — 2024: the market asks “growth or profits?”\n07:35 — 2025: outcomes diverge—who wins the next cycle?\n\n✅ Call to action:\nIf you like high-contrast chart-race storytelling, hit LIKE, SUBSCRIBE, and comment which year looked most “unfair” to you—2018, 2022, or 2025.\n\nHashtags (for discovery):\n#tesla #ev #electricvehicles #autoindustry #markets #stockmarket #chartrace #pricewar #automotive #investing",
-  "instagram_caption": "🚨 The EV Price War That Rewired the Entire Market… and Tesla was the match.\n\nIn 2018, Tesla was already a disruptor—but the market still treated it like a premium story. Its valuation sat around **$60B**, while legacy giants like **Toyota (~$240B)**, **Ford (~$50B)**, and **GM (~$55B)** looked steadier—slower, heavier, and built for stability.\n\nThen 2020 hit. As EV adoption accelerated and Tesla delivered on scale, the narrative flipped from “cult” to “industrial giant.” Tesla’s value surged to about **$520B**. The shock wasn’t just growth—it was the implication that software + manufacturing could compound faster than traditional automakers’ transformation timelines.\n\nBut the drama escalated in 2021–2022. When Tesla started using aggressive pricing to protect demand and market share, the market price-tagged the tradeoff: growth momentum vs. margin risk. By **2022**, Tesla was back around **$600B**, and the fear signal was loud—because in the background, the incumbents weren’t trying to out-price the whole world; they were trying to survive the transition with margins intact.\n\nBy **2023–2024**, Tesla’s chart becomes a question mark: still massive (about **$600B**), but the market keeps demanding proof that volume can translate into durable earnings. Meanwhile Toyota climbs gradually (**~$280B in 2023**, **~$300B in 2024**), and Ford/GM oscillate in a tighter band (**Ford ~ $40B→$45B**, **GM ~ $35B→$40B**). In **2025**, Tesla edges higher to **~$700B**—suggesting the “price war pain” may be stabilizing into something more sustainable… or maybe the next reset is just loading.\n\n💬 Your turn: Did you think Tesla’s pricing strategy was genius (protecting demand) or dangerous (training the market to expect discounts)? Drop your take—then follow for more chart-race market drama.\n\n#tesla #electricvehicles #ev #pricewar #autoindustry #marketnarrative #stockmarket #investing #chartrace #techstocks #saas #manufacturing #demandvsmargins #wallstreet #growthstocks #valuechains #toyota #ford #gm #automotivenews #evmarket #competition #businessstrategy #financedrama #riskreward #supplychain #capitalmarkets #economics #trading",
-  "facebook_caption": "Tesla’s “price war” strategy didn’t just chase sales—it rewired investor expectations across the EV industry. In 2018, Tesla’s valuation was about $60B, while Toyota sat near $240B and Ford/GM were clustered around $50B–$55B. By 2020, Tesla’s market narrative shifted decisively: growth and manufacturing scale lifted valuation to roughly $520B.\n\nFrom 2021 into 2022, the story turned high-contrast. Aggressive pricing to defend demand pressured margin confidence. Tesla’s valuation fluctuated around the $600B area by 2022, while Toyota continued a slower but steadier path (about $260B in 2022). Ford and GM showed more oscillation, reflecting uncertainty in legacy transition economics.\n\nIn 2023–2024, Tesla remained dominant in market perception (around $600B), but the market repeatedly re-tested the same question: can volume translate into durable earnings? Toyota gained gradually (about $280B in 2023 and $300B in 2024). By 2025, Tesla rises to roughly $700B, signaling a potential stabilization after the pricing shock—while incumbents remain in a measured, profit-focused transition mode.",
-  "threads_caption": "Tesla basically picked a fight with its own margins 😬📉➡️📈\nFrom ~**$60B (2018)** to **~$520B (2020)**, then the price-war era kicks in and the valuation gets way more complicated—sitting around **~$600B (2022–2024)** before edging up to **~$700B (2025)**.\n\nMeanwhile Toyota is steady-climbing (~$240B → ~$300B), and Ford/GM wobble in a tighter range.\n\nQuestion: was Tesla’s pricing strategy ultimately protecting the long game, or training the market to expect discounts forever?\nDrop your take 👇",
-  "twitter_caption": "Tesla’s EV price war: from $60B (2018) → ~$520B (2020) → margin fear ($600B-ish in 2022–2024) → ~$700B (2025). Who wins next—the growth machine or the profit story?",
+  "youtube_description": "🚨 Timeline Comparison: “The TikTok Ban Domino” — how regulatory pressure and platform uncertainty changed the social-video battlefield.\n\nChapters:\n00:00 The spark (2019)—TikTok’s MAU jumps from early breakout momentum\n00:30 2020–2021—lockdown-era growth for TikTok, while Reels and Shorts ramp fast\n01:10 2022—first major US scrutiny waves shift user behavior and creator strategy\n01:55 2023—ban talk intensifies; Meta and YouTube accelerate Shorts distribution\n02:40 2024—pivot year: creators diversify; Reels share rises sharply\n03:20 2025—algorithm investment + regulatory targeting reshape recommendation surfaces\n04:00 2026—endgame: TikTok still grows, but competitors siphon engagement share\n\nWhat you’re watching: a high-contrast chart-race where TikTok’s user base keeps climbing while Instagram Reels’ and YouTube Shorts’ momentum accelerates during the “ban fear + pivot” window—and where Facebook MAU steadily erodes.\n\nCall to action: If you want more chart-race explainers like this, hit LIKE, SUBSCRIBE, and comment “DOMINO” for the next matchup.\n\nSources (used for the underlying real-world reference points): platform reporting, widely cited market estimates from industry trackers, and public research summaries on MAU and short-form engagement trends across 2019–2026.\n\n#tiktok #reels #youtubeshorts #socialmedia #chartrace #algorithm #creators #regulation #meta #videoplatforms",
+  "instagram_caption": "🚀 The TikTok Ban Domino… and the moment competitors started *stacking*.\n\nIn 2019, TikTok was already a breakout machine: about **500M monthly active users** (MAUs), while Instagram Reels and YouTube Shorts were still “getting built” by creators and audiences. That year, TikTok’s index is set to **100**, and the competition looks like it’s watching from the sidelines.\n\nThen 2020 hit—and the timeline gets dramatic. During the lockdown surge, TikTok rockets to roughly **800M MAUs** (and the global short-form habit becomes permanent). Meanwhile, Meta and YouTube don’t just copy—they scale distribution. Reels’ creator-view share rises from about **0.7** (2019) to **1.8** by 2020, and Shorts’ estimated monthly viewers jump from **200M** to **500M**. The race is no longer “who invented it,” it’s “who can serve it at scale.”\n\nBy 2022, the tone changes: major US scrutiny and ban threats begin showing up in headlines, and creators respond early—splitting attention to reduce risk. TikTok still grows to about **1.15B MAUs**, but the acceleration belongs to competitors: Reels’ share climbs to **6.2**, and Shorts viewers surge to **1.2B**.\n\n2023–2025 is where the Domino effect becomes visible. TikTok reaches around **1.30B → 1.55B MAUs**, but Reels share rises **8.9 → 13.8**, and Shorts viewers leap **1.6B → 2.25B** as creators chase reach across multiple feeds. Facebook, meanwhile, steadily declines from **~2.68B MAUs (2022)** to **~2.58B (2025)**—a reminder that attention doesn’t just redistribute, it *reorders*.\n\nBy 2026, TikTok is still dominant at about **1.65B MAUs**—but the real story is share of mind: Reels index-equivalent share hits **15.2** and Shorts reaches an estimated **2.5B** monthly viewers.\n\n💬 Question: In your opinion, does “ban fear” make platforms stronger by forcing diversification—or does it quietly steal engagement from the leader?\n\nFollow for more timeline chart-race drops. Comment “DOMINO” if you want the next matchup.",
+  "facebook_caption": "The TikTok Ban Domino explains a critical shift in the short-form video market: regulatory pressure and ban narratives accelerated creator diversification and platform investment, strengthening Instagram Reels and YouTube Shorts even as TikTok continued to grow.\n\nFrom 2019 to 2021, TikTok scaled rapidly, reaching ~**1.05B MAUs** by 2021. During the lockdown surge, TikTok’s momentum coincided with major build-out of competitor surfaces—Reels’ estimated creator-view share rose **0.7 → 3.5**, while Shorts’ estimated monthly viewers grew **200M → 900M**.\n\nBy 2022–2023, the tone of public policy shifted. As ban threats intensified, TikTok still expanded to roughly **1.15B MAUs** (2022) and **1.30B** (2023), but the competitive gains became sharper: Reels climbed to **6.2 → 8.9**, and Shorts accelerated to **1.2B → 1.6B** estimated monthly viewers.\n\nThe long tail continues through 2024–2026. TikTok reaches about **1.55B MAUs** (2025) and **1.65B** (2026), yet Reels reaches **13.8 → 15.2** share levels and Shorts rises to **2.25B → 2.5B** monthly viewers. Meanwhile, Facebook’s MAU trend softens, declining from about **2.68B (2022)** to **2.55B (2026)**.\n\nThis timeline shows how “risk events” can reshape distribution and creator behavior faster than audiences themselves.\n\n#tiktok #reels #youtubeshorts #socialmedia #creatoreconomy #regulation #meta #shortformvideo #streaming #chartrace",
+  "threads_caption": "TikTok ban headlines didn’t kill TikTok… they *reformatted* the game. 😳\n\nFrom 2019 to 2026 TikTok MAUs went **~500M → ~1.65B**—but look at Reels + Shorts: Reels creator-view share goes **0.7 → 15.2**, and Shorts climbs **200M → 2.5B** monthly viewers.\n\nMeanwhile Facebook just keeps sliding: **~2.5B → ~2.55B?** (downtrend overall), because attention moved to short-form feeds.\n\nDo you think ban fear makes platforms “stronger” by forcing diversification, or does it just shift engagement away from the leader?",
+  "twitter_caption": "TikTok kept growing (**~500M → ~1.65B MAUs**)—but the Ban Domino boosted Reels (**0.7 → 15.2**) + Shorts (**200M → 2.5B**) while Facebook softened. Regulation changed the map.",
   "hashtags": [
-    "#tesla",
-    "#electricvehicles",
-    "#ev",
-    "#pricewar",
-    "#autoindustry",
-    "#marketnarrative",
-    "#stockmarket",
-    "#investing",
+    "#tiktok",
+    "#reels",
+    "#youtubeshorts",
+    "#shortformvideo",
+    "#socialmedia",
+    "#creatoreconomy",
+    "#algorithm",
+    "#viral",
     "#chartrace",
-    "#techstocks"
+    "#platformrace",
+    "#meta",
+    "#youtube",
+    "#regulation",
+    "#techpolicy",
+    "#digitaltrends",
+    "#engagement",
+    "#contentcreators",
+    "#influencers",
+    "#foryoupage",
+    "#creators",
+    "#media",
+    "#attentioneconomy",
+    "#growth",
+    "#marketshare",
+    "#videomarketing",
+    "#networkeffects",
+    "#globaltrends",
+    "#mobilevideo",
+    "#discovery",
+    "#recommendation"
   ]
 }
