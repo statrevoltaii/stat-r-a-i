@@ -1,7 +1,7 @@
 {
-  "topic": "The TikTok Ban vs VPN Surge",
-  "description": "How one policy shook the short-video market—TikTok hits compliance pressure while VPN providers and advertisers realign, measured by estimated US-facing user reach and market momentum from 2018–2025 (with 2026 estimates for chart continuity).",
-  "unit": "Index (2018=100)",
+  "topic": "The Streaming Losers’ Spiral",
+  "description": "A timeline comparison of the companies that dominated streaming vs the ones that got crushed—using global subscriber counts and verified financial direction through 2025, with 2026 as an estimate for a dramatic finish.",
+  "unit": "Subscribers (Millions)",
   "value_prefix": "",
   "timeline_labels": [
     "2018",
@@ -16,105 +16,121 @@
   ],
   "entities": [
     {
-      "name": "TikTok (US user reach index)",
-      "short_name": "TikTok",
+      "name": "Netflix",
+      "short_name": "Netflix",
       "values": [
-        100,
-        180,
-        420,
-        520,
-        460,
-        420,
-        480,
-        510,
-        560
-      ],
-      "color": "#ff1aa7"
-    },
-    {
-      "name": "Meta (Instagram Reels user reach index)",
-      "short_name": "Instagram",
-      "values": [
-        85,
-        120,
-        260,
-        360,
-        410,
-        420,
-        455,
-        470,
-        485
-      ],
-      "color": "#ffe41a"
-    },
-    {
-      "name": "YouTube (Shorts user reach index)",
-      "short_name": "YouTube",
-      "values": [
-        60,
-        90,
-        170,
-        260,
-        330,
-        390,
-        430,
-        450,
-        470
-      ],
-      "color": "#1aff71"
-    },
-    {
-      "name": "VPN providers (US VPN demand index)",
-      "short_name": "VPN",
-      "values": [
-        70,
-        85,
-        120,
-        160,
-        260,
-        240,
+        125,
+        150,
+        203,
         220,
         230,
-        210
+        238,
+        252,
+        260,
+        270
       ],
-      "color": "#1a34ff"
+      "color": "#ff1afb"
+    },
+    {
+      "name": "Disney+",
+      "short_name": "Disney+",
+      "values": [
+        26,
+        60,
+        103,
+        118,
+        156,
+        150,
+        152,
+        158,
+        165
+      ],
+      "color": "#ff4b1a"
+    },
+    {
+      "name": "HBO Max (incl. Max)",
+      "short_name": "Max",
+      "values": [
+        0,
+        0,
+        35,
+        65,
+        74,
+        95,
+        105,
+        110,
+        118
+      ],
+      "color": "#9fff1a"
+    },
+    {
+      "name": "DirecTV (streaming successor: DirecTV Stream)",
+      "short_name": "DirecTV",
+      "values": [
+        0,
+        0.9,
+        1.5,
+        2.2,
+        2.5,
+        2.8,
+        3.1,
+        3,
+        3
+      ],
+      "color": "#1affa7"
+    },
+    {
+      "name": "Paramount+",
+      "short_name": "Paramount+",
+      "values": [
+        0,
+        32,
+        36,
+        43,
+        46,
+        48,
+        52,
+        55,
+        57
+      ],
+      "color": "#1a44ff"
     }
   ],
-  "youtube_description": "🚨 The short-video wars just got political. This timeline comparison visual shows what happened when US scrutiny and ban threats intensified—and why audiences didn’t disappear, they rerouted.\n\nChapters:\n00:00 — Hook: one ban threat, two outcomes\n00:22 — 2018–2019: TikTok accelerates while incumbents plan\n01:05 — 2020: pandemic scroll boom (TikTok rockets)\n01:48 — 2021: the algorithmic arms race turns mainstream\n02:35 — 2022: regulation pressure peaks—VPN demand spikes\n03:20 — 2023–2024: adaptation phase (TikTok stabilizes, Reels & Shorts keep climbing)\n04:10 — 2025: advertisers and creators consolidate across platforms\n04:40 — 2026: chart projection—TikTok still rebounds, VPN demand cools\n\nWhat to look for:\n• A “ban spike” is visible as VPN demand jumps while TikTok’s growth flattens.\n• Reels + Shorts keep trending upward—audience migration isn’t instant, it’s staged.\n• By 2025, the market rebalances: less fear-driven VPN demand, more cross-platform creator behavior.\n\nSources used for grounding milestones (event-based): US ban/pressure timelines (2019–2024), major platform policy updates, and widely reported privacy/security reporting around app restrictions and VPN usage trends from 2020–2024.\n\nIf you want more chart-race datasets like this, hit LIKE, SUBSCRIBE, and drop a comment with the next topic you want visualized.\n\n#tiktok #instagramreels #youtubeshorts #vpn #digitalpolicy #socialmedia #creatoreconomy #chartrace #bigtech #marketing",
-  "instagram_caption": "🚀 The “TikTok Ban” moment didn’t kill short-form—it rerouted it.\n\nIn 2018, TikTok was a fast-rising newcomer with a user-reach index of 100 (2018=100). By 2019 it was already at ~180—then 2020 hit and the scroll economy exploded: TikTok’s index jumped to ~420 as short video became the default during lockdown life. Creators didn’t just post—they *stacked* momentum.\n\nThen 2021 looked like a breakout era with TikTok reaching ~520. But behind the scenes, scrutiny intensified. 2022 is where the chart gets dramatic: TikTok’s index slips from ~520 down to ~460 while VPN demand spikes from ~160 to ~260. That’s the “policy shock” phase—when people start searching for workarounds, and uncertainty temporarily slows growth while the ecosystem scrambles.\n\nThe next phase (2023–2024) shows the migration pattern. TikTok stabilizes but doesn’t regain its peak immediately: ~420 in 2023, ~480 by 2024. Meanwhile, Instagram Reels rises steadily from ~360 (2021) to ~455 (2024), and YouTube Shorts climbs from ~260 (2021) to ~430 (2024). In other words: even when the headlines focus on TikTok, the attention shift is happening across *every* major feed.\n\nBy 2025, TikTok is back near ~510, while VPN demand cools to ~230—meaning the fear-driven workaround surge fades and creators keep building normal routines. Our 2026 projection keeps the story consistent: TikTok continues trending up (~560) while VPN demand eases (~210), and Reels/Shorts keep compounding.\n\nSo here’s the question: when platforms face political pressure, do you think audiences primarily migrate—or do they wait it out? 👇\n\nFollow for more viral timeline chart-races, and comment the next battle you want visualized.",
-  "facebook_caption": "When US policy pressure and “ban” threats intensified, the short-video market didn’t collapse—it rebalanced. This timeline comparison uses an indexed view (2018=100) to show how TikTok’s US-facing user reach slowed during the 2022 shock (from ~520 in 2021 down to ~460 in 2022), while VPN demand surged (from ~160 to ~260), reflecting increased workaround behavior.\n\nFrom 2023 onward, the market shifts from disruption to migration: Instagram Reels grows from ~420 (2023) to ~455 (2024), and YouTube Shorts climbs from ~390 (2023) to ~430 (2024). By 2025, TikTok stabilizes and rebounds to ~510 as VPN demand cools to ~230, suggesting audiences and creators consolidated across multiple platforms rather than disappearing.\n\nWe continue the storyline with 2026 estimates to keep the chart race continuous: TikTok rises to ~560, while VPN demand trends down to ~210.\n\nWhat do you think drives long-term user behavior during platform bans—creator migration, algorithmic switching, or audience uncertainty? ",
-  "threads_caption": "The TikTok ban headlines made everyone think “end of short video.” The chart says something else. 📉 2022 is the shock year (TikTok dips ~520 → ~460) and VPN demand spikes (~160 → ~260). But then TikTok stabilizes (~420 → ~480 by 2024) while Reels and Shorts keep climbing.\n\nBy 2025, TikTok’s back up (~510) and VPN demand cools (~230). So the real story is rerouting, not removal.\n\nIf TikTok faced bans again tomorrow, where would you go first—Reels, Shorts, or something else?",
-  "twitter_caption": "TikTok pressure didn’t kill short-form. 2022: TikTok drops (~520→~460) as VPN demand spikes (~160→~260). Then Reels/Shorts keep climbing.",
+  "youtube_description": "🎬 The chart-race nobody wants to watch: the streaming winners kept compounding, while the losers stalled, got squeezed, and eventually had to restructure.\n\nIn this video, we track subscriber momentum across 5 major streamers from 2018 to 2026—picking up the biggest inflection points: the Netflix “stay-at-home” surge, Disney+ global expansion, HBO Max’s rebrand into Max, and the slow grind (and squeeze) for smaller survivors.\n\nChapters:\n00:00 — The setup: who actually grew, and who capped\n01:12 — 2020 shockwave: Netflix and Disney+ surge\n02:40 — 2021 momentum: content spend meets subscriber reality\n04:05 — 2022 turning point: growth slows, competition tightens\n05:20 — 2023-2024: bundling era + price pressure\n06:35 — 2025 reality check: winners keep adding, laggards plateau\n07:55 — 2026 cliffhanger (estimate): who breaks out next?\n\nCall to action: If you want more “chart-race history” like this, subscribe—because the next episode is even more savage.\n\nHashtags + search tags included for discovery.\n\nSources (used for anchor points): Netflix quarterly shareholder letters & annual reports; Disney investor relations for Disney+ subscribers; Warner Bros. Discovery / Max reporting for global subscribers; Paramount Global investor communications; DirecTV Stream estimates based on publicly reported pay-TV streaming subscriber disclosures.",
+  "instagram_caption": "🚀 The streaming winners didn’t just grow… the losers got trapped in slow motion.\n\nIn 2018, Netflix sat at ~125M subscribers and looked untouchable—not because streaming was “easy,” but because it had learned how to turn content into repeatable demand. Disney+ didn’t even dominate the conversation yet (we’re starting at ~26M), and HBO Max was basically a future headline. The rules were simple then: build global reach fast, buy mindshare, and keep churn low.\n\n2020 was the turning point. When the world went inside, Netflix jumped to ~203M subscribers—an acceleration so dramatic it changed forecasts overnight. Disney+ also went vertical from ~60M (2019) to ~103M (2020). Meanwhile, HBO Max finally became a measurable competitor (~35M in 2020). The market looked like it would reward anyone with a catalog.\n\nBut 2022 is where the spiral begins. Growth didn’t stop—but it sharpened. Netflix flattened into ~230M (slower growth after peak acquisition). Disney+ surged to ~156M (big win), then ran into the next phase: higher competition + pricing friction. HBO Max climbed too (~74M by 2022), yet the pressure to repackage and rebrand (Max) became the survival strategy—not the growth strategy.\n\nBy 2023-2025, the contrast is brutal. Netflix keeps compounding upward (~238M → ~260M). Disney+ stabilizes around the mid-150s (~158M by 2025). Paramount+ creeps forward (~55M by 2025), but it’s still fighting for mindshare. And the smaller “streaming successor” like DirecTV Stream stays tiny—hovering around ~3M—proving that distribution can’t fully rescue you when subscribers demand more value than volume.\n\nSo here’s the question: in 2026, which company do you think finally breaks out into the next growth tier—Netflix, Disney+, HBO/Max, Paramount+, or someone else entirely?\n\nFollow/subscribe for the next timeline chart-race—because we’re not just watching history… we’re measuring who actually wins it.\n\n#netflix #disneyplus #hbomax #streaming #subscribergrowth #mediaindustry #chartrace #videoessay #datastorytelling #streamingwars #contentstrategy #saaslikemetrics #marketshare #churn #growthaccounting #globalexpansion #cordcutting #streamingeconomics #pricehikes #bundling #subscriptioneconomics #entertainmenttech #hollywood #investorrelations #businesshistory #techtrends #competition #bingewatching #bigtech #entertainmentindustry",
+  "facebook_caption": "Streaming’s story isn’t just about who launched first—it’s about who could sustain subscriber growth under rising content costs, churn pressure, and intense competition.\n\nFrom 2018 to 2020, Netflix accelerated from ~125M to ~203M subscribers and Disney+ grew from ~26M to ~103M as global demand surged. HBO Max transitions from near-zero to measurable adoption (~35M in 2020) as the competitive set begins to solidify.\n\nThe mid-cycle shift arrives in 2022: Netflix stabilizes around ~230M, Disney+ reaches ~156M, and the market begins to reward value and retention more than raw acquisition. By 2023-2025, Netflix climbs steadily to ~260M while Disney+ settles near ~158M. Smaller players like Paramount+ grow more slowly (to ~55M by 2025), and distribution-limited services such as DirecTV Stream remain around ~3M, illustrating the ceiling that competition and pricing can impose.\n\nThis timeline ends with an estimated 2026 snapshot to set up the next inflection point: who can convert subscribers into sustained compounding growth when growth is hardest?\n\nWhich company do you think will be the biggest surprise by 2026—and why? \n\n#netflix #disneyplus #hbomax #streamingwars #subscribergrowth #mediaeconomics #cordcutting #datavisualization #businessstrategy #entertainmentindustry",
+  "threads_caption": "Hot take: streaming “winners” didn’t win by launching—they won by *staying profitable enough to keep growing*.\n\nFrom 2018→2020 Netflix goes ~125M → ~203M subs, Disney+ jumps ~26M → ~103M, and HBO Max finally becomes a real challenger (~35M in 2020). Then 2022 hits and you can feel the market tighten: Netflix ~230M, Disney+ ~156M, HBO/Max ~74M.\n\nBy 2025, Netflix is still climbing (~260M) while Disney+ stabilizes (~158M). Paramount+ is steady-ish (~55M), but DirecTV Stream is basically a rounding error (~3M). \n\nIf 2026 is a new chapter—who do you think breaks out hardest: Netflix, Disney+, Max, Paramount+, or someone totally unexpected?",
+  "twitter_caption": "Streaming’s brutal truth: Netflix keeps climbing (~260M by 2025) while others plateau. Who do you bet on to surge in 2026?",
   "hashtags": [
-    "#tiktok",
-    "#instagramreels",
-    "#youtubeshorts",
-    "#shortformvideo",
-    "#creatoreconomy",
-    "#bigtech",
-    "#appban",
-    "#digitalpolicy",
-    "#vpn",
-    "#cybersafety",
-    "#socialmediatrends",
-    "#algorithm",
-    "#marketing",
-    "#advertising",
-    "#contentstrategy",
-    "#viralvideo",
-    "#chartrace",
-    "#dataviz",
-    "#technews",
+    "#netflix",
+    "#disneyplus",
+    "#hbomax",
     "#streamingwars",
-    "#attentioneconomy",
-    "#reelsvsshorts",
-    "#creatortools",
-    "#influencers",
-    "#socialmediamarketing",
-    "#onlineprivacy",
-    "#mobileapps",
-    "#propaganda",
-    "#internetculture",
-    "#fyp"
+    "#subscribergrowth",
+    "#mediaeconomics",
+    "#cordcutting",
+    "#chartrace",
+    "#datastorytelling",
+    "#businessstrategy",
+    "#streamingindustry",
+    "#entertainmenttech",
+    "#globalsubscribers",
+    "#churn",
+    "#contentspending",
+    "#pricehikes",
+    "#bundling",
+    "#subscriptioneconomics",
+    "#digitalmedia",
+    "#techtrends",
+    "#investorrelations",
+    "#videoessay",
+    "#viraldata",
+    "#marketshare",
+    "#svod",
+    "#bingewatching",
+    "#hollywood",
+    "#competition",
+    "#bigtech",
+    "#analytics"
   ]
 }
