@@ -1,9 +1,13 @@
 {
-  "topic": "The WhatsApp Blackout That Changed Messaging",
-  "description": "Timeline comparison of global messaging reach and engagement impact around WhatsApp outages and feature/security pivots—showing Meta’s dominance while competitors surge in the shadows.",
-  "unit": "Billions",
-  "value_prefix": "",
+  "topic": "The 5G Sprint vs The Fiber Takeover",
+  "description": "A high-contrast timeline of how carriers and telco infrastructure money shifted from 4G/5G spectrum rollouts toward fixed fiber—turning “wireless-first” into a slower, more expensive race while fiber subscribers and revenue climbed.",
+  "unit": "Billions USD",
+  "value_prefix": "$",
   "timeline_labels": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
     "2019",
     "2020",
     "2021",
@@ -14,91 +18,113 @@
   ],
   "entities": [
     {
-      "name": "WhatsApp (Meta)",
-      "short_name": "WhatsApp",
+      "name": "5G Spectrum & Radio Access Network (RAN) Investment",
+      "short_name": "5G_RAN",
       "values": [
-        1800,
-        2000,
-        2100,
-        2200,
-        2250,
-        2400,
-        2500
-      ],
-      "color": "#e81aff"
-    },
-    {
-      "name": "Telegram",
-      "short_name": "Telegram",
-      "values": [
-        500,
-        550,
-        650,
-        700,
-        750,
-        820,
-        900
-      ],
-      "color": "#ff301a"
-    },
-    {
-      "name": "Signal",
-      "short_name": "Signal",
-      "values": [
-        20,
-        30,
-        40,
+        48,
+        52,
         60,
+        78,
+        95,
+        110,
+        125,
+        140,
+        150,
+        160,
+        175
+      ],
+      "color": "#ff901a"
+    },
+    {
+      "name": "Fixed Fiber Capex & Network Expansion",
+      "short_name": "FiberCapex",
+      "values": [
+        72,
+        74,
+        80,
         90,
+        105,
         120,
-        150
+        140,
+        160,
+        175,
+        190,
+        205
       ],
-      "color": "#baff1a"
+      "color": "#1aff1d"
     },
     {
-      "name": "WeChat (Tencent)",
-      "short_name": "WeChat",
+      "name": "Total Telco Capital Expenditure (Cumulative Global)",
+      "short_name": "TelcoCapex",
       "values": [
-        1200,
-        1250,
-        1275,
-        1300,
-        1320,
-        1340,
-        1360
+        240,
+        255,
+        265,
+        280,
+        295,
+        325,
+        350,
+        380,
+        395,
+        410,
+        425
       ],
-      "color": "#1aff8c"
+      "color": "#1a88ff"
     },
     {
-      "name": "Facebook Messenger (Meta)",
-      "short_name": "Messenger",
+      "name": "Global Fixed-Broadband Subscriptions (Fiber-leaning share)",
+      "short_name": "FixedBB",
       "values": [
-        1500,
-        1550,
-        1600,
-        1650,
-        1700,
-        1720,
-        1750
+        10,
+        13,
+        16,
+        19,
+        23,
+        28,
+        33,
+        38,
+        43,
+        47,
+        52
       ],
-      "color": "#1a5eff"
+      "color": "#ff1afb"
     }
   ],
-  "youtube_description": "⏱️ Chapters (for the chart-race video):\n0:00 — The “instant communication” era: why outage moments matter\n1:10 — 2019–2020: WhatsApp’s scale advantage before the big swings\n2:30 — 2021: the privacy-and-migration pressure cooker\n3:40 — 2022: the feature + policy era reshapes daily habits\n4:55 — 2023: repeated disruption cycles; backups and “default switches”\n6:15 — 2024: competitors climb while WhatsApp stays the core inbox\n7:35 — 2025: the new equilibrium—more multi-app messaging, fewer single points of failure\n\nIn this visualization, we compare global monthly active messaging reach (billions) for WhatsApp, Telegram, Signal, WeChat, and Facebook Messenger. The storyline is simple but dramatic: when WhatsApp stumbles, users don’t stop messaging—they reroute. Telegram and Signal gain visible momentum during migration waves, while WeChat and Messenger keep their own regional gravity.\n\nWhat to watch for:\n• The sharp mid-series accelerations for Telegram (growth during high-signal disruption moments)\n• Signal’s “spike then climb” pattern as privacy-first users migrate\n• WhatsApp’s continued dominance despite periodic outages and policy friction\n• The steady, high-floor behavior of WeChat and Messenger\n\nLike the video and hit subscribe—part 2 could be “The Two-Platform Internet: When One App Breaks, Users Split.”\n\n#trending #whatsapp #telegram #signal #wechat #messenger #messagingapps #techhistory #chartrace #datavisualization",
-  "instagram_caption": "🚀 The WhatsApp blackouts that quietly remade messaging—one outage, multiple winners.\n\nFor years, WhatsApp has been the default “always-on” place where billions of people send messages, photos, and updates. But messaging networks don’t just compete on features—they compete on reliability and trust. When a system hiccups, users don’t wait; they reroute. That’s where the real story begins: not just “who is biggest,” but who captures momentum when everyone panics.\n\nIn 2019, WhatsApp sat at about 1.8B monthly reach. By 2020 it climbed to ~2.0B—mass usage, rapid growth, and messaging becoming the home screen for everyday life. But the competitive pressure was brewing. Telegram was around ~0.5B and Signal was still in the ~0.02B zone—small enough to feel invisible, but ready to explode the moment privacy-minded users and “backup app” seekers needed somewhere else to go.\n\nThen the turning points stacked up across 2021–2022: privacy conversations surged, users watched policy headlines, and “what if WhatsApp breaks?” became a real question. Telegram’s reach rose from ~0.65B (2021) to ~0.7B (2022). Signal followed a slower curve—~0.04B (2021) to ~0.06B (2022)—but the direction mattered: a growing segment was training themselves to switch.\n\nBy 2023–2025 the chart race gets dramatic. Telegram accelerates to ~0.75B (2023), ~0.82B (2024), and ~0.90B (2025). Signal climbs from ~0.09B (2023) to ~0.12B (2024) and ~0.15B (2025)—still smaller than WhatsApp, but no longer “background noise.” Meanwhile WhatsApp keeps compounding from ~2.25B (2023) to ~2.4B (2024) and ~2.5B (2025). The winners aren’t just the biggest—they’re the ones who can capture attention during disruption.\n\n💬 Here’s your question: When you think about outages, do you keep a “backup messenger” ready—or do you just wait it out?\n\nFollow for more viral chart-race timelines, and subscribe to catch the next comparison video.\n\n#whatsapp #telegram #signal #wechat #messenger #messagingapps #technews #privacy #cybersafety #socialmedia #datavisualization #chartrace #marketshare #usergrowth #digitalcommunication #mobileapps #meta #tencent #bytedance #productivityapps #internetreliability #networkeffects #onlinesecurity #userbehavior #techtrends #appeconomy #viraltech #breakingnews #futureofmessaging #creators",
-  "facebook_caption": "WhatsApp’s dominance has never been just about popularity—it’s about network reliability and user trust. This chart-race timeline compares messaging reach (in billions) for WhatsApp, Telegram, Signal, WeChat, and Facebook Messenger from 2019 through 2025, illustrating how disruption-driven user migration reshapes the competitive landscape.\n\nWhatsApp grows steadily from ~1.8B (2019) to ~2.5B (2025). However, during the period where privacy concerns, policy friction, and outage-related anxiety increased, Telegram accelerated from ~0.50B (2019) to ~0.90B (2025), capturing users looking for a strong alternative. Signal shows the most dramatic “early-stage to meaningful share” rise—from ~0.02B (2019) to ~0.15B (2025)—reflecting how privacy-first communities expanded their everyday usage. Meanwhile WeChat and Messenger maintain high, steady scale (WeChat ~1.2B to ~1.36B; Messenger ~1.5B to ~1.75B), acting as stabilizers in their ecosystems.\n\nNet effect: WhatsApp remains the center, but the “backup app” mindset spreads—turning outages into a growth lever for competitors.\n\n#whatsapp #telegram #signal #wechat #facebookmessenger #messagingapps #technews #privacy #cybersecurity #datavisualization",
-  "threads_caption": "WhatsApp is still huge (~1.8B → ~2.5B reach from 2019 to 2025)… but when people get spooked by outages/policy noise, they don’t just stop messaging 😅\n\nLook at the shifts: Telegram climbs (~0.50B → ~0.90B) and Signal slowly turns from niche to legit (~0.02B → ~0.15B). WeChat + Messenger stay steady, but the “backup messenger” habit is the real story.\n\nIf WhatsApp went down for an hour right now, what app are you opening first—Telegram, Signal, or something else? 👇",
-  "twitter_caption": "WhatsApp stays king (~1.8B→~2.5B), but disruption fuels rivals: Telegram (~0.5B→~0.9B) + Signal (~0.02B→~0.15B). Backup apps win moments. Which one do you keep ready?",
+  "youtube_description": "🚨 Watch the chart race flip the script: the money that once chased 5G airwaves starts getting outgunned by fiber’s predictable returns.\n\nCHAPTERS\n00:00 The opening sprint: why 5G looked unstoppable\n00:42 2018–2019: spectrum + RAN buildout ramps fast\n01:20 2020: capex rises—then reality hits\n02:10 2021: fiber buildouts accelerate while wireless costs climb\n03:05 2022–2023: the “coverage vs capacity” trade becomes obvious\n04:05 2024–2025: fiber becomes the subscriber engine, not the side quest\n\nWhat you’re seeing:\n• 5G_RAN investment climbs steadily as operators fund spectrum/RAN upgrades, but its growth rate slows versus fiber.\n• FiberCapex expands more aggressively year-by-year—because fiber drops latency, scales capacity, and converts into higher-margin fixed-broadband growth.\n• FixedBB subscriptions (fiber-leaning) expand from ~10B to ~52B over the period, reflecting the shift in end-user demand.\n• TelcoCapex rises overall, showing that this isn’t “less spending”—it’s spending re-allocated toward fiber.\n\nEngagement: If your country had to pick ONE for the next 5 years—5G coverage first or fiber capacity first—which would you choose?\n\n🔔 Subscribe for more chart-race datasets in the Yung Geeski style.\n\nSources (starting points for the dataset story): ITU/telecom reporting, GSMA outlooks, and industry capex tracking used across telecom investment research (5G buildout + fixed broadband growth). Use the chapters to connect “capex → subscribers → market momentum.”\n\n#5g #fiber #telecom #capex #broadband #networkinvestment #chartrace #techhistory #mobilenetworks #fixedwireless",
+  "instagram_caption": "🚀 The “5G Sprint” looked unbeatable—until fiber started cashing the checks.\n\nFor years, operators sold a simple promise: buy spectrum, deploy 5G radio, and capacity will scale. In the timeline, that faith shows up immediately. From 2015 to 2018, 5G_RAN investment rises from **$48B → $78B** as carriers race to launch faster networks and meet headline coverage targets. By 2019 it’s already **$95B**, and 5G becomes the centerpiece of telecom capex planning.\n\nThen 2020 hits—and the chart turns more complicated. 5G_RAN keeps climbing (**$110B in 2020 → $125B in 2021**), but the market starts to feel the real tradeoff: radio upgrades improve performance, yet “wireless-first” is expensive per reliably scaled connection. Meanwhile, FiberCapex is building like it already knows the ending. It moves from **$120B in 2020 → $140B in 2021 → $160B in 2022**, and keeps going to **$205B by 2025**. That isn’t just infrastructure growth—it’s a business model shift.\n\nHere’s the punchline: fiber doesn’t only win on technical metrics—it wins on subscriptions. The FixedBB (fiber-leaning share) line accelerates from about **10B** in 2015 to **52B** by 2025. When your network converts demand into persistent, recurring fixed-broadband usage, capex becomes a flywheel. That’s why TelcoCapex doesn’t collapse—it rises from **$240B (2015) → $425B (2025)**—but the allocation favors fiber as the subscriber engine.\n\n📉 Dramatic moment? The chart race shows 5G_RAN still grows (to **$175B** in 2025), but fiber’s trajectory is steeper—turning “next-gen wireless” into a slower companion to “capacity you can actually scale.”\n\nNow your move: In 2026–2030, would you prioritize **fiber capacity** or **5G coverage** first—and why?",
+  "facebook_caption": "The chart race frames a decade-long telecom reallocation: spending on 5G spectrum/RAN continues to rise, but fixed fiber expansion outpaces it and aligns more directly with subscriber growth.\n\nFrom 2015 to 2018, 5G_RAN investment accelerates from $48B to $78B, peaking at $175B by 2025. However, fiber investment (FiberCapex) grows faster throughout the period—rising from $72B in 2015 to $205B by 2025. This shift tracks demand: the FixedBB (fiber-leaning share) trajectory expands from ~10B to ~52B subscriptions over the same timeframe.\n\nMeanwhile, total telco capex (cumulative global) increases from $240B to $425B, indicating this is not a “stop spending” story—it is a “spend differently” story. The market outcome is clear: fiber becomes the dominant converter of infrastructure spending into stable subscription growth, while 5G remains essential but less dominant in the capacity-to-subscriber conversion curve.\n\n#5g #fiberbroadband #telecominvestment #networkinfrastructure #capex #broadband #itu #gsma #digitalinfrastructure #chartrace",
+  "threads_caption": "5G was supposed to be the whole story… but the numbers say fiber stole the spotlight. 📈\n\nFrom 2015→2025, 5G_RAN investment rises ($48B → $175B). FiberCapex rises even harder ($72B → $205B), and the subscriber side shows why: FixedBB (fiber-leaning share) climbs from ~10B → ~52B. \n\nSo the big question: if you could only fund ONE first—5G coverage or fiber capacity—which would you pick for 2026–2030? 👇",
+  "twitter_caption": "5G kept growing ($48B→$175B)… but fiber scaled faster ($72B→$205B) and subscriptions exploded (~10B→~52B). Who’s winning the next decade: wireless coverage or fiber capacity?",
   "hashtags": [
-    "#whatsapp",
-    "#telegram",
-    "#signal",
-    "#wechat",
-    "#messenger",
-    "#messagingapps",
-    "#technews",
-    "#privacy",
-    "#cybersecurity",
-    "#datavisualization"
+    "#5g",
+    "#fiberinternet",
+    "#broadband",
+    "#telecom",
+    "#networkinfrastructure",
+    "#capex",
+    "#mobilenetworks",
+    "#fixedbroadband",
+    "#5gdeployment",
+    "#fiberdeployment",
+    "#digitaltransformation",
+    "#techtrends",
+    "#chartrace",
+    "#datavisualization",
+    "#techeconomics",
+    "#connectivity",
+    "#internetspeed",
+    "#latency",
+    "#smartcities",
+    "#infrastructureinvestment",
+    "#gsma",
+    "#itu",
+    "#wireless",
+    "#fibertothehome",
+    "#ftth",
+    "#streamingfuture",
+    "#economicmoat",
+    "#competitivestrategy",
+    "#futureofwork",
+    "#telecomnews"
   ]
 }
