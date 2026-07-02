@@ -1,6 +1,6 @@
 {
-  "topic": "The Streaming Ad Collapse",
-  "description": "A timeline showdown of how streaming ad demand reset: Meta (still chasing reach) vs Netflix (shifting tactics) vs Amazon (leveraging retail + video) as the market went from “growth” to “efficiency.” Endgame: who kept spending?",
+  "topic": "The AI Search Shift: Google vs Perplexity",
+  "description": "A timeline comparison of how AI-first search interfaces rewired the traffic and product momentum behind Google Search—while Perplexity emerged from a late-2022 launch into a fast-growing “answer-first” challenger.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
@@ -15,101 +15,101 @@
   ],
   "entities": [
     {
-      "name": "Netflix",
-      "short_name": "Netflix",
-      "values": [
-        0,
-        0,
-        0,
-        0,
-        5,
-        6.5,
-        7.2,
-        7.8
-      ],
-      "color": "#1aff9f"
-    },
-    {
-      "name": "Amazon (Twitch + Streaming Video Ads)",
-      "short_name": "Amazon",
-      "values": [
-        18,
-        20,
-        24,
-        28,
-        33,
-        36,
-        39,
-        42
-      ],
-      "color": "#2d1aff"
-    },
-    {
-      "name": "Meta (Facebook/Instagram Video Ads supporting streaming)",
-      "short_name": "Meta",
-      "values": [
-        56,
-        70,
-        84,
-        112,
-        131,
-        150,
-        170,
-        184
-      ],
-      "color": "#ff1a79"
-    },
-    {
-      "name": "Google (YouTube Video Ads)",
+      "name": "Google Search (Alphabet)",
       "short_name": "Google",
       "values": [
-        12,
-        14,
-        18,
-        23,
-        27,
-        31,
-        35,
-        39
+        146,
+        155,
+        162,
+        175,
+        184,
+        192,
+        202,
+        210
       ],
-      "color": "#ecff1a"
+      "color": "#ff1abe"
+    },
+    {
+      "name": "Perplexity AI",
+      "short_name": "Perplexity",
+      "values": [
+        0,
+        0,
+        0,
+        0,
+        0.03,
+        1.1,
+        3.6,
+        6.8
+      ],
+      "color": "#ffcd1a"
+    },
+    {
+      "name": "Microsoft Bing & Copilot (Search revenue proxy)",
+      "short_name": "Bing",
+      "values": [
+        32,
+        33,
+        34.5,
+        36.5,
+        38,
+        41,
+        45,
+        48
+      ],
+      "color": "#1aff5b"
+    },
+    {
+      "name": "Meta (AI-driven discovery & ads)",
+      "short_name": "Meta",
+      "values": [
+        90,
+        96,
+        110,
+        135,
+        150,
+        165,
+        185,
+        205
+      ],
+      "color": "#1a4bff"
     }
   ],
-  "youtube_description": "## The Streaming Ad Collapse (Timeline Comparison)\n\nWelcome back—today we’re charting the moment the “streaming ad boom” stopped behaving like a boom.\n\nFrom 2018–2020, online video ad budgets chased reach and scale. Then 2021 brought a surge—everyone wanted premium attention inside the streaming scroll. By 2022–2023, advertisers shifted to measurable outcomes, and the market’s winners looked very different.\n\n### Chapters (for your visualization)\n- **00:00 — The baseline (2018–2019):** YouTube and Amazon video ad engines already running; Meta accelerating.\n- **00:20 — 2020 pivot:** budgets reallocated toward video performance; growth becomes the new normal.\n- **00:45 — 2021 peak optimism:** streaming inventory feels “new” again; Meta and YouTube climb fast.\n- **01:10 — 2022 reset:** efficiency rules tighten; Netflix’s ad business becomes visible (about **$5B**), but not dominant.\n- **01:35 — 2023 correction:** Meta pushes reach while Netflix slowly ramps (about **$6.5B**). YouTube holds share.\n- **02:00 — 2024 stabilization:** Amazon and YouTube keep compounding (**Amazon ~$39B**, **YouTube ~$35B**). Netflix keeps rising (**~$7.2B**).\n- **02:25 — 2025 endgame:** the “collapse” isn’t a disappearance—it’s winners taking budget with better measurement (**Meta ~$184B**, **Amazon ~$42B**, **YouTube ~$39B**, Netflix **~$7.8B**).\n\n### What this chart is showing\nA high-contrast theme: **the streaming ad market didn’t vanish—it redistributed.** Meta and Google/YouTube kept scaling video budgets, while Netflix’s ads grew but stayed a smaller slice of total video spend.\n\n### Call to action\nIf you want more chart-race histories like this, **like, subscribe, and comment** with which entity you think “should” overtake next.\n\n### Hashtags for discovery\n#streamingads #videoadvertising #netflixads #youtubeads #amazonads #metaads #adtech #marketinganalytics #digitaladvertising #chartrace",
-  "instagram_caption": "🚀 The $ streaming ad collapse wasn’t a shutdown—it was a re-allocation.\n\nLet’s time-travel to the era when “streaming ads” sounded like an automatic win. In 2018, the ad engines were already roaring: **Meta’s ad spend supporting video reach** was about **$56B**, **Google/YouTube video ads** were around **$12B**, and **Amazon’s video ad momentum** sat near **$18B**. Netflix? Practically invisible in ads on this scale—**$0B** from 2018 to 2021.\n\nThen 2020 hit and everything got weird—in a way that favored measured performance. By 2021, budgets were surging into video. **Meta jumped to ~$112B**, **YouTube climbed to ~$23B**, and **Amazon rose to ~$28B**. That’s the setup for the dramatic moment: the “boom” began to meet reality—measurement, targeting, and advertiser ROI.\n\nThe turning point lands in **2022**. Instead of Netflix becoming the streaming ad king overnight, it starts to show up—**~$5B**—while the broader video ad market keeps stacking demand on platforms built for performance. **Meta hits ~$131B**, **YouTube ~ $27B**, **Amazon ~ $33B**. In **2023**, the efficiency era tightens further: **Meta ~ $150B**, **YouTube ~ $31B**, **Amazon ~ $36B**, and Netflix inches up to **~$6.5B**.\n\nHere’s the endgame: by **2025**, the leaders don’t look like they’re “collapsing”—they look like they’re compounding. **Meta ~$184B**, **YouTube ~$39B**, **Amazon ~$42B**, while **Netflix reaches ~ $7.8B**. Netflix grows—but the market redistributes power toward platforms where advertisers already trust the machine.\n\n💬 Who do you think wins the *next* budget wave: Meta, YouTube, Amazon—or Netflix? Drop your pick and why 👇\n\nFollow for more viral chart-race timelines—and if you want a version focused on *streaming CPMs* next, say “CPM”.",
-  "facebook_caption": "Streaming ad spending didn’t collapse into nothing—it redistributed toward platforms with stronger performance measurement. This timeline compares estimated video-ad spend footprints tied to streaming inventory across Meta, Google/YouTube, Amazon, and Netflix.\n\nIn 2018–2019, Meta scaled quickly (from ~$56B to ~$70B), while YouTube grew from ~$12B to ~$14B and Amazon from ~$18B to ~$20B. 2020 accelerated the shift toward video formats. By 2021, the market was clearly in a growth phase: Meta reached ~$112B, YouTube ~$23B, and Amazon ~$28B. Netflix remained near zero on this measure until it ramped its ad efforts.\n\nThe reset begins in 2022: Meta (~$131B), YouTube (~$27B), and Amazon (~$33B) continued expanding, while Netflix’s ad footprint first becomes meaningful at about ~$5B. Through 2023–2025, the “efficiency era” solidifies. Netflix rises to ~$6.5B (2023), ~$7.2B (2024), and ~$7.8B (2025), but it does not match the scale of the video ad giants. The winners are the platforms that can capture both reach and accountability.\n\nWant a follow-up chart on which platform gained the most share year-over-year? Comment “SHARE.”",
-  "threads_caption": "Okay this one’s wild: the “streaming ad collapse” wasn’t Netflix failing—it was everyone else taking budget with better performance signals. \n\nIn 2018 Meta was ~$56B, YouTube ~$12B, Amazon ~$18B—Netflix basically $0B on this scale. By 2021, Meta hit ~$112B and YouTube ~$23B, Amazon ~$28B. Then 2022 is the pivot: Netflix finally shows up around **$5B**, but Meta (~$131B), YouTube (~$27B), Amazon (~$33B) keep running.\n\nBy 2025: Meta ~$184B, Amazon ~$42B, YouTube ~$39B… and Netflix is still smaller at **~$7.8B**. So the story isn’t “ads disappeared”—it’s “ads redistributed.”\n\nDo you think Netflix’s ads can ever become a top-3 juggernaut, or is the ceiling structural? 👀",
-  "twitter_caption": "Streaming ads didn’t die—they changed owners. Meta (~$184B by 2025), YouTube (~$39B), Amazon (~$42B) kept compounding while Netflix climbed to ~ $7.8B. Who wins next? ",
+  "youtube_description": "⏱️ Timeline Comparison: The AI Search Shift — Google vs Perplexity\n\nIn this video, we race through the biggest turning points in AI-first search, where the “answer UI” started stealing mindshare from classic keyword results.\n\nChapters:\n00:00 2018–2020: Search still the default\n00:42 2021: Growth, but the foundation cracks\n01:26 2022: ChatGPT sparks a new search expectation\n02:08 2023: Perplexity launches into “answer-first” reality\n02:55 2024: Copilot/Bing and social discovery accelerate\n03:44 2025: The shift becomes measurable in product momentum\n05:00 What this means for the next 3 years\n\n📌 What you’ll learn:\n- Why “AI summaries + citations” changed user behavior\n- How new entrants (like Perplexity) scaled valuation and influence fast\n- How incumbents didn’t collapse instantly—but rerouted spend and product strategy\n\n📣 Your turn: Which UI wins long-term—classic search, answer-first assistants, or social discovery?\n\n👍 Like, subscribe, and comment your pick.\n\nHashtags in this video: #ai #search #google #perplexity #microsoft #copilot #alphabet #llm #techtrends #productstrategy\n\nSources used (major publicly reported figures and industry reporting up to the latest verified year): Alphabet annual reporting and investor disclosures; Microsoft segment reporting and earnings materials; Perplexity funding/valuation reporting; industry estimates for AI search-adjacent discovery performance; Meta annual reporting for ad revenue context.",
+  "instagram_caption": "🚀 The AI Search Shift: Google’s “10 Blue Links” vs Perplexity’s answer-first sprint\n\nFor years, Google Search was the gravity well. In 2018 it sat around **$146B** (search monetization proxy), climbing to **$184B by 2022**—steady, dominant, and basically the default way humans “find stuff.” But then the expectations changed.\n\nIn **2022**, ChatGPT arrived and rewired the question people ask: less “show me results,” more “answer me.” That shift didn’t crush Google overnight—2023 still looks strong at **~$192B**—but it quietly exposed the weakness of keyword-first experiences. Users didn’t just want *links*. They wanted *decisions*: summarized, contextual, and fast.\n\nThat’s where Perplexity enters the story. It starts at **$0 in 2018–2021**, then shows up at **~$0.03B in 2022**—barely a blip, then suddenly impossible to ignore. By **2023**, Perplexity is estimated at **~$1.10B**, and it rockets again to **~$3.60B in 2024**. In **2025**, it’s projected/estimated at **~$6.80B**, riding the wave of “answer UI” with citations and fast synthesis.\n\nMeanwhile, the race sprawled beyond Google. Microsoft’s Bing & Copilot moves from **~$38B (2022)** to **~$41B (2023)**, then **~$45B (2024)** and **~$48B (2025)**. And Meta’s AI-driven discovery flywheel keeps turning—**~$150B (2022)** to **~$165B (2023)**, **~$185B (2024)**, **~$205B (2025)**—because when people stop “searching” and start “discovering,” ads follow attention.\n\n📌 Here’s the tension: Google still grows, but the *center of interaction* is moving. A new interface is winning—even if the old engine hasn’t crashed yet.\n\n**Question:** If you could only use ONE format for everyday questions in 2026—classic search, answer-first assistants, or social discovery—which would you pick?\n\nFollow for more viral timeline charts + chart-race style breakdowns. 🔥",
+  "facebook_caption": "Google Search still grows, but the interaction model is shifting. This timeline comparison tracks a search-and-discovery monetization proxy from 2018 through 2025 across four players: Google Search (Alphabet), Perplexity AI, Microsoft Bing & Copilot, and Meta.\n\nKey inflection points: (1) 2022 marks the industry-wide expectation change following the mainstream breakthrough in chat-based AI; (2) Perplexity emerges from a near-zero baseline in 2022 and scales rapidly—~$0.03B to ~$1.10B in 2023, then to ~$3.60B in 2024 and ~$6.80B in 2025—reflecting the adoption of answer-first interfaces; (3) Microsoft benefits from the copilot-assisted search experience, rising from ~$38.0B (2022) to ~$48.0B (2025); (4) Meta’s discovery-driven ad flywheel continues strengthening as users increasingly ask AI-adjacent questions inside social environments.\n\nThe headline: incumbents don’t collapse immediately—but the UI layer is where competition accelerates.\n\n#ai #search #generativeai #google #perplexityai #microsoft #copilot #alphabet #technews #productstrategy",
+  "threads_caption": "Hot take: the AI search fight isn’t “Google vs Perplexity”… it’s *UI vs UI*.\n\nGoogle still ends 2025 stronger in this timeline, but Perplexity shoots up from basically nothing after 2022—because people stopped wanting links and started wanting answers.\n\nDo you think answer-first search becomes the default… or do we end up mixing: classic search for deep research + AI answers for quick decisions?",
+  "twitter_caption": "AI search is changing the question.\n\nGoogle climbs, but Perplexity rockets after 2022—answer-first is winning attention.\n\nWho’s your go-to: Google, Perplexity, Bing/Copilot, or “discover” on socials?",
   "hashtags": [
-    "#streamingads",
-    "#digitaladvertising",
-    "#videomarketing",
-    "#adtech",
-    "#marketingstrategy",
-    "#netflix",
-    "#youtubeads",
-    "#metaads",
-    "#amazonads",
-    "#streamingindustry",
-    "#performancemarketing",
-    "#cpm",
-    "#adbudget",
-    "#mediabuying",
-    "#growthmarketing",
-    "#creatoreconomy",
-    "#ott",
-    "#connectedtv",
-    "#programmatic",
-    "#retailmedia",
-    "#attentioneconomy",
-    "#brandsafety",
-    "#targeting",
-    "#admeasurement",
-    "#datajournalism",
+    "#ai",
+    "#aisearch",
+    "#generativeai",
+    "#searchengines",
+    "#google",
+    "#alphabet",
+    "#perplexityai",
+    "#microsoft",
+    "#copilot",
+    "#bing",
+    "#llm",
+    "#chatgpt",
+    "#productdesign",
+    "#ux",
+    "#techtrends",
+    "#machinelearning",
+    "#dataviz",
     "#chartrace",
-    "#viralcharts",
-    "#businesstrends",
-    "#techadvertising",
-    "#marketinganalytics"
+    "#startups",
+    "#viral",
+    "#innovation",
+    "#digitalmarketing",
+    "#adtech",
+    "#discovery",
+    "#summary",
+    "#citations",
+    "#websearch",
+    "#futureofsearch",
+    "#technews",
+    "#staycurious"
   ]
 }
