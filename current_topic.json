@@ -1,124 +1,94 @@
 {
-  "topic": "The Streaming Price-Cut Truce Breaks",
-  "description": "A timeline comparison of how streaming giants reshaped pricing and revenue momentum after the 2022–2024 price hikes—Netflix pushing ads, Disney+ and Max retrenching, and Amazon Prime rising via bundles.",
-  "unit": "Billions USD (Annual Revenue)",
-  "value_prefix": "$",
+  "topic": "Electric Vehicle Revolution",
+  "description": "Tesla vs BYD vs VW: The EV Market Takeover",
+  "unit": "Million Vehicles Sold",
+  "value_prefix": "",
   "timeline_labels": [
+    "2018",
     "2019",
     "2020",
     "2021",
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "Netflix, Inc.",
-      "short_name": "Netflix",
+      "name": "Tesla",
+      "short_name": "Tesla",
       "values": [
-        20.2,
-        24.9,
-        30.4,
-        31.6,
-        33.7,
-        39.4,
-        41
+        0.24,
+        0.37,
+        0.5,
+        0.93,
+        1.31,
+        1.81,
+        2.2,
+        2.6,
+        3
       ],
-      "color": "#1aff79"
+      "color": "#fb1aff"
     },
     {
-      "name": "The Walt Disney Company",
-      "short_name": "Disney",
+      "name": "BYD",
+      "short_name": "BYD",
       "values": [
-        69.6,
-        65.4,
-        67.4,
-        82.3,
-        96.5,
-        108.6,
-        114.9
+        0.24,
+        0.23,
+        0.43,
+        0.73,
+        1.86,
+        3.02,
+        3.5,
+        4,
+        4.5
       ],
-      "color": "#1a71ff"
+      "color": "#fffb1a"
     },
     {
-      "name": "Warner Bros. Discovery",
-      "short_name": "WBD",
+      "name": "Volkswagen",
+      "short_name": "VW",
       "values": [
-        11,
-        11.2,
-        12.3,
-        11.8,
-        12.8,
-        13.7,
-        14.5
+        0.04,
+        0.11,
+        0.22,
+        0.45,
+        0.57,
+        0.77,
+        0.9,
+        1.1,
+        1.3
       ],
-      "color": "#d51aff"
-    },
-    {
-      "name": "The Walt Disney Company (Streaming Media & Direct-to-Consumer subset proxy)",
-      "short_name": "DisneyDTC",
-      "values": [
-        0,
-        14.8,
-        29.5,
-        43.2,
-        47.1,
-        52.9,
-        56
-      ],
-      "color": "#ff1d1a"
-    },
-    {
-      "name": "Amazon.com, Inc. (Prime Video segment proxy via total)",
-      "short_name": "Amazon",
-      "values": [
-        280.5,
-        386.1,
-        469.8,
-        513.9,
-        574.8,
-        604,
-        630
-      ],
-      "color": "#cdff1a"
+      "color": "#1afffb"
     }
   ],
-  "youtube_description": "🎬 Timeline Comparison: The Streaming Price-Cut Truce Breaks\n\nIn this chart-race, we track how streaming pricing strategies translated into *real annual revenue momentum* from 2019→2025—right through the 2022–2024 era where “more ads” and “bundles” turned into the winning playbooks.\n\nChapters / timestamps:\n00:00 The setup — 2019 revenue baselines\n00:23 2020 — the global binge surge\n01:05 2021 — competition hardens, growth slows\n01:40 2022 — price hikes & ad tiers collide\n02:25 2023 — retrenchment + bundling pressure\n03:10 2024 — Netflix and Amazon pull ahead\n04:00 2025 — the post-truce market map\n\nWhat to watch:\n• Netflix’s steady jump as ad-supported growth matures\n• Disney’s step-change as streaming rebalances inside a bigger portfolio\n• Warner Bros. Discovery stuck in the squeeze—steady, not soaring\n• Amazon’s scale advantage: Prime pricing + logistics + AWS gravity\n\nCall to action:\nIf you want more dramatic chart-races like this, hit Like, Subscribe, and comment which company “won” the price-cut era.\n\nSources (used for verified annual revenue figures):\nNetflix annual reports (10-K) by year\nThe Walt Disney Company annual reports (10-K) by year\nWarner Bros. Discovery (10-K) by year\nAmazon 10-K annual revenue by year\n\n#chart #timeline #streaming #netflix #disneyplus #primevideo #warnerbrosdiscovery #pricingpower #revenuetrends",
-  "instagram_caption": "🚀 The streaming “price-cut truce” didn’t last—here’s who it crushed.\n\nFor years, streaming brands sold the same promise: pay monthly, watch anything. Then the bill came due. The 2022–2024 period is where the price strategy shifted from “growth at any cost” to “profit at any cost”—and you can see it in the numbers. This timeline visualization tracks annual revenue momentum (not vibes) across Netflix, Disney, Warner Bros. Discovery, and Amazon.\n\nStart with 2019: Netflix sat at about $20.2B in annual revenue, while Amazon was already an enormous $280.5B machine. But 2020 is the big jolt—lockdowns turbocharged viewing demand. Netflix climbed from $20.2B to $24.9B, while Amazon surged from $280.5B to $386.1B. It wasn’t just more streaming—it was demand colliding with timing.\n\n2021 continues the climb, then 2022 changes the plot. Netflix revenue rose to $31.6B (up from $30.4B in 2021), but the industry reality hit: churn, competition, and rising content costs. Disney’s revenue jumped sharply to $82.3B in 2022, showing how portfolio scale and restructuring became strategic weapons. Meanwhile Warner Bros. Discovery stayed near the low-teens—$11.8B—revealing the classic squeeze: content costs without the same pricing leverage.\n\nBy 2023–2025, the “winning” pattern is clearer. Netflix reaches about $33.7B (2023) and accelerates to $39.4B (2024) and roughly $41.0B (2025). Amazon keeps compounding—$574.8B (2023) to ~$604.0B (2024) and ~$630.0B (2025). Disney keeps expanding revenue as streaming rebalances inside the bigger group, while Warner Bros. Discovery inches up to ~$14.5B by 2025.\n\nSo who do you think truly won the post-truce streaming era: Netflix’s ad-and-retention play, Disney’s scale retool, WBD’s grind, or Amazon’s bundle gravity?\n\nDrop your pick in the comments, then follow for the next chart-race. 🔥\n\n#netflix #disneyplus #primevideo #streaming #cordcutting #mediaindustry #videostreaming #pricingstrategy #subscriptioneconomics #adsupported #chartrace #dataviz #revenuegrowth #businesstrends #techtrends #entertainmenteconomics #bingewatch #contentcosts #marketshare #streamingwar #streamingservices #subscriptionfatigue #churn #bundling #aws #amazon #hollywood #digitalmedia #investorinsights #futureofstreaming",
-  "facebook_caption": "The streaming “price-cut truce” never really ended—it transformed. From 2019 to 2025, annual revenue momentum shows how pricing and packaging strategies mapped to outcomes.\n\nNetflix moved from about $20.2B (2019) to roughly $41.0B (2025), reflecting the shift toward durable subscriber economics alongside ad-tier experimentation and retention focus. Amazon’s scale is the constant outlier: $280.5B (2019) rising to about $630.0B (2025), illustrating why bundling (Prime) can subsidize perceived streaming value and accelerate adoption.\n\nDisney’s revenue profile jumps meaningfully from $67.4B (2021) to $82.3B (2022) and continues climbing to about $114.9B (2025), consistent with portfolio-level restructuring and streaming optimization inside the broader company. Warner Bros. Discovery tells a different story: relatively flat, low-teens revenue from 2019 ($11.0B) to 2025 (~$14.5B), underscoring how smaller streaming leverage can struggle when content and distribution economics tighten.\n\nWhich company’s strategy do you think best handled the 2022–2024 pricing reality: Netflix, Disney, Warner Bros. Discovery, or Amazon?\n\n#netflix #disneyplus #primevideo #streamingeconomics #subscriptionmodel #revenue #mediacompany #adsupported #cordcutting #datavisualization",
-  "threads_caption": "So… the streaming “price-cut truce” was temporary 😅\n\nFrom 2019→2025, Netflix basically went $20.2B → ~$41.0B in annual revenue. Disney climbed to ~$114.9B, Amazon kept compounding to ~$630B, and WBD… stayed in the low-teens (~$14.5B).\n\nHonestly, it looks like scale + packaging (Amazon), plus pricing/retention discipline (Netflix), beat the squeeze.\n\nWho do you think “won” the post-2022 streaming strategy game?",
-  "twitter_caption": "Streaming pricing reality check: Netflix ~ $20.2B (2019) → ~$41.0B (2025). Amazon: $280.5B → ~$630B. WBD stayed low-teens (~$14.5B). Who won your vote?",
+  "youtube_description": "📊 Electric Vehicle Revolution\n\nTesla vs BYD vs VW: The EV Market Takeover\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#ElectricVehicleRevolution #DataViz #ChartRace",
+  "instagram_caption": "🚀 Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
+  "facebook_caption": "Electric Vehicle Revolution: A data-driven analysis of market dynamics. Tesla vs BYD vs VW: The EV Market Takeover\n\n#DataViz #Business #Technology",
+  "threads_caption": "The Electric Vehicle Revolution is wild! 📈 Tesla vs BYD vs VW: The EV Market Takeover",
+  "twitter_caption": "Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover 📊 #DataViz #Trends",
   "hashtags": [
-    "#netflix",
-    "#disneyplus",
-    "#primevideo",
-    "#streaming",
-    "#cordcutting",
-    "#streamingwars",
-    "#subscriptioneconomics",
-    "#pricingstrategy",
-    "#adsupported",
-    "#mediaindustry",
-    "#businesstrends",
-    "#revenuegrowth",
     "#dataviz",
-    "#chartrace",
-    "#techtrends",
-    "#entertainmenteconomics",
-    "#investorinsights",
-    "#churn",
-    "#bundling",
-    "#contentcosts",
-    "#streamingservices",
-    "#digitalmedia",
+    "#chart",
+    "#visualization",
+    "#trends",
+    "#business",
+    "#technology",
+    "#growth",
     "#marketshare",
-    "#futureofstreaming",
-    "#videostreaming",
-    "#bingewatching",
-    "#economicsofstreaming",
-    "#competitivestrategy",
+    "#infographic",
+    "#data",
     "#analytics",
-    "#datastory"
+    "#stats",
+    "#comparison",
+    "#timeline",
+    "#chartrace",
+    "#viral",
+    "#fyp",
+    "#explore",
+    "#dataisbeautiful",
+    "#vizoftheday"
   ]
 }
