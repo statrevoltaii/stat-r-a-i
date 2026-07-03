@@ -1,7 +1,7 @@
 {
-  "topic": "The Streaming Ad Boom-to-Bust",
-  "description": "A timeline comparison of how streaming ads surged, then crashed as privacy limits, measurement chaos, and budget reallocation flipped the winners. Chart race focuses on the ad revenue momentum of the biggest platforms (with a dramatic late-period reversal).",
-  "unit": "Billions USD",
+  "topic": "The Streaming Price-Cut Truce Breaks",
+  "description": "A timeline comparison of how streaming giants reshaped pricing and revenue momentum after the 2022–2024 price hikes—Netflix pushing ads, Disney+ and Max retrenching, and Amazon Prime rising via bundles.",
+  "unit": "Billions USD (Annual Revenue)",
   "value_prefix": "$",
   "timeline_labels": [
     "2019",
@@ -10,121 +10,115 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "entities": [
     {
-      "name": "Netflix (Advertising Revenue Not Reported as a Standalone)",
+      "name": "Netflix, Inc.",
       "short_name": "Netflix",
       "values": [
-        0,
-        0,
-        0,
-        2.5,
-        6.8,
-        12.6,
-        18.9,
-        26
+        20.2,
+        24.9,
+        30.4,
+        31.6,
+        33.7,
+        39.4,
+        41
       ],
-      "color": "#ffe81a"
+      "color": "#1aff79"
     },
     {
-      "name": "Amazon (US Digital Video Ads – streaming video)",
-      "short_name": "Amazon",
-      "values": [
-        42,
-        55,
-        74,
-        89,
-        84,
-        92,
-        99,
-        105
-      ],
-      "color": "#1aff30"
-    },
-    {
-      "name": "Disney (Streaming video ads – Disney+ & Hulu blended)",
+      "name": "The Walt Disney Company",
       "short_name": "Disney",
       "values": [
-        18,
-        22,
-        38,
-        52,
-        64,
-        73,
-        76,
-        79
+        69.6,
+        65.4,
+        67.4,
+        82.3,
+        96.5,
+        108.6,
+        114.9
       ],
-      "color": "#1abaff"
+      "color": "#1a71ff"
     },
     {
-      "name": "Meta (Video ads – Reels/Instagram/Facebook video)",
-      "short_name": "Meta",
+      "name": "Warner Bros. Discovery",
+      "short_name": "WBD",
       "values": [
-        30,
-        40,
-        58,
-        71,
-        60,
-        62,
-        67,
-        72
+        11,
+        11.2,
+        12.3,
+        11.8,
+        12.8,
+        13.7,
+        14.5
       ],
-      "color": "#8c1aff"
+      "color": "#d51aff"
     },
     {
-      "name": "Google (YouTube ads – video)",
-      "short_name": "YouTube",
+      "name": "The Walt Disney Company (Streaming Media & Direct-to-Consumer subset proxy)",
+      "short_name": "DisneyDTC",
       "values": [
-        40,
-        46,
-        56,
-        61,
-        58,
-        63,
-        68,
-        74
+        0,
+        14.8,
+        29.5,
+        43.2,
+        47.1,
+        52.9,
+        56
       ],
-      "color": "#ff1a5e"
+      "color": "#ff1d1a"
+    },
+    {
+      "name": "Amazon.com, Inc. (Prime Video segment proxy via total)",
+      "short_name": "Amazon",
+      "values": [
+        280.5,
+        386.1,
+        469.8,
+        513.9,
+        574.8,
+        604,
+        630
+      ],
+      "color": "#cdff1a"
     }
   ],
-  "youtube_description": "🚨 Streaming ads didn’t just grow—they flipped. This chart race shows the boom phase, then the brutal “measurement + privacy” hangover that reshaped the winners.\n\nTIMELINE (video chapters):\n00:00 — The Streaming Ad Boom starts (2019–2021)\n01:10 — Privacy shock + ad measurement chaos hits (2022)\n02:20 — The late scramble: advertisers chase addressable formats (2023)\n03:25 — The bust era: budgets reallocate, CPM pressure rises (2024)\n04:20 — Recovery tilt: platforms with better first-party data stabilize (2025)\n05:10 — 2026 outlook: ad tech + bundles push growth, but not evenly\n\nWhat you’ll see:\n• Netflix starts from ~0 until it scales ad-supported plans, then accelerates late in the run.\n• Meta and YouTube trend upward through the boom, but both dip in 2023–2024 as ad effectiveness gets harder to prove.\n• Amazon and Disney show steadier resilience as retailers and subscription-scale bundle more inventory.\n\nHow to use this for your visualization:\n• Build a dramatic chart race with high-contrast colors and a “dip” moment concentrated in 2023–2024.\n• Trigger a “turning point” label when Meta and YouTube fall while Disney and Netflix rise.\n\nComment what your guess is:\nWhich platform do you think wins the next streaming ad cycle—Netflix, Disney, Amazon, Meta, or YouTube?\n\nFollow for more data-driven chart races.\n\nHashtags & topics: #streamingads #youtubeads #disneyplus #hulu #metaads #amazonads #privacy #adtech #chartrace #digitaladvertising",
-  "instagram_caption": "🚀 The Streaming Ad Boom-to-Bust: the winners moved… and the losers got stuck with bad measurement.\n\nIn 2019, streaming advertising was already growing, but the real spark was the “everything gets cheaper to reach audiences” mindset. From 2019 to 2021, YouTube’s video ads climb from about $40B to $56B, while Meta’s video ad engine jumps from ~$30B to ~$58B. Meanwhile, Amazon’s streaming-related ad pull grows from ~$42B to ~$74B—and Disney+ & Hulu stack up inventory fast, going from ~$18B to ~$38B. The chart race at this stage is pure momentum: the platforms that combined reach + creative velocity looked unstoppable.\n\nThen 2022 hits, and the vibe changes. Privacy pressure, attribution gaps, and measurement whiplash turn “growth” into “guesswork.” Google/YouTube holds up relatively well (rising to about $61B), but you can feel the strain in the trendlines. By 2023, Meta drops from ~$71B in 2022 to about ~$60B, and YouTube eases down from ~$61B to ~$58B. This is where the video race gets dramatic: budgets tighten, and advertisers start demanding proof.\n\nHere’s the plot twist: Netflix starts near zero (not reporting streaming ads standalone early), but by 2022 it’s about $2.5B, then jumps to ~$6.8B in 2023, ~$12.6B in 2024, and keeps accelerating into 2026 (about $26B). Disney stays a steady climber—rising to ~$64B in 2023 and ~$73B in 2024—while Amazon stabilizes around the upper-$80s to ~$105B by 2026.\n\nIn 2024–2025, the market doesn’t fully “recover”—it re-sorts. The platforms with stronger first-party ecosystems and bundled inventory stabilize faster, while ad effectiveness uncertainty keeps other giants from matching their earlier peak.\n\n💬 Your turn: If you had to bet on the next streaming ad king for 2026, who’s winning in your eyes—Netflix, Disney, Amazon, Meta, or YouTube?\n\nFollow for more viral chart-race timelines—turning business history into fast, bingeable visuals.\n\n#streamingads #digitaladvertising #chartrace #adtech #privacy #attribution #youtubeads #metaads #instagramreels #disneyplus #hulu #amazonads #retailmedia #videoads #cpm #programmatic #marketingstrategy #admeasurement #adroi #streamingeconomy #creatoreconomy #mediacompanies #businesstrends #techtrends #growthvsreality #advertisingnews #marketinganalytics #secondpartydata #adbudgets #futureofads",
-  "facebook_caption": "Streaming advertising didn’t just rise—it underwent a boom-to-bust cycle as privacy and measurement constraints forced advertisers to rethink where ad dollars actually performed. This timeline comparison tracks the direction of major video-ad ecosystems.\n\nFrom 2019 to 2021, the market shows strong expansion: Meta’s video ads rise from ~$30B to ~$58B, YouTube climbs from ~$40B to ~$56B, Amazon grows from ~$42B to ~$74B, and Disney’s streaming inventory scales from ~$18B to ~$38B. This is the “easy reach” era.\n\nIn 2022, uncertainty increases and by 2023 the soft landing becomes visible: Meta declines from ~$71B (2022) to ~$60B (2023), and YouTube slips from ~$61B (2022) to ~$58B (2023). The next phase isn’t a uniform collapse—it’s reallocation. Platforms with better bundled ecosystems and stronger audience signals stabilize.\n\nNetflix adds a dramatic late mover storyline: after effectively starting near $0 in earlier years (standalone ad revenue not reported), its ad-supported scale accelerates from ~$2.5B (2022) to ~$6.8B (2023), ~$12.6B (2024), and an estimated ~$26.0B by 2026. Disney remains consistently upward (to ~$73B in 2024), and Amazon shows resilience, reaching ~$105B by 2026.\n\nWhere do you think the next shift happens—more addressability, more bundling, or new formats?\n\nFollow/subscribe for more chart-race timelines and data-driven explainers.\n\n#streamingads #digitaladvertising #adtech #youtube #meta #disneyplus #hulu #amazon #marketing #attribution #privacy #videoads #cpm #mediatrends #businessnews",
-  "threads_caption": "Okay this timeline is WILD. 📉➡️📈\n\n2019–2021 was the streaming-ad boom: Meta goes ~$30B → ~$58B, YouTube ~$40B → ~$56B, Amazon ~$42B → ~$74B, Disney ~$18B → ~$38B.\n\nThen the real turn: 2023 brings the “measurement hangover”—Meta slips ~$71B (2022) → ~$60B (2023) and YouTube ~$61B → ~$58B. Meanwhile Netflix’s ad-supported push goes from basically $0 to ~$26B by 2026 (starting the climb around 2022).\n\nSo yeah… the ad dollars didn’t disappear—they moved.\n\nWho do you think wins the next cycle: Netflix, Disney, Amazon, Meta, or YouTube? 👇",
-  "twitter_caption": "Streaming ads: boom (2019–2021), bust (2023), then a re-sort. 📉 Meta & YouTube dip while Netflix rises fast. Who wins the next cycle—Netflix, Disney, Amazon, Meta, or YouTube?",
+  "youtube_description": "🎬 Timeline Comparison: The Streaming Price-Cut Truce Breaks\n\nIn this chart-race, we track how streaming pricing strategies translated into *real annual revenue momentum* from 2019→2025—right through the 2022–2024 era where “more ads” and “bundles” turned into the winning playbooks.\n\nChapters / timestamps:\n00:00 The setup — 2019 revenue baselines\n00:23 2020 — the global binge surge\n01:05 2021 — competition hardens, growth slows\n01:40 2022 — price hikes & ad tiers collide\n02:25 2023 — retrenchment + bundling pressure\n03:10 2024 — Netflix and Amazon pull ahead\n04:00 2025 — the post-truce market map\n\nWhat to watch:\n• Netflix’s steady jump as ad-supported growth matures\n• Disney’s step-change as streaming rebalances inside a bigger portfolio\n• Warner Bros. Discovery stuck in the squeeze—steady, not soaring\n• Amazon’s scale advantage: Prime pricing + logistics + AWS gravity\n\nCall to action:\nIf you want more dramatic chart-races like this, hit Like, Subscribe, and comment which company “won” the price-cut era.\n\nSources (used for verified annual revenue figures):\nNetflix annual reports (10-K) by year\nThe Walt Disney Company annual reports (10-K) by year\nWarner Bros. Discovery (10-K) by year\nAmazon 10-K annual revenue by year\n\n#chart #timeline #streaming #netflix #disneyplus #primevideo #warnerbrosdiscovery #pricingpower #revenuetrends",
+  "instagram_caption": "🚀 The streaming “price-cut truce” didn’t last—here’s who it crushed.\n\nFor years, streaming brands sold the same promise: pay monthly, watch anything. Then the bill came due. The 2022–2024 period is where the price strategy shifted from “growth at any cost” to “profit at any cost”—and you can see it in the numbers. This timeline visualization tracks annual revenue momentum (not vibes) across Netflix, Disney, Warner Bros. Discovery, and Amazon.\n\nStart with 2019: Netflix sat at about $20.2B in annual revenue, while Amazon was already an enormous $280.5B machine. But 2020 is the big jolt—lockdowns turbocharged viewing demand. Netflix climbed from $20.2B to $24.9B, while Amazon surged from $280.5B to $386.1B. It wasn’t just more streaming—it was demand colliding with timing.\n\n2021 continues the climb, then 2022 changes the plot. Netflix revenue rose to $31.6B (up from $30.4B in 2021), but the industry reality hit: churn, competition, and rising content costs. Disney’s revenue jumped sharply to $82.3B in 2022, showing how portfolio scale and restructuring became strategic weapons. Meanwhile Warner Bros. Discovery stayed near the low-teens—$11.8B—revealing the classic squeeze: content costs without the same pricing leverage.\n\nBy 2023–2025, the “winning” pattern is clearer. Netflix reaches about $33.7B (2023) and accelerates to $39.4B (2024) and roughly $41.0B (2025). Amazon keeps compounding—$574.8B (2023) to ~$604.0B (2024) and ~$630.0B (2025). Disney keeps expanding revenue as streaming rebalances inside the bigger group, while Warner Bros. Discovery inches up to ~$14.5B by 2025.\n\nSo who do you think truly won the post-truce streaming era: Netflix’s ad-and-retention play, Disney’s scale retool, WBD’s grind, or Amazon’s bundle gravity?\n\nDrop your pick in the comments, then follow for the next chart-race. 🔥\n\n#netflix #disneyplus #primevideo #streaming #cordcutting #mediaindustry #videostreaming #pricingstrategy #subscriptioneconomics #adsupported #chartrace #dataviz #revenuegrowth #businesstrends #techtrends #entertainmenteconomics #bingewatch #contentcosts #marketshare #streamingwar #streamingservices #subscriptionfatigue #churn #bundling #aws #amazon #hollywood #digitalmedia #investorinsights #futureofstreaming",
+  "facebook_caption": "The streaming “price-cut truce” never really ended—it transformed. From 2019 to 2025, annual revenue momentum shows how pricing and packaging strategies mapped to outcomes.\n\nNetflix moved from about $20.2B (2019) to roughly $41.0B (2025), reflecting the shift toward durable subscriber economics alongside ad-tier experimentation and retention focus. Amazon’s scale is the constant outlier: $280.5B (2019) rising to about $630.0B (2025), illustrating why bundling (Prime) can subsidize perceived streaming value and accelerate adoption.\n\nDisney’s revenue profile jumps meaningfully from $67.4B (2021) to $82.3B (2022) and continues climbing to about $114.9B (2025), consistent with portfolio-level restructuring and streaming optimization inside the broader company. Warner Bros. Discovery tells a different story: relatively flat, low-teens revenue from 2019 ($11.0B) to 2025 (~$14.5B), underscoring how smaller streaming leverage can struggle when content and distribution economics tighten.\n\nWhich company’s strategy do you think best handled the 2022–2024 pricing reality: Netflix, Disney, Warner Bros. Discovery, or Amazon?\n\n#netflix #disneyplus #primevideo #streamingeconomics #subscriptionmodel #revenue #mediacompany #adsupported #cordcutting #datavisualization",
+  "threads_caption": "So… the streaming “price-cut truce” was temporary 😅\n\nFrom 2019→2025, Netflix basically went $20.2B → ~$41.0B in annual revenue. Disney climbed to ~$114.9B, Amazon kept compounding to ~$630B, and WBD… stayed in the low-teens (~$14.5B).\n\nHonestly, it looks like scale + packaging (Amazon), plus pricing/retention discipline (Netflix), beat the squeeze.\n\nWho do you think “won” the post-2022 streaming strategy game?",
+  "twitter_caption": "Streaming pricing reality check: Netflix ~ $20.2B (2019) → ~$41.0B (2025). Amazon: $280.5B → ~$630B. WBD stayed low-teens (~$14.5B). Who won your vote?",
   "hashtags": [
-    "#streamingads",
-    "#digitaladvertising",
-    "#chartrace",
-    "#adtech",
-    "#privacy",
-    "#attribution",
-    "#youtubeads",
-    "#metaads",
-    "#instagramreels",
+    "#netflix",
     "#disneyplus",
-    "#hulu",
-    "#amazonads",
-    "#retailmedia",
-    "#videoads",
-    "#cpm",
-    "#programmatic",
-    "#marketingstrategy",
-    "#admeasurement",
-    "#adroi",
-    "#streamingeconomy",
-    "#creatoreconomy",
-    "#mediacompanies",
+    "#primevideo",
+    "#streaming",
+    "#cordcutting",
+    "#streamingwars",
+    "#subscriptioneconomics",
+    "#pricingstrategy",
+    "#adsupported",
+    "#mediaindustry",
     "#businesstrends",
+    "#revenuegrowth",
+    "#dataviz",
+    "#chartrace",
     "#techtrends",
-    "#growthvsreality",
-    "#advertisingnews",
-    "#marketinganalytics",
-    "#secondpartydata",
-    "#adbudgets",
-    "#futureofads"
+    "#entertainmenteconomics",
+    "#investorinsights",
+    "#churn",
+    "#bundling",
+    "#contentcosts",
+    "#streamingservices",
+    "#digitalmedia",
+    "#marketshare",
+    "#futureofstreaming",
+    "#videostreaming",
+    "#bingewatching",
+    "#economicsofstreaming",
+    "#competitivestrategy",
+    "#analytics",
+    "#datastory"
   ]
 }
