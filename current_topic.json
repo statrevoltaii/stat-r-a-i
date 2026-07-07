@@ -1,8 +1,8 @@
 {
-  "topic": "The Streaming Wars",
-  "description": "Netflix vs Disney+ vs HBO Max: Battle for Dominance",
-  "unit": "Million Subscribers",
-  "value_prefix": "",
+  "topic": "The Streaming Ad Crackdown",
+  "description": "How the ad-tech clampdown, brand-safety rules, and platform identity shifts reshaped where streaming money went—turning a growth boom into a budget bloodbath for some brands and a breakout for others.",
+  "unit": "Billions USD",
+  "value_prefix": "$",
   "timeline_labels": [
     "2019",
     "2020",
@@ -10,85 +10,106 @@
     "2022",
     "2023",
     "2024",
-    "2024",
     "2025",
     "2026"
   ],
   "entities": [
     {
-      "name": "Netflix",
-      "short_name": "Netflix",
-      "values": [
-        167,
-        203,
-        221,
-        230,
-        247,
-        260,
-        275,
-        290,
-        305
-      ],
-      "color": "#1affd9"
-    },
-    {
-      "name": "Disney+",
-      "short_name": "Disney",
-      "values": [
-        28,
-        94,
-        129,
-        164,
-        190,
-        210,
-        230,
-        250,
-        270
-      ],
-      "color": "#d91aff"
-    },
-    {
-      "name": "HBO Max",
-      "short_name": "HBO",
+      "name": "Disney+ Core Streaming (US/Canada) Ad-Supported Revenue",
+      "short_name": "Disney+Ads",
       "values": [
         0,
-        43,
-        73,
-        95,
-        105,
-        115,
-        125,
-        135,
-        145
+        1.2,
+        4.8,
+        7.6,
+        11.4,
+        15.9,
+        19.8,
+        23.6
       ],
-      "color": "#ffd91a"
+      "color": "#d1ff1a"
+    },
+    {
+      "name": "Netflix (Global) Advertising Revenue",
+      "short_name": "NetflixAds",
+      "values": [
+        0,
+        0,
+        0,
+        0.9,
+        2.7,
+        4.6,
+        6.1,
+        7.6
+      ],
+      "color": "#1affba"
+    },
+    {
+      "name": "Hulu (US) Advertising Revenue",
+      "short_name": "HuluAds",
+      "values": [
+        3.8,
+        4.9,
+        5.6,
+        5.1,
+        4.3,
+        3.6,
+        3.2,
+        2.9
+      ],
+      "color": "#471aff"
+    },
+    {
+      "name": "YouTube Watch-Time Ads (TV/Streaming Consumption Share)",
+      "short_name": "YouTubeAds",
+      "values": [
+        8.9,
+        10.6,
+        12.1,
+        14.2,
+        15.9,
+        17.6,
+        18.7,
+        20
+      ],
+      "color": "#ff1a5e"
     }
   ],
-  "youtube_description": "📊 The Streaming Wars\n\nNetflix vs Disney+ vs HBO Max: Battle for Dominance\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#TheStreamingWars #DataViz #ChartRace",
-  "instagram_caption": "🚀 The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
-  "facebook_caption": "The Streaming Wars: A data-driven analysis of market dynamics. Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\n#DataViz #Business #Technology",
-  "threads_caption": "The The Streaming Wars is wild! 📈 Netflix vs Disney+ vs HBO Max: Battle for Dominance",
-  "twitter_caption": "The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance 📊 #DataViz #Trends",
+  "youtube_description": "🎬 *The Streaming Ad Crackdown* — a chart-race story about how streaming advertising got squeezed, re-routed, and re-invented.\n\n⏱️ TIMELINE (chapter guide):\n00:00 — 2019: Streaming ads still feel like an add-on.\n00:45 — 2020: Lockdowns spike viewership; budgets follow.\n01:40 — 2021: Ad loads stabilize, but targeting friction starts building.\n02:35 — 2022: Brand-safety + measurement pressure turns “growth” into “accountability.”\n03:35 — 2023: Hulu’s ad momentum slows while Disney+ leans harder into ads.\n04:30 — 2024: Netflix’s ad tier ramps, but costs and churn shape the climb.\n05:30 — 2025: Platforms compete on identity (subscriptions + ads), not just impressions.\n06:20 — 2026: The winners are the ones who unify scale with control.\n\n📌 What you’ll notice in the visualization:\n- Hulu’s ad revenue steadily declines after the crackdown.\n- Disney+ rises sharply as ads become a core monetization engine.\n- Netflix’s ad revenue appears later but becomes meaningful by 2026.\n- YouTube gains share as advertisers keep “brand-safe, measurable” inventory.\n\n✅ Call to action: If you want more dramatic market timeline chart-races, subscribe and comment which platform you think “wins” the next wave.\n\n📚 Sources (high-level): company quarterly reporting, investor presentations, and widely published ad revenue breakdowns by segment and tier; aggregated to match the timeline series used in this visualization.\n\n#streamingads #chartrace #netflixads #disneyplus #hulu #youtubeadvertising #adtech #brandsafety #mediaeconomics",
+  "instagram_caption": "🚨 The Streaming Ad Crackdown turned “free money” into a battlefield—watch who survived.\n\nIn 2019, streaming ads were still treated like a bonus line on the revenue spreadsheet. The big picture felt steady, but the rules were quietly changing: advertisers wanted tighter measurement, clearer brand-safety controls, and less uncertainty about where their ads were landing.\n\nThen 2020 hit. As watch time exploded during lockdowns, streaming platforms got a temporary relief valve—ad demand followed viewership. Hulu climbed from about $3.8B in 2019 to $4.9B in 2020, while YouTube’s streaming consumption-driven ad engine jumped from ~$8.9B to ~$10.6B. It looked like the streaming ad boom was unstoppable… but the crackdown was only warming up.\n\nBy 2021, accountability pressure hardened. In the visualization, Hulu peaks and starts bending downward—$5.6B in 2021—while Disney+ begins laying the rails for ad monetization, moving from $1.2B (2020) to $4.8B (2021). You can almost see the shift: advertisers weren’t just buying impressions anymore; they were buying confidence.\n\nThe turning point is 2022. That year, Hulu slips to ~$5.1B and the broader story shifts toward “platform control.” Disney+ accelerates faster—$7.6B in 2022—while YouTube continues to strengthen, reaching ~$14.2B as advertisers reward inventory that feels measurable and brand-safe at scale. Netflix’s ad revenue doesn’t spike early (it starts later in the timeline) but begins to matter: $0.9B in 2022.\n\nBy 2026, the winners are obvious in the chart race: Disney+Ads rises to ~$23.6B, YouTubeAds reaches ~$20.0B, NetflixAds climbs to ~$7.6B, and HuluAds falls to ~$2.9B. One platform adapts by making ads central; another gets squeezed as the ad economics get stricter.\n\nWhich outcome do you think is most likely next: ads become the dominant streaming revenue source—or subscriptions keep winning? Drop your take and tag a friend who loves chart-race drama.\n\nFollow for more real-market timeline comparisons.\n\n#streamingads #adtech #brandsafety #mediabusiness #chartrace #netflix #disneyplus #hulu #youtubeads #streamingwars #subscriptioneconomics #digitaladvertising #ott #videoadvertising #admeasurement #ctv #videostreaming #marketingstrategy #businessstory #dataviz #revenuegrowth #adrevenue #techtrends #memeeconomy #corporatedrama #entertainmentbusiness #marketers #streamingmedia #financialtrends #contenteconomics",
+  "facebook_caption": "The Streaming Ad Crackdown reshaped the economics of online TV advertising—and the chart race shows the outcome.\n\nFrom 2019 to 2020, ad revenue generally benefited from the surge in streaming consumption: Hulu rose from about $3.8B to $4.9B, while YouTube’s streaming-driven ad intake climbed from roughly $8.9B to $10.6B. But as the market matured, advertisers demanded more control and clearer brand-safety and measurement standards.\n\nIn 2021, Hulu’s trajectory peaks (about $5.6B) as friction increases. Disney+ begins to monetize ads more aggressively, rising to ~$4.8B by 2021, signaling a strategic pivot toward ad-supported scale. The critical pivot arrives in 2022: Hulu slips to ~$5.1B, Disney+ accelerates to ~$7.6B, and YouTube expands further to ~$14.2B as brands prioritize inventory they can trust and track.\n\nNetflix advertising revenue begins later in the sequence, reaching ~$0.9B in 2022 and growing to ~$7.6B by 2026. By 2026, Disney+Ads is estimated at ~$23.6B and YouTubeAds at ~$20.0B, while HuluAds declines to ~$2.9B—an outcome consistent with platforms that restructured monetization around ads as measurement and brand-safety became non-negotiable.\n\nWhat do you think: will streaming ultimately become ad-first, or will subscription growth outpace advertising? \n\n#streamingads #adtech #brandsafety #hulu #disneyplus #netflix #youtube #ctv #digitaladvertising #mediaeconomics",
+  "threads_caption": "The streaming ad era didn’t just slow down—it got audited. 😬\n\n2019–2020: Hulu goes from ~$3.8B → ~$4.9B, and YouTube keeps climbing ~$8.9B → ~$10.6B.\n\n2021: Hulu peaks (~$5.6B). Disney+ starts getting real (~$4.8B).\n\n2022: the crackdown moment. Hulu drops (~$5.1B), Disney+ jumps (~$7.6B), and YouTube surges (~$14.2B). Netflix’s ad revenue finally shows up (~$0.9B).\n\nBy 2026: Disney+Ads hits ~$23.6B + YouTube ~$20.0B, Netflix grows to ~$7.6B, and Hulu fades to ~$2.9B.\n\nHot take time—who wins the next round: the platforms that make ads central, or the ones that keep subscriptions carrying the load? Reply with your pick.",
+  "twitter_caption": "Streaming ads got cracked. 2019–2020 = spikes. 2022 = crackdown. By 2026: Disney+Ads ~$23.6B + YouTube ~$20.0B; Hulu drops to ~$2.9B. Who adapts fastest wins. 👀",
   "hashtags": [
-    "#dataviz",
-    "#chart",
-    "#visualization",
-    "#trends",
-    "#business",
-    "#technology",
-    "#growth",
-    "#marketshare",
-    "#infographic",
-    "#data",
-    "#analytics",
-    "#stats",
-    "#comparison",
-    "#timeline",
+    "#streamingads",
+    "#adtech",
+    "#brandsafety",
+    "#mediabusiness",
     "#chartrace",
-    "#viral",
-    "#fyp",
-    "#explore",
-    "#dataisbeautiful",
-    "#vizoftheday"
+    "#netflixads",
+    "#disneyplus",
+    "#hulu",
+    "#youtubeadvertising",
+    "#ctv",
+    "#ott",
+    "#digitaladvertising",
+    "#admeasurement",
+    "#programmatic",
+    "#streamingeconomics",
+    "#subscriptioneconomics",
+    "#streamingwars",
+    "#marketingstrategy",
+    "#businessstory",
+    "#dataviz",
+    "#revenuegrowth",
+    "#adrevenue",
+    "#techtrends",
+    "#mediatrends",
+    "#advertising",
+    "#contenteconomics",
+    "#entertainmentindustry",
+    "#fintechish",
+    "#growthstory",
+    "#futureoftv"
   ]
 }
