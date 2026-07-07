@@ -1,7 +1,7 @@
 {
-  "topic": "Streaming’s Price War Countdown",
-  "description": "How Netflix’s early premium binge model collapsed into a global price war as Disney+, Max, Hulu, and Prime Video fought over subscribers, budgets, and retention.",
-  "unit": "Millions Subscribers (End of Year)",
+  "topic": "Electric Vehicle Revolution",
+  "description": "Tesla vs BYD vs VW: The EV Market Takeover",
+  "unit": "Million Vehicles Sold",
   "value_prefix": "",
   "timeline_labels": [
     "2018",
@@ -12,125 +12,83 @@
     "2023",
     "2024",
     "2025",
-    "2026E"
+    "2026"
   ],
   "entities": [
     {
-      "name": "Netflix (Global Streaming Subscribers)",
-      "short_name": "Netflix",
+      "name": "Tesla",
+      "short_name": "Tesla",
       "values": [
-        150,
-        167,
-        195,
-        208,
-        220,
-        232,
-        270,
-        274,
-        280
+        0.24,
+        0.37,
+        0.5,
+        0.93,
+        1.31,
+        1.81,
+        2.2,
+        2.6,
+        3
       ],
-      "color": "#1afbff"
+      "color": "#1aff75"
     },
     {
-      "name": "Disney+ (Global Subscribers)",
-      "short_name": "Disney+",
+      "name": "BYD",
+      "short_name": "BYD",
       "values": [
-        86,
-        117,
-        137,
-        137,
-        161,
-        150,
-        165,
-        170,
-        178
+        0.24,
+        0.23,
+        0.43,
+        0.73,
+        1.86,
+        3.02,
+        3.5,
+        4,
+        4.5
       ],
-      "color": "#4b1aff"
+      "color": "#751aff"
     },
     {
-      "name": "Max (Warner Bros. Discovery Combined Streaming)",
-      "short_name": "Max",
+      "name": "Volkswagen",
+      "short_name": "VW",
       "values": [
-        0,
-        0,
-        0,
-        74,
-        84,
-        98,
-        106,
-        110,
-        116
+        0.04,
+        0.11,
+        0.22,
+        0.45,
+        0.57,
+        0.77,
+        0.9,
+        1.1,
+        1.3
       ],
-      "color": "#ff1a9f"
-    },
-    {
-      "name": "Hulu (Subscriber Base, included in Disney bundle)",
-      "short_name": "Hulu",
-      "values": [
-        28,
-        31,
-        34,
-        38,
-        46,
-        51,
-        53,
-        55,
-        57
-      ],
-      "color": "#ffa71a"
-    },
-    {
-      "name": "Prime Video (Prime Members with Video Included)",
-      "short_name": "PrimeVideo",
-      "values": [
-        95,
-        100,
-        110,
-        120,
-        125,
-        130,
-        135,
-        140,
-        145
-      ],
-      "color": "#44ff1a"
+      "color": "#ff751a"
     }
   ],
-  "youtube_description": "🎬 Streaming’s Price War Countdown is the story of how the “premium binge” era snapped into a retention battle.\n\nIn this chart-race, watch five giants collide from 2018 to 2026E, as Netflix’s churn spikes get countered by ad tiers and price resets—while Disney+ stabilizes, Max ramps post-merger, Hulu climbs, and Prime Video stays sticky through the broader Prime bundle.\n\nChapters:\n00:00 The premium model peaks\n00:45 2019–2020: Subscriber rush, then reality hits\n01:40 2021: Consolidation begins—bundles & pricing pressure\n02:35 2022: The churn era—competitors stop waiting\n03:25 2023: Netflix’s reset & the ad-tier pivot\n04:15 2024–2026E: Winners aren’t the fastest—just the hardest to churn\n\nWhat to look for in the race:\n• Netflix’s rebound after the 2022 slowdown\n• Disney+ flattening, then regaining momentum\n• Max’s late but accelerating climb post-rebrand\n• Hulu’s steady bundle growth\n• Prime Video’s “always-on” moat via Prime\n\nEngage:\nWhich strategy wins the next phase—ads, bundles, or price discipline?\nDrop your answer in the comments and subscribe for more chart-race breakdowns.\n\nHashtags: #netflix #disneyplus #primevideo #hulu #max #streamingwars #subscriptioneconomics #cordcutting #chartrace #mediatrends",
-  "instagram_caption": "🚀 The $60B Streaming Price War is here—and Netflix learned the hard way.\n\nBack in 2018, the streaming world looked like a one-way ticket: Netflix had ~150M global subscribers, Disney+ was still climbing (~86M), and Prime Video was already a steady moat (~95M). The momentum was so strong that “growth” felt guaranteed—even as competitors started forming their own ecosystems.\n\nThen 2020 pulled the whole industry into a frenzy. By 2020, Netflix surged to ~195M and Disney+ to ~137M. But the real turning point wasn’t the binge—it was the bill. When costs rose and content slowed down, customers didn’t just churn—they negotiated. By 2022, Netflix was still up (~220M), but the competitive field was no longer a sideshow. Disney+ reached ~161M and Prime Video was ~125M, meaning attention and budgets were getting split across more screens.\n\n2022–2023 is where the “price war countdown” becomes visible in the numbers. Max (launched/rebranded into the modern era) accelerates—~74M in 2021 to ~84M in 2022, then ~98M by 2023. Meanwhile, Hulu keeps stacking gains inside the bundle (~46M in 2022 to ~51M in 2023). Netflix also hits its reset phase: it climbs from ~220M (2022) to ~232M (2023) and then jumps to ~270M by 2024 as its retention strategy tightens.\n\nFast-forward to 2026E: Netflix is modeled around ~280M, Disney+ ~178M, Max ~116M, Hulu ~57M, and Prime Video ~145M. The drama? The biggest growth isn’t just “who launched first”—it’s who made subscribers stay.\n\n📌 Question: In the next round of streaming battles, will ads win (cheaper entry), bundles win (lower switching), or price discipline wins (higher retention)?\n\nFollow for more chart-race timelines—and hit subscribe so you don’t miss the next data drop.\n\n#netflix #disneyplus #hulu #max #primevideo #streamingwars #streamingindustry #subscriptioneconomics #cordcutters #mediatrends #chartrace #datavisualization #viralcharts #contentstrategy #churnrate #adsupported #streaminggrowth #bundling #digitalentertainment #entertainmentindustry #techtrends #businesstrends #competitivestrategy #marketshare #consumerspending #globalstreaming #videoondemand #streamingeconomics #analytics #economicsexplained",
-  "facebook_caption": "Streaming’s Price War Countdown traces how the subscriber race shifted from simple acquisition to retention under pricing pressure.\n\nFrom 2018 to 2020, the expansion phase is clear: Netflix grows from ~150M to ~195M global subscribers, Disney+ rises from ~86M to ~137M, and Prime Video increases from ~95M to ~110M. But competitive density changes the economics. By 2021–2022, consolidation and strategy shifts appear: Max (emerging in its modern form) moves from ~74M in 2021 to ~84M in 2022, Hulu climbs from ~38M to ~46M, and Disney+ peaks around ~161M.\n\nThe key inflection is 2022–2023. Netflix’s subscriber growth slows relative to prior surges and then rebounds as pricing and packaging strategies stabilize. The model shows Netflix at ~232M by 2023 and a stronger recovery to ~270M by 2024, while Disney+ flattens near ~150M in 2023 and then regains into 2024–2025. Prime Video’s subscriber base remains comparatively resilient due to Prime’s broader bundle utility.\n\nOverall, the chart race highlights a consistent market reality: in mature streaming markets, the winner is often the platform that reduces churn—not the one that grows fastest at launch.\n\nWhich approach do you think dominates the next phase: ads, bundles, or price discipline?\n\n#netflix #disneyplus #hulu #max #primevideo #streamingwars #subscriptioneconomics #churn #cordcutting #markettrends",
-  "threads_caption": "Streaming isn’t “growing forever” anymore—it’s wrestling over retention 😳\n\nNetflix goes from ~150M (2018) → ~220M (2022) → ~270M (2024) and tries to outlast the churn era. Meanwhile Disney+ spikes (~161M in 2022) then steadies, Max ramps up later (~74M in 2021 to ~98M in 2023), Hulu keeps climbing (~46M → ~51M), and Prime Video stays quietly dominant (~110M → ~130M).\n\nIf you had to bet: will the next big win come from ad tiers, bundles, or simply being the hardest service to quit?\n\nFollow for more chart-race timelines.",
-  "twitter_caption": "Streaming price war era = retention > growth. Netflix recovers to ~270M by 2024 while everyone else fights to stop churn. Ads/bundles/discipline—who wins next?",
+  "youtube_description": "📊 Electric Vehicle Revolution\n\nTesla vs BYD vs VW: The EV Market Takeover\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#ElectricVehicleRevolution #DataViz #ChartRace",
+  "instagram_caption": "🚀 Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
+  "facebook_caption": "Electric Vehicle Revolution: A data-driven analysis of market dynamics. Tesla vs BYD vs VW: The EV Market Takeover\n\n#DataViz #Business #Technology",
+  "threads_caption": "The Electric Vehicle Revolution is wild! 📈 Tesla vs BYD vs VW: The EV Market Takeover",
+  "twitter_caption": "Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover 📊 #DataViz #Trends",
   "hashtags": [
-    "#netflix",
-    "#disneyplus",
-    "#hulu",
-    "#max",
-    "#primevideo",
-    "#streamingwars",
-    "#streamingindustry",
-    "#subscriptioneconomics",
-    "#cordcutting",
-    "#chartrace",
-    "#datavisualization",
-    "#viralcharts",
-    "#churnrate",
-    "#streaminggrowth",
-    "#adsupported",
-    "#bundling",
-    "#mediatrends",
-    "#entertainmentindustry",
-    "#markettrends",
-    "#businessstrategy",
-    "#competitiveanalysis",
-    "#globalstreaming",
-    "#videostreaming",
-    "#consumerbehavior",
-    "#pricingstrategy",
-    "#digitalentertainment",
-    "#economicsexplained",
-    "#techtrends",
+    "#dataviz",
+    "#chart",
+    "#visualization",
+    "#trends",
+    "#business",
+    "#technology",
+    "#growth",
+    "#marketshare",
+    "#infographic",
+    "#data",
     "#analytics",
-    "#marketshare"
+    "#stats",
+    "#comparison",
+    "#timeline",
+    "#chartrace",
+    "#viral",
+    "#fyp",
+    "#explore",
+    "#dataisbeautiful",
+    "#vizoftheday"
   ]
 }
