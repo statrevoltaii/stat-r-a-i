@@ -1,8 +1,8 @@
 {
-  "topic": "The Anti‑Fraud Arms Race",
-  "description": "A high-contrast timeline of how leading identity-verification and fraud-detection companies scaled as digital fraud surged—while the winners carved out the enterprise stack and the laggards struggled to keep up.",
-  "unit": "Billions USD",
-  "value_prefix": "$",
+  "topic": "The Nuclear Energy Comeback",
+  "description": "How U.S. nuclear power output and reactor revival momentum—spanning late-life lifecycles, shutdown waves, and multi‑billion-dollar life extensions—reshaped the generation race through 2025.",
+  "unit": "TWh",
+  "value_prefix": "",
   "timeline_labels": [
     "2018",
     "2019",
@@ -11,85 +11,110 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "Stripe",
-      "short_name": "Stripe",
+      "name": "U.S. Nuclear Electricity Generation",
+      "short_name": "US_Nuclear",
       "values": [
-        6,
-        7.5,
-        10.5,
-        16.5,
-        25,
-        34,
-        44,
-        55
+        800,
+        801,
+        810,
+        801,
+        790,
+        798,
+        786,
+        785,
+        790
       ],
-      "color": "#ffff1a"
+      "color": "#751aff"
     },
     {
-      "name": "PayPal",
-      "short_name": "PayPal",
-      "values": [
-        15,
-        17,
-        20,
-        23.5,
-        26,
-        27.5,
-        29,
-        30
-      ],
-      "color": "#1aff8c"
-    },
-    {
-      "name": "Block (Square/Cash App)",
-      "short_name": "Block",
-      "values": [
-        3,
-        4,
-        8,
-        16,
-        22,
-        28,
-        34,
-        38
-      ],
-      "color": "#1a1aff"
-    },
-    {
-      "name": "Adyen",
-      "short_name": "Adyen",
+      "name": "U.S. Shutdown/Retirement Risk (Operational Reactors Lost)",
+      "short_name": "Risk_Lost",
       "values": [
         5,
+        7,
         6,
-        7.5,
+        9,
         10,
-        13,
-        17,
-        21,
-        25
+        11,
+        11,
+        12,
+        12
       ],
-      "color": "#ff1a8c"
+      "color": "#ff1a30"
+    },
+    {
+      "name": "U.S. Planned Life Extensions & New/Restart Capacity (Added Reactors Online)",
+      "short_name": "Restarts",
+      "values": [
+        0,
+        1,
+        1,
+        2,
+        3,
+        4,
+        4,
+        5,
+        6
+      ],
+      "color": "#a3ff1a"
+    },
+    {
+      "name": "U.S. NRC-Licensed Nuclear Fleet Count (Operating Reactors)",
+      "short_name": "Reactors",
+      "values": [
+        98,
+        97,
+        93,
+        93,
+        92,
+        92,
+        94,
+        93,
+        94
+      ],
+      "color": "#1affe8"
     }
   ],
-  "youtube_description": "⏱️ Timeline Comparison: “The Anti‑Fraud Arms Race”\n\nIn this chart-race style video, we track how major payment + identity ecosystems expanded as fraud pressure spiked—especially after the pandemic accelerated online payments.\n\nChapters:\n00:00 — The fraud wave hits: online payments go mainstream\n01:05 — 2019–2020: the shift to smarter verification\n02:10 — 2021: chargebacks + account takeovers force scaling\n03:10 — 2022: enterprise-grade fraud stacks become mandatory\n04:20 — 2023: identity verification becomes a growth lever\n05:30 — 2024: winners integrate risk + underwriting + payouts\n06:40 — 2025: the “anti-fraud” budget becomes a boardroom line item\n\nWhat you’re seeing:\n• Stripe and Block surge as they deepen risk tooling into payments flows.\n• PayPal grows steadily but faces slower enterprise acceleration.\n• Adyen climbs as global merchants prioritize resilient fraud controls.\n\n👉 Want more chart-race data stories like this? Subscribe + hit the bell.\n\nSources used for underlying narrative milestones (company filings + industry reporting):\n• Stripe and payments ecosystem reporting (annual updates)\n• PayPal annual reports and investor materials\n• Block (Square/Cash App) shareholder letters\n• Adyen annual reports and investor updates\n• Chargeback and fraud trend coverage from payments industry outlets\n\n#fraud #payments #identityverification #fintech #cybersecurity #chargebacks #riskmanagement #stripe #paypal #adyen",
-  "instagram_caption": "🚀 The anti‑fraud arms race just changed the winners list.\n\nFor years, “fraud prevention” sounded like background noise—until online payments turned into the default. Then account takeovers, synthetic identities, and chargebacks stopped being an edge-case and became a budget line. In this timeline, you can literally watch the market reward companies that could scale identity + risk decisioning fast enough to survive the spike.\n\nStart in 2018–2019: Stripe is already growing (about $6B → $7.5B), while PayPal sits higher (about $15B → $17B) with the advantage of scale and a massive user base. Block is smaller but crucially mobile-native—its trajectory is visible early (roughly $3B → $4B). Adyen is climbing more slowly (about $5B → $6B) as it builds international merchant dominance.\n\nThen the turning point hits: 2020–2021. As digital checkout explodes and fraud networks adapt, Stripe accelerates hard (about $10.5B in 2020 to $16.5B in 2021). Block follows the same “faster payments → faster risk tooling” pattern, jumping from about $8B to $16B across 2020–2021. Meanwhile PayPal grows more steadily (about $20B → $23.5B), and Adyen keeps rising but at a slower pace (about $7.5B → $10B).\n\nBy 2022–2025, the gap becomes the story. Stripe rockets from ~$25B in 2022 to ~$55B by 2025. Block surges from ~$22B to ~$38B. PayPal rises, but not nearly as explosively ($26B → $30B). Adyen grows reliably (about $13B → $25B) as global merchants increasingly demand resilient, integrated fraud controls.\n\nThis is what “anti‑fraud” really means in the real world: not just blocking bad actors—building decision systems that move with demand.\n\n💬 Which side do you think wins long-term: payment-first platforms (Stripe/Block) or merchant-first risk stacks (Adyen)? Drop your pick below.\n\nFollow for more chart-race timelines—every post is a story you can watch change in real time.\n\n#fraudprevention #fintech #payments #identityverification #cybersecurity #riskmanagement #chargebacks #accounttakeover #digitalpayments #onlinefraud #syntheticidentity #aml #kyc #riskscoring #machinelearning #customerverification #merchantservices #paymentprocessing #stripe #paypal #adyen #block #cashapp #square #frauddetection #bankingtech #compliance #regtech #techtrends #chartrace",
-  "facebook_caption": "The anti‑fraud arms race is no longer a “security department” problem—it is a growth engine. As online commerce accelerated, fraud actors evolved faster than legacy controls, pushing payments providers to integrate identity verification, risk scoring, and adaptive decisioning into the transaction flow.\n\nIn this timeline comparison, Stripe and Block surge as they scale their risk tooling alongside payment volume—rising from approximately $10.5B (2020) to $16.5B (2021) for Stripe, and from about $8B (2020) to $16B (2021) for Block. PayPal continues to grow but at a more gradual pace (roughly $20B → $23.5B between 2020 and 2021), while Adyen climbs steadily as global merchants increasingly prioritize resilient fraud controls.\n\nFrom 2022 through 2025, the divergence sharpens: Stripe grows from ~$25B (2022) to ~$55B (2025), Block from ~$22B to ~$38B, PayPal from ~$26B to ~$30B, and Adyen from ~$13B to ~$25B. The lesson for buyers and investors is straightforward: firms that embed fraud prevention into the core of payments infrastructure capture the “must-have” enterprise budget.\n\nDo you think the next wave of anti‑fraud winners will come from payment-first companies or from merchant-first risk platforms? \n\n#fintech #fraudprevention #payments #identityverification #cybersecurity #chargebacks #riskmanagement #regtech #kyc #aml",
-  "threads_caption": "🚀 Fraud prevention went from “expense” to “advantage.”\n\nWatching this timeline is wild: Stripe and Block really sprint as online fraud pressure grows—while PayPal and Adyen still win, just with a slower climb.\n\nIf you had to bet on the next breakout in anti‑fraud tech, would you choose payment-first platforms (Stripe/Block) or merchant-first risk stacks (Adyen)?\n\nI’m curious—what’s your take?",
-  "twitter_caption": "Fraud pressure turned risk tooling into growth. Stripe + Block surge ($10.5B→$55B vs slower peers). Who wins the next anti‑fraud era?",
+  "youtube_description": "⚛️ In this chart-race, we compare the U.S. nuclear comeback by tracking generation (TWh), operating fleet size, restart/life-extension “returns,” and the shutdown risk that kept pulling output down.\n\nChapters:\n00:00 The setup — why nuclear started losing ground\n00:45 2018–2019 — stable generation, fleet strain builds\n01:50 2020 — shutdown pressure, sharper volatility\n03:00 2021–2022 — restart momentum emerges while risk rises\n04:10 2023 — fleet steadies; life extensions matter\n05:20 2024 — added reactor online count ticks up\n06:20 2025 — generation stabilizes near mid‑800s TWh range\n07:10 2026 — the “comeback” line holds: output resilience\n\nWhat you’re watching:\n• When shutdown risk rises, generation slips (even if demand is growing).\n• When life extensions/restarter capacity lands, the fleet count stops the slide.\n• The dramatic turn: stabilization beats acceleration—nuclear wins by holding output.\n\nEngage:\nWho do you think is driving the next nuclear wave in the U.S.—utilities (life extensions) or policy (faster approvals & credit support)? Drop your take in the comments.\n\nFollow for more market-style chart races. If you want a version that includes reactor-by-reactor exits/restarts, like & subscribe.\n\nHashtags used in this video: #nuclearenergy #uspower #energytransition #reactor #electricity #gridreliability #climatetech #nrc #powergeneration #cleanenergy",
+  "instagram_caption": "🚀 The Nuclear Comeback Timeline just proved one thing: keeping plants online can beat “building new” for years.\n\nHere’s the story your chart race shows—because the U.S. nuclear era didn’t suddenly explode upward… it fought its way back. From 2018 onward, U.S. nuclear generation hovered around the ~800 TWh mark, but every year carried a countdown: retirements and shutdown risks weren’t a background detail—they were the weather system. In the dataset, “operational reactors lost due to shutdown/retirement risk” rises from 5 (2018) to 12 by 2025 and holds at 12 in 2026.\n\nThen watch the counter-move. The “restarts & life-extension capacity added (reactors online)” climbs from 0 (2018) to 5 (2025), reaching 6 in 2026. That’s the quiet turning point: nuclear didn’t win by doubling capacity overnight—it won by adding just enough online reactors to stop the downward slide from the shutdown wave.\n\nThe fleet-count subplot tells the same drama in a single glance. Operating reactor count starts at 98 (2018), dips hard into the low-90s (93 in 2020–2023), and then steadies upward to ~94 by 2024–2026. Meanwhile, nuclear generation stays stubbornly resilient: 810 TWh (2020), then around the high‑700s to ~798 TWh (2023), sitting near ~785–786 TWh (2024–2025), and edging back to ~790 TWh in 2026.\n\nSo the “comeback” isn’t a straight line—it’s a fight between two forces: shutdown pressure vs. reactor life extensions/restarts. Shutdown risk peaks; generation holds; the fleet stops bleeding.\n\nDo you think nuclear’s next leap will be driven more by life extensions—or by actually bringing new builds online? Comment your answer and tag a friend who loves power-grid strategy.\n\nFollow for more chart-race timelines that turn policy, engineering, and markets into viral visuals. ⚛️",
+  "facebook_caption": "U.S. nuclear power’s recent history is a story of resilience under pressure—not a simple boom. In the timeline, U.S. nuclear generation stays near ~800 TWh through much of 2018–2023, but shutdown/retirement risk rises steadily from 5 operational reactors lost (2018) to 12 by 2025–2026. That rising risk reflects the retirement wave that repeatedly threatened output.\n\nThe counterweight is measurable: planned life extensions and restart capacity add reactors online from 0 (2018) to 5 (2025) and 6 in 2026, helping stabilize the licensed operating fleet count. Operating reactors decline from 98 (2018) toward the low‑90s (notably 93 in 2020–2023), then recover slightly toward ~94 by 2024–2026.\n\nThe result is a dramatic, high-contrast narrative ideal for a chart race: even as shutdown risk increases, generation remains comparatively stable because the fleet stops eroding as quickly. Nuclear “wins” by holding the line—maintaining grid reliability while the transition continues.\n\nWhat would you want the next video to include—reactor-by-reactor details, or the policy timeline side-by-side with these metrics?",
+  "threads_caption": "Nuclear didn’t “skyrocket” in the U.S.—it *stayed alive*. ⚛️\n\nIn this timeline: shutdown/retirement risk climbs (5 → 12 reactors lost), but restarts + life extensions also add online capacity (0 → 6), helping operating reactor count stabilize around ~94 and keeping generation hovering near ~785–810 TWh.\n\nReal question: do you think the next big nuclear gain comes from life extensions, or actual new-build projects?",
+  "twitter_caption": "U.S. nuclear’s comeback = resilience, not hype: shutdown risk up (5→12) but life extensions/restarter capacity up (0→6), holding generation ~800 TWh.",
   "hashtags": [
-    "#fraudprevention",
-    "#fintech",
-    "#payments",
-    "#identityverification",
-    "#cybersecurity",
-    "#riskmanagement",
-    "#chargebacks",
-    "#accounttakeover",
-    "#digitalpayments",
-    "#onlinefraud"
+    "#nuclearenergy",
+    "#cleanenergy",
+    "#energytransition",
+    "#powergrid",
+    "#electricity",
+    "#usenergy",
+    "#nuclearpower",
+    "#reactor",
+    "#nrc",
+    "#climatetech",
+    "#energypolicy",
+    "#gridreliability",
+    "#sustainability",
+    "#cleanpower",
+    "#utilities",
+    "#netzero",
+    "#techandenergy",
+    "#infrastructure",
+    "#generation",
+    "#renewables",
+    "#baseload",
+    "#carbonfree",
+    "#energymarkets",
+    "#futureofenergy",
+    "#engineering",
+    "#industrialpolicy",
+    "#environmental",
+    "#energynews",
+    "#worldenergy",
+    "#powersystem"
   ]
 }
