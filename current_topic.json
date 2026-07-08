@@ -1,74 +1,74 @@
 {
-  "topic": "Social Media Titans",
-  "description": "TikTok vs Instagram vs Snapchat: Gen Z Attention Wars",
-  "unit": "Million Daily Active Users",
+  "topic": "The Streaming Wars",
+  "description": "Netflix vs Disney+ vs HBO Max: Battle for Dominance",
+  "unit": "Million Subscribers",
   "value_prefix": "",
   "timeline_labels": [
-    "2018",
     "2019",
     "2020",
     "2021",
     "2022",
     "2023",
     "2024",
+    "2024",
     "2025",
     "2026"
   ],
   "entities": [
     {
-      "name": "TikTok",
-      "short_name": "TikTok",
+      "name": "Netflix",
+      "short_name": "Netflix",
       "values": [
-        271,
-        500,
-        689,
-        1000,
-        1200,
-        1400,
-        1550,
-        1700,
-        1850
+        167,
+        203,
+        221,
+        230,
+        247,
+        260,
+        275,
+        290,
+        305
       ],
-      "color": "#1aecff"
+      "color": "#ff7d1a"
     },
     {
-      "name": "Instagram",
-      "short_name": "Instagram",
+      "name": "Disney+",
+      "short_name": "Disney",
       "values": [
-        500,
-        600,
-        700,
-        800,
-        900,
-        1000,
-        1100,
-        1200,
-        1300
-      ],
-      "color": "#ff1aec"
-    },
-    {
-      "name": "Snapchat",
-      "short_name": "Snapchat",
-      "values": [
-        187,
+        28,
+        94,
+        129,
+        164,
+        190,
         210,
-        265,
-        300,
-        350,
-        380,
-        400,
-        420,
-        440
+        230,
+        250,
+        270
       ],
-      "color": "#ecff1a"
+      "color": "#1aff7d"
+    },
+    {
+      "name": "HBO Max",
+      "short_name": "HBO",
+      "values": [
+        0,
+        43,
+        73,
+        95,
+        105,
+        115,
+        125,
+        135,
+        145
+      ],
+      "color": "#7d1aff"
     }
   ],
-  "youtube_description": "📊 Social Media Titans\n\nTikTok vs Instagram vs Snapchat: Gen Z Attention Wars\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#SocialMediaTitans #DataViz #ChartRace",
-  "instagram_caption": "🚀 Social Media Titans: TikTok vs Instagram vs Snapchat: Gen Z Attention Wars\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
-  "facebook_caption": "Social Media Titans: A data-driven analysis of market dynamics. TikTok vs Instagram vs Snapchat: Gen Z Attention Wars\n\n#DataViz #Business #Technology",
-  "threads_caption": "The Social Media Titans is wild! 📈 TikTok vs Instagram vs Snapchat: Gen Z Attention Wars",
-  "twitter_caption": "Social Media Titans: TikTok vs Instagram vs Snapchat: Gen Z Attention Wars 📊 #DataViz #Trends",
+  "youtube_description": "📊 The Streaming Wars\n\nNetflix vs Disney+ vs HBO Max: Battle for Dominance\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#TheStreamingWars #DataViz #ChartRace",
+  "instagram_caption": "🚀 The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
+  "facebook_caption": "The Streaming Wars: A data-driven analysis of market dynamics. Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\n#DataViz #Business #Technology",
+  "threads_caption": "The The Streaming Wars is wild! 📈 Netflix vs Disney+ vs HBO Max: Battle for Dominance",
+  "twitter_caption": "The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance 📊 #DataViz #Trends",
   "hashtags": [
     "#dataviz",
     "#chart",
