@@ -1,74 +1,74 @@
 {
-  "topic": "Electric Vehicle Revolution",
-  "description": "Tesla vs BYD vs VW: The EV Market Takeover",
-  "unit": "Million Vehicles Sold",
+  "topic": "The Streaming Wars",
+  "description": "Netflix vs Disney+ vs HBO Max: Battle for Dominance",
+  "unit": "Million Subscribers",
   "value_prefix": "",
   "timeline_labels": [
-    "2018",
     "2019",
     "2020",
     "2021",
     "2022",
     "2023",
     "2024",
+    "2024",
     "2025",
     "2026"
   ],
   "entities": [
     {
-      "name": "Tesla",
-      "short_name": "Tesla",
+      "name": "Netflix",
+      "short_name": "Netflix",
       "values": [
-        0.24,
-        0.37,
-        0.5,
-        0.93,
-        1.31,
-        1.81,
-        2.2,
-        2.6,
-        3
+        167,
+        203,
+        221,
+        230,
+        247,
+        260,
+        275,
+        290,
+        305
       ],
-      "color": "#791aff"
+      "color": "#ff1aa7"
     },
     {
-      "name": "BYD",
-      "short_name": "BYD",
+      "name": "Disney+",
+      "short_name": "Disney",
       "values": [
-        0.24,
-        0.23,
-        0.43,
-        0.73,
-        1.86,
-        3.02,
-        3.5,
-        4,
-        4.5
+        28,
+        94,
+        129,
+        164,
+        190,
+        210,
+        230,
+        250,
+        270
       ],
-      "color": "#ff791a"
+      "color": "#a7ff1a"
     },
     {
-      "name": "Volkswagen",
-      "short_name": "VW",
+      "name": "HBO Max",
+      "short_name": "HBO",
       "values": [
-        0.04,
-        0.11,
-        0.22,
-        0.45,
-        0.57,
-        0.77,
-        0.9,
-        1.1,
-        1.3
+        0,
+        43,
+        73,
+        95,
+        105,
+        115,
+        125,
+        135,
+        145
       ],
-      "color": "#1aff79"
+      "color": "#1aa7ff"
     }
   ],
-  "youtube_description": "📊 Electric Vehicle Revolution\n\nTesla vs BYD vs VW: The EV Market Takeover\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#ElectricVehicleRevolution #DataViz #ChartRace",
-  "instagram_caption": "🚀 Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
-  "facebook_caption": "Electric Vehicle Revolution: A data-driven analysis of market dynamics. Tesla vs BYD vs VW: The EV Market Takeover\n\n#DataViz #Business #Technology",
-  "threads_caption": "The Electric Vehicle Revolution is wild! 📈 Tesla vs BYD vs VW: The EV Market Takeover",
-  "twitter_caption": "Electric Vehicle Revolution: Tesla vs BYD vs VW: The EV Market Takeover 📊 #DataViz #Trends",
+  "youtube_description": "📊 The Streaming Wars\n\nNetflix vs Disney+ vs HBO Max: Battle for Dominance\n\n0:00 - Introduction\n0:30 - Early Days\n1:00 - The Turning Point\n2:00 - Explosive Growth\n3:00 - Current State\n4:00 - What's Next?\n\n#TheStreamingWars #DataViz #ChartRace",
+  "instagram_caption": "🚀 The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\nThis visualization shows the dramatic shift in the industry. From humble beginnings to market dominance, see how these companies battled for supremacy.\n\nWhich company do you think will lead in 2027? Comment below! 👇\n\nFollow for more data visualizations!\n\n#dataviz #chart #visualization #trends #business #technology #growth #marketshare #infographic #data",
+  "facebook_caption": "The Streaming Wars: A data-driven analysis of market dynamics. Netflix vs Disney+ vs HBO Max: Battle for Dominance\n\n#DataViz #Business #Technology",
+  "threads_caption": "The The Streaming Wars is wild! 📈 Netflix vs Disney+ vs HBO Max: Battle for Dominance",
+  "twitter_caption": "The Streaming Wars: Netflix vs Disney+ vs HBO Max: Battle for Dominance 📊 #DataViz #Trends",
   "hashtags": [
     "#dataviz",
     "#chart",
