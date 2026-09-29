@@ -1,17 +1,14 @@
 import puppeteer from 'puppeteer';
-import { PuppeteerScreenRecorder } from 'puppeteer-screen-recorder';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
-import { spawn } from 'child_process';
-
+import { spawn, execSync } from 'child_process';
+import fs from 'fs';
 import { createRequire } from 'module';
+
 const require = createRequire(import.meta.url);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const ffmpeg = require('ffmpeg-static');
-const fs = require('fs');
-const { execSync } = require('child_process');
 
 // Helper to check if server is responsive
 async function isServerRunning(url) {
@@ -28,13 +25,14 @@ async function isServerRunning(url) {
 }
 
 async function capture() {
-    console.log('🚀 Starting Robust 60 FPS Audio/Video Capture...');
-    const VIDEO_PATH = path.join(__dirname, 'temp_video.mp4');
-    const AUDIO_PATH = path.join(__dirname, 'temp_audio.webm');
+    console.log('🚀 Starting High-Precision 60 FPS Native Video Capture...');
+    const WEBM_PATH = path.join(__dirname, 'temp_video.webm');
     const FINAL_PATH = path.join(__dirname, 'recording.mp4');
+    const THUMB_JPG = path.join(__dirname, 'thumbnail.jpg');
+    const THUMB_PNG = path.join(__dirname, 'thumbnail.png');
     const EXPORT_DIR = path.join(__dirname, '..', 'FINAL_EXPORTED_VIDEOS');
 
-    // 1. Ensure dev server is running
+    // 1. Ensure Vite dev server is running
     const serverUrl = 'http://localhost:3000';
     let devProcess = null;
     const isUp = await isServerRunning(serverUrl);
@@ -67,113 +65,106 @@ async function capture() {
             '--enable-gpu-rasterization',
             '--enable-zero-copy',
             '--disable-dev-shm-usage',
-            '--force-gpu-mem-available-mb=4096',
             '--disable-background-timer-throttling',
             '--disable-backgrounding-occluded-windows',
             '--disable-renderer-backgrounding',
             '--high-dpi-support=1',
-            '--force-device-scale-factor=1',
+            '--force-device-scale-factor=1'
         ],
-        defaultViewport: { width: 1080, height: 1920 },
+        defaultViewport: { width: 1080, height: 1920, deviceScaleFactor: 1 },
     });
 
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
 
-    // Expose function to save audio chunks from browser
-    const audioChunks = [];
-    await page.exposeFunction('saveAudioChunk', (base64) => {
-        audioChunks.push(Buffer.from(base64, 'base64'));
+    // Collect native video chunks streamed from browser MediaRecorder
+    const videoChunks = [];
+    await page.exposeFunction('saveVideoChunk', (base64) => {
+        videoChunks.push(Buffer.from(base64, 'base64'));
     });
 
-    const recorder = new PuppeteerScreenRecorder(page, {
-        followNewTab: true,
-        fps: 60,
-        ffmpeg_Path: ffmpeg,
-        videoFrame: { width: 1080, height: 1920 },
-        aspectRatio: '9:16',
-        videoBitrate: 9000,
-        audio: false // We capture audio manually
-    });
-
-    // Check for console errors
+    // Handle console logs for debugging
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
     page.on('pageerror', err => console.log('PAGE ERROR:', err.toString()));
 
-    console.log('Navigating to app...');
+    console.log('Navigating to app at http://localhost:3000...');
     await page.goto('http://localhost:3000', { waitUntil: 'domcontentloaded' });
-    await new Promise(r => setTimeout(r, 3500));
+    await new Promise(r => setTimeout(r, 2500));
 
-    // Inject manual audio recorder
-    console.log('Injecting Audio Recorder...');
-    await page.evaluate(() => {
-        window.startAudioCapture = () => {
-            const audioService = (window).audioService;
-            if (!audioService || !audioService.ctx) return;
+    // Inject in-browser 60 FPS MediaRecorder directly attached to canvas
+    console.log('Injecting In-Browser 60 FPS MediaRecorder...');
+    const recorderStatus = await page.evaluate(async () => {
+        const canvas = document.querySelector('canvas');
+        if (!canvas) return { error: 'Canvas not found' };
 
-            const dest = audioService.ctx.createMediaStreamDestination();
-            if (audioService.masterGain) {
-                audioService.masterGain.connect(dest);
+        const stream = canvas.captureStream(60);
+        let mime = 'video/webm;codecs=vp9';
+        if (!MediaRecorder.isTypeSupported(mime)) {
+            mime = 'video/webm;codecs=vp8';
+        }
+        if (!MediaRecorder.isTypeSupported(mime)) {
+            mime = 'video/webm';
+        }
+
+        const mediaRecorder = new MediaRecorder(stream, {
+            mimeType: mime,
+            videoBitsPerSecond: 16000000
+        });
+
+        mediaRecorder.ondataavailable = (e) => {
+            if (e.data && e.data.size > 0) {
+                const reader = new FileReader();
+                reader.onload = () => (window).saveVideoChunk(reader.result.split(',')[1]);
+                reader.readAsDataURL(e.data);
             }
-
-            const options = { mimeType: 'audio/webm' };
-            const mediaRecorder = new MediaRecorder(dest.stream, options);
-
-            mediaRecorder.ondataavailable = (e) => {
-                if (e.data.size > 0) {
-                    const reader = new FileReader();
-                    reader.onload = () => (window).saveAudioChunk(reader.result.split(',')[1]);
-                    reader.readAsDataURL(e.data);
-                }
-            };
-
-            mediaRecorder.start(100);
-            (window)._mediaRecorder = mediaRecorder;
         };
-    });
 
-    // Start video recording
-    console.log("Starting 60 FPS Video Recorder...");
-    await recorder.start(VIDEO_PATH);
+        (window)._activeRecorder = mediaRecorder;
+        mediaRecorder.start(100);
 
-    // click body to enable audio context
-    await page.click('body').catch(() => { });
-
-    // START EVERYTHING
-    console.log('Starting Animation & Audio...');
-    await page.evaluate(() => {
-        const audioService = (window).audioService;
-        if (audioService && audioService.resume) audioService.resume();
-        if ((window).startAudioCapture) (window).startAudioCapture();
+        // Trigger animation
         if ((window).startSorting) (window).startSorting();
+
+        return { success: true, mime };
     });
 
-    console.log('Recording in progress...');
+    console.log('Recorder initialized:', recorderStatus);
+    console.log('Recording 60 FPS race animation in progress...');
 
     // Wait until animation signals completion
     try {
-        await page.waitForFunction(() => (window).isSortingCompleted === true, { timeout: 60000 });
+        await page.waitForFunction(() => (window).isSortingCompleted === true, { timeout: 75000 });
+        console.log('✅ Animation completed successfully!');
     } catch (e) {
-        console.log("Timeout waiting for completion signal, stopping manually.");
+        console.warn('⚠️ Timeout waiting for completion signal, stopping manually.');
     }
 
-    // Hold on final frame for smooth ending
-    await new Promise(r => setTimeout(r, 2500));
+    // Hold frame for confetti decay
+    await new Promise(r => setTimeout(r, 1800));
 
-    // Stop audio recorder
+    // Stop MediaRecorder
     await page.evaluate(() => {
-        if (window._mediaRecorder && window._mediaRecorder.state !== 'inactive') {
-            window._mediaRecorder.stop();
+        if ((window)._activeRecorder && (window)._activeRecorder.state !== 'inactive') {
+            (window)._activeRecorder.stop();
         }
     });
 
-    await new Promise(r => setTimeout(r, 1000));
-    await recorder.stop();
+    // Wait for remaining chunks to flush
+    await new Promise(r => setTimeout(r, 1200));
     await browser.close();
 
-    console.log('Processing and merging audio...');
+    const totalBytes = videoChunks.reduce((acc, c) => acc + c.length, 0);
+    console.log(`📦 Captured ${videoChunks.length} video chunks (${(totalBytes / (1024 * 1024)).toFixed(2)} MB)`);
 
-    // Rotate through audio library
+    if (videoChunks.length === 0) {
+        console.error('❌ No video chunks were captured!');
+        process.exit(1);
+    }
+
+    fs.writeFileSync(WEBM_PATH, Buffer.concat(videoChunks));
+    console.log(`💾 Raw WebM saved to ${WEBM_PATH}`);
+
+    // Select soundtrack from viral music library
     const STATE_FILE = path.join(__dirname, 'audio_state.json');
     let audioTrackPath = '';
     if (fs.existsSync(STATE_FILE)) {
@@ -185,42 +176,51 @@ async function capture() {
         console.log(`🎵 Using Viral Track: ${state.tracks[nextIndex]} (Track ${nextIndex + 1}/${state.total_tracks})`);
     }
 
-    if (fs.existsSync(VIDEO_PATH)) {
-        try {
-            if (audioTrackPath && fs.existsSync(audioTrackPath)) {
-                console.log('Merging with Viral Audio (Looping enabled)...');
-                execSync(`"${ffmpeg}" -y -i "${VIDEO_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v copy -c:a aac -b:a 192k -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
-            } else {
-                console.warn('Viral audio not found. Saving video only.');
-                fs.renameSync(VIDEO_PATH, FINAL_PATH);
-            }
-            
-            console.log(`✅ Success! Video saved to ${FINAL_PATH}`);
-            if (fs.existsSync(VIDEO_PATH)) fs.unlinkSync(VIDEO_PATH);
-            if (fs.existsSync(AUDIO_PATH)) fs.unlinkSync(AUDIO_PATH);
-
-            // Copy to FINAL_EXPORTED_VIDEOS for user convenience
-            if (fs.existsSync(EXPORT_DIR)) {
-                const sampleTarget = path.join(EXPORT_DIR, 'StatRevoltAI_Camera_Wars_Comparison.mp4');
-                fs.copyFileSync(FINAL_PATH, sampleTarget);
-                console.log(`📁 Sample copied to: ${sampleTarget}`);
-
-                // Generate preview poster image
-                const thumbTarget = path.join(EXPORT_DIR, 'StatRevoltAI_Camera_Wars_Comparison_preview.jpg');
-                execSync(`"${ffmpeg}" -y -ss 00:00:10 -i "${FINAL_PATH}" -vframes 1 -q:v 2 "${thumbTarget}"`);
-                console.log(`📸 Preview image saved to: ${thumbTarget}`);
-            }
-        } catch (e) {
-            console.error('FFmpeg merge failed:', e.message);
+    // Transcode WebM to 60 FPS MP4 and merge audio
+    console.log('🎬 Transcoding to pristine 60 FPS MP4 (H.264/AAC)...');
+    try {
+        if (audioTrackPath && fs.existsSync(audioTrackPath)) {
+            console.log('Merging with Viral Audio (Looping enabled)...');
+            execSync(`"${ffmpeg}" -y -i "${WEBM_PATH}" -stream_loop -1 -i "${audioTrackPath}" -c:v libx264 -pix_fmt yuv420p -r 60 -b:v 9000k -c:a aac -b:a 192k -map 0:v:0 -map 1:a:0 -shortest "${FINAL_PATH}"`);
+        } else {
+            console.warn('Viral audio not found. Saving video only.');
+            execSync(`"${ffmpeg}" -y -i "${WEBM_PATH}" -c:v libx264 -pix_fmt yuv420p -r 60 -b:v 9000k "${FINAL_PATH}"`);
         }
-    } else {
-        console.warn('Video file not found. Capture might have failed.');
+
+        console.log(`✅ Success! High-definition 60 FPS video saved to ${FINAL_PATH}`);
+        const mp4SizeMb = (fs.statSync(FINAL_PATH).size / (1024 * 1024)).toFixed(2);
+        console.log(`📊 Final MP4 Size: ${mp4SizeMb} MB`);
+
+        // Generate high-contrast, vibrant thumbnail snapshot at 8 seconds (peak race action)
+        console.log('📸 Generating vibrant thumbnail snapshot at 8 seconds...');
+        execSync(`"${ffmpeg}" -y -ss 00:00:08 -i "${FINAL_PATH}" -vframes 1 -q:v 2 "${THUMB_JPG}"`);
+        fs.copyFileSync(THUMB_JPG, THUMB_PNG);
+        console.log(`✅ Thumbnail saved to ${THUMB_JPG} and ${THUMB_PNG}`);
+
+        // Copy to FINAL_EXPORTED_VIDEOS for user convenience
+        if (fs.existsSync(EXPORT_DIR)) {
+            const sampleTarget = path.join(EXPORT_DIR, 'StatRevoltAI_Camera_Wars_Comparison.mp4');
+            fs.copyFileSync(FINAL_PATH, sampleTarget);
+            console.log(`📁 Sample copied to: ${sampleTarget}`);
+
+            const thumbTarget = path.join(EXPORT_DIR, 'StatRevoltAI_Camera_Wars_Comparison_preview.jpg');
+            fs.copyFileSync(THUMB_JPG, thumbTarget);
+            console.log(`📸 Preview image saved to: ${thumbTarget}`);
+        }
+
+        // Clean up raw WebM to save disk space
+        if (fs.existsSync(WEBM_PATH)) fs.unlinkSync(WEBM_PATH);
+
+    } catch (e) {
+        console.error('❌ FFmpeg transcode/merge failed:', e.message);
+        process.exit(1);
     }
 
+    console.log('🏁 Video capture and generation completed successfully!');
     process.exit(0);
 }
 
 capture().catch(e => {
-    console.error(e);
+    console.error('Fatal error during capture:', e);
     process.exit(1);
 });

@@ -213,9 +213,11 @@ def main():
     files_to_delete = [
         video_path,
         os.path.join(__dirname, 'temp_video.mp4'),
+        os.path.join(__dirname, 'temp_video.webm'),
         os.path.join(__dirname, 'temp_audio.webm'),
         os.path.join(__dirname, 'thumb_frame.mp4'),
         os.path.join(__dirname, 'thumbnail.png'),
+        os.path.join(__dirname, 'thumbnail.jpg'),
         os.path.join(__dirname, 'concat_list.txt'),
         os.path.join(__dirname, 'recording_with_thumb.mp4')
     ]

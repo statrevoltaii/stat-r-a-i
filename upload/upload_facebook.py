@@ -57,6 +57,18 @@ def upload_to_facebook(video_path, description, title="Algorithm Visualization")
     print(f"[facebook] ✅ Video file found: {video_path}")
     print(f"[facebook] Video size: {file_size_mb:.2f} MB")
     
+    # Check for thumbnail file (e.g., thumbnail.jpg / thumbnail.png)
+    thumb_path = None
+    for candidate in [
+        video_path_obj.parent / "thumbnail.jpg",
+        video_path_obj.parent / "thumbnail.png",
+        Path("thumbnail.jpg"),
+        Path("thumbnail.png")
+    ]:
+        if candidate.exists():
+            thumb_path = candidate
+            break
+
     # Upload video
     print(f"[facebook] 🚀 Uploading to Facebook Page...")
     # Using v21.0 as it's verified working in the root script
@@ -65,16 +77,25 @@ def upload_to_facebook(video_path, description, title="Algorithm Visualization")
     try:
         with open(video_path, 'rb') as video:
             files = {'file': video}
+            thumb_handle = None
+            if thumb_path and thumb_path.exists():
+                print(f"[facebook] 📸 Attaching high-vibrancy thumbnail: {thumb_path}")
+                thumb_handle = open(thumb_path, 'rb')
+                files['thumb'] = ('thumbnail.jpg', thumb_handle, 'image/jpeg')
+
             data = {
                 'access_token': access_token,
                 'description': description,
                 'title': title,
                 'is_explicit_share': True,
-                'is_reel': True
+                'is_reel': True,
+                'thumb_offset': 8000 # 8 seconds in: vibrant curves & leaderboards (never dark)
             }
             
             print(f"[facebook] Sending request to Facebook API...")
             response = requests.post(url, files=files, data=data, timeout=300)
+            if thumb_handle:
+                thumb_handle.close()
             
             # Check response
             if response.status_code == 200:
@@ -147,17 +168,12 @@ def upload_to_facebook_story(video_path):
     if not video_path_obj.exists():
         raise FileNotFoundError(f"[facebook] Video not found: {video_path}")
 
-    # Endpoint for Video Stories
-    url = f"https://graph.facebook.com/v21.0/{page_id}/video_stories"
-
     try:
         print(f"[facebook] 🚀 Uploading Story to Facebook (Sessions API)...")
-        
         file_size = video_path_obj.stat().st_size
         
         # Step 1: Start Upload Session
         print(f"[facebook] Step 1: Initiating upload session...")
-        # Note: /video_stories endpoint strictly requires session flow for most apps
         start_url = f"https://graph.facebook.com/v21.0/{page_id}/video_stories"
         start_data = {
             'access_token': access_token,
@@ -167,13 +183,27 @@ def upload_to_facebook_story(video_path):
         res_start = requests.post(start_url, data=start_data, timeout=30)
         
         if res_start.status_code != 200:
-             # If "start" fails, we can't proceed. Log detailed error.
              print(f"[facebook] ❌ Start Phase Error: {res_start.text}")
              raise Exception(f"Start Phase Failed: {res_start.text}")
         
         start_json = res_start.json()
         upload_session_id = start_json.get('upload_session_id')
         video_id = start_json.get('video_id')
+        upload_url = start_json.get('upload_url')
+        
+        if upload_url:
+            # Handle Direct rupload protocol
+            print(f"[facebook] Step 2: Uploading via direct upload_url...")
+            with open(video_path, 'rb') as f:
+                headers = {
+                    'Authorization': f'OAuth {access_token}',
+                    'offset': '0',
+                    'file_size': str(file_size)
+                }
+                res_rupload = requests.post(upload_url, data=f, headers=headers, timeout=600)
+            if res_rupload.status_code == 200:
+                print(f"[facebook] ✅ SUCCESS! Story uploaded via rupload!")
+                return {'id': video_id, 'platform': 'facebook_story', 'status': 'success'}
         
         if not upload_session_id:
              raise Exception(f"No upload_session_id returned. Response: {start_json}")
@@ -205,8 +235,7 @@ def upload_to_facebook_story(video_path):
             'access_token': access_token,
             'upload_phase': 'finish',
             'upload_session_id': upload_session_id,
-             # Sometimes story_state is needed or title
-             'title': 'Story Upload'
+            'title': 'Story Upload'
         }
         res_finish = requests.post(finish_url, data=finish_data, timeout=60)
         

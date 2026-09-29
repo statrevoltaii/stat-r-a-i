@@ -994,18 +994,34 @@ const App: React.FC = () => {
       renderScene(eased, clamped, clamped * duration);
     };
 
-    // Live animation loop
+    // IMMEDIATELY render t=0 on mount so canvas is NEVER blank/black
+    renderScene(0, 0, 0);
+
+    // Live animation loop with frame-delta clamping for CI environments
+    let lastTimestamp: number | null = null;
+    let virtualElapsed = 0;
+
     const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const elapsed = timestamp - startTime;
-      const rawProgress = Math.min(elapsed / duration, 1);
+      if (lastTimestamp === null) {
+        lastTimestamp = timestamp;
+      }
+      const rawDelta = timestamp - lastTimestamp;
+      lastTimestamp = timestamp;
+
+      // CRITICAL FOR HEADLESS / SLOW CI RUNNERS:
+      // Clamp delta to maximum 33.33ms (minimum 30 FPS progression) so intermediate
+      // spline interpolation steps are NEVER skipped or teleported even if runner CPU spikes.
+      const clampedDelta = Math.min(Math.max(rawDelta, 1), 33.33);
+      virtualElapsed += clampedDelta;
+
+      const rawProgress = Math.min(virtualElapsed / duration, 1);
 
       // Smooth cubic easing
       const easedProgress = rawProgress < 0.5
         ? 2 * rawProgress * rawProgress
         : 1 - Math.pow(-2 * rawProgress + 2, 2) / 2;
 
-      renderScene(easedProgress, rawProgress, elapsed);
+      renderScene(easedProgress, rawProgress, virtualElapsed);
 
       if (rawProgress < 1 && isStarted) {
         animationFrame = requestAnimationFrame(animate);
@@ -1035,6 +1051,10 @@ const App: React.FC = () => {
 
     (window as any).startSorting = () => {
       console.log("Starting StatRevolt animation...");
+      lastTimestamp = null;
+      virtualElapsed = 0;
+      hasExploded = false;
+      completionTimerStarted = false;
       setIsStarted(true);
       audioService.resume();
     };
