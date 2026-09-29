@@ -12,7 +12,21 @@ def get_public_video_url(video_path):
 
     print(f"[hosting] 📤 Uploading video ({video_path_obj.name}) to public direct hosting...")
 
-    # Provider 1: Uguu.se (Instant, raw direct MP4 stream, supports byte-ranges, no Cloudfront challenge)
+    # Provider 1: Catbox.moe (Direct raw MP4 stream, fast, permanent, no Cloudflare block)
+    try:
+        print("[hosting] Attempting upload via catbox.moe...")
+        with open(video_path_obj, 'rb') as vf:
+            data = {'reqtype': 'fileupload'}
+            files = {'fileToUpload': (video_path_obj.name, vf, 'video/mp4')}
+            resp = requests.post('https://catbox.moe/user/api.php', data=data, files=files, timeout=120)
+            if resp.status_code == 200 and resp.text.startswith('http'):
+                url = resp.text.strip()
+                print(f"[hosting] ✅ Success via catbox: {url}")
+                return url
+    except Exception as e:
+        print(f"[hosting] ⚠️ catbox attempt failed: {e}")
+
+    # Provider 2: Uguu.se (Instant, raw direct MP4 stream, supports byte-ranges)
     try:
         print("[hosting] Attempting upload via uguu.se...")
         with open(video_path_obj, 'rb') as vf:
@@ -26,20 +40,6 @@ def get_public_video_url(video_path):
                     return url
     except Exception as e:
         print(f"[hosting] ⚠️ uguu.se attempt failed: {e}")
-
-    # Provider 2: Catbox / Litterbox (1 hour retention, direct mp4 download)
-    try:
-        print("[hosting] Attempting upload via litterbox.catbox.moe...")
-        with open(video_path_obj, 'rb') as vf:
-            data = {'reqtype': 'fileupload', 'time': '1h'}
-            files = {'fileToUpload': (video_path_obj.name, vf, 'video/mp4')}
-            resp = requests.post('https://litterbox.catbox.moe/resources/internals/api.php', data=data, files=files, timeout=120)
-            if resp.status_code == 200 and resp.text.startswith('http'):
-                url = resp.text.strip()
-                print(f"[hosting] ✅ Success via litterbox: {url}")
-                return url
-    except Exception as e:
-        print(f"[hosting] ⚠️ litterbox attempt failed: {e}")
 
     # Provider 3: Fallback tmpfiles.org
     try:

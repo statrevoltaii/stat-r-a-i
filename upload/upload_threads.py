@@ -58,66 +58,77 @@ def upload_to_threads(video_path, text):
     print(f"[threads] Text length: {len(text_limited)} characters")
     
     try:
-        # Step 1: Upload to reliable temporary hosting
-        print(f"[threads] 📤 Step 1: Uploading to direct public hosting...")
-        try:
-            from upload.video_host import get_public_video_url
-        except ImportError:
-            from video_host import get_public_video_url
-
-        video_url = get_public_video_url(video_path_obj)
-        print(f"[threads] ✅ Direct video URL ready: {video_url}")
-        
-        # Step 2: Create Threads container with video URL
-        print(f"[threads] 📦 Step 2: Creating Threads container...")
-        
-        # Try different API versions
-        api_versions = ['v1.0', 'v18.0']
         container_id = None
-        
-        for api_version in api_versions:
-            print(f"[threads] Trying API version: {api_version}")
-            
-            container_url = f"https://graph.threads.net/{api_version}/{user_id}/threads"
-            container_params = {
-                'media_type': 'VIDEO',
-                'video_url': video_url,
-                'text': text_limited,
-                'access_token': access_token
-            }
-            
-            print(f"[threads] Request URL: {container_url}")
-            print(f"[threads] Parameters: media_type=VIDEO, video_url={video_url[:50]}..., text length={len(text_limited)}")
-            
-            container_response = requests.post(container_url, params=container_params, timeout=60)
-            
-            print(f"[threads] Response status: {container_response.status_code}")
-            print(f"[threads] Response headers: {dict(container_response.headers)}")
-            print(f"[threads] Response body: {container_response.text}")
-            
-            if container_response.status_code == 200:
-                response_data = container_response.json()
-                container_id = response_data.get('id')
-                if container_id:
-                    print(f"[threads] ✅ Container created with API {api_version}: {container_id}")
-                    break
-            else:
-                error_data = container_response.json() if container_response.text else {}
-                error_msg = error_data.get('error', {}).get('message', 'Unknown error')
-                error_code = error_data.get('error', {}).get('code', 'N/A')
-                error_type = error_data.get('error', {}).get('type', 'N/A')
-                error_subcode = error_data.get('error', {}).get('error_subcode', 'N/A')
-                
-                print(f"[threads] ❌ API {api_version} failed:")
-                print(f"[threads]    Error type: {error_type}")
-                print(f"[threads]    Error code: {error_code}")
-                print(f"[threads]    Error subcode: {error_subcode}")
-                print(f"[threads]    Error message: {error_msg}")
-        
+        file_size = video_path_obj.stat().st_size
+
+        # Method A: Direct Resumable Upload (Threads rupload protocol)
+        print(f"[threads] 🚀 Attempting direct Threads Resumable Upload...")
+        for api_version in ['v1.0', 'v18.0']:
+            try:
+                init_url = f"https://graph.threads.net/{api_version}/{user_id}/threads"
+                init_params = {
+                    'media_type': 'VIDEO',
+                    'upload_type': 'resumable',
+                    'text': text_limited,
+                    'access_token': access_token
+                }
+                init_resp = requests.post(init_url, params=init_params, timeout=30)
+                if init_resp.status_code == 200:
+                    init_data = init_resp.json()
+                    cid = init_data.get('id')
+                    upload_uri = init_data.get('uri')
+                    if cid and upload_uri:
+                        print(f"[threads] Resumable container initialized with API {api_version}: {cid}")
+                        with open(video_path_obj, 'rb') as f:
+                            rupload_headers = {
+                                'Authorization': f'OAuth {access_token}',
+                                'offset': '0',
+                                'file_size': str(file_size),
+                                'Content-Type': 'application/octet-stream'
+                            }
+                            up_res = requests.post(upload_uri, data=f, headers=rupload_headers, timeout=300)
+                            if up_res.status_code == 200:
+                                print(f"[threads] ✅ Direct upload to Threads rupload complete!")
+                                container_id = cid
+                                break
+                            else:
+                                print(f"[threads] ⚠️ Binary upload to Threads {upload_uri[:40]} returned {up_res.status_code}")
+                else:
+                    print(f"[threads] ⚠️ Resumable init on API {api_version} returned {init_resp.status_code}")
+            except Exception as e:
+                print(f"[threads] ⚠️ Resumable attempt failed on {api_version}: {e}")
+
+        # Method B: Fallback to Public Video URL Hosting if resumable did not complete
         if not container_id:
-            error_msg = "Failed to create container with all API versions"
-            print(f"[threads] ❌ {error_msg}")
-            raise Exception(error_msg)
+            print(f"[threads] 📤 Falling back to public hosting for direct video URL...")
+            try:
+                from upload.video_host import get_public_video_url
+            except ImportError:
+                from video_host import get_public_video_url
+
+            video_url = get_public_video_url(video_path_obj)
+            print(f"[threads] ✅ Direct video URL ready: {video_url}")
+
+            for api_version in ['v1.0', 'v18.0']:
+                container_url = f"https://graph.threads.net/{api_version}/{user_id}/threads"
+                container_params = {
+                    'media_type': 'VIDEO',
+                    'video_url': video_url,
+                    'text': text_limited,
+                    'access_token': access_token
+                }
+                c_res = requests.post(container_url, params=container_params, timeout=60)
+                if c_res.status_code == 200:
+                    container_id = c_res.json().get('id')
+                    print(f"[threads] ✅ Container created via URL with API {api_version}: {container_id}")
+                    break
+                else:
+                    print(f"[threads] ⚠️ Container creation with API {api_version} failed: {c_res.status_code} {c_res.text[:200]}")
+
+        if not container_id:
+            raise Exception("❌ Failed to create Threads container via both Resumable and Public URL methods")
+
+        print(f"[threads] ✅ Container active: {container_id}")
         
         # Step 3: Wait for processing
         print(f"[threads] ⏳ Step 3: Waiting for video processing...")

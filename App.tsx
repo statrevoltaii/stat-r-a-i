@@ -71,6 +71,27 @@ const App: React.FC = () => {
     const ctx = canvas.getContext('2d', { alpha: false });
     if (!ctx) return;
 
+    // Detect headless / export environment (CI runner or Puppeteer capture)
+    const isHeadless = typeof window !== 'undefined' && (
+      Boolean(window.navigator.webdriver) ||
+      Boolean((window as any).isExporting) ||
+      window.location.search.includes('headless=true') ||
+      window.location.search.includes('export=true')
+    );
+    const blur = (val: number) => isHeadless ? 0 : val;
+
+    if (isHeadless) {
+      try {
+        Object.defineProperty(ctx, 'shadowBlur', {
+          get: () => 0,
+          set: () => {},
+          configurable: true
+        });
+      } catch (e) {
+        // Handled via blur()
+      }
+    }
+
     // Fixed 9:16 Vertical HD resolution
     const W = 1080;
     const H = 1920;
@@ -377,7 +398,7 @@ const App: React.FC = () => {
       ctx.fillStyle = '#ffffff';
       ctx.font = '800 46px "Plus Jakarta Sans", sans-serif';
       ctx.shadowColor = 'rgba(0, 240, 255, 0.25)';
-      ctx.shadowBlur = 16;
+      ctx.shadowBlur = blur(16);
       const words = topic.split(' ');
       let line = '';
       const maxTextW = W - 180;
@@ -460,7 +481,7 @@ const App: React.FC = () => {
       ctx.arc(timelinePillX + barPadding + curBarW, timelinePillY + timelinePillH - 6, 4, 0, Math.PI * 2);
       ctx.fillStyle = '#ffffff';
       ctx.shadowColor = '#00f0ff';
-      ctx.shadowBlur = 8;
+      ctx.shadowBlur = blur(8);
       ctx.fill();
       ctx.shadowBlur = 0;
 
@@ -518,7 +539,7 @@ const App: React.FC = () => {
         ctx.lineWidth = isLeader ? 2 : 1;
         if (isLeader) {
           ctx.shadowColor = 'rgba(255, 215, 0, 0.35)';
-          ctx.shadowBlur = 16;
+          ctx.shadowBlur = blur(16);
         }
         ctx.beginPath();
         ctx.roundRect(cx, hudY, cardW, cardH, 12);
@@ -652,7 +673,7 @@ const App: React.FC = () => {
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
         ctx.shadowColor = entity.color;
-        ctx.shadowBlur = isLeader ? 36 : 24;
+        ctx.shadowBlur = blur(isLeader ? 36 : 24);
         ctx.globalAlpha = isLeader ? 0.45 : 0.3;
 
         ctx.moveTo(samples[0].x, samples[0].y);
@@ -670,7 +691,7 @@ const App: React.FC = () => {
         ctx.lineCap = 'round';
         ctx.lineJoin = 'round';
         ctx.shadowColor = entity.color;
-        ctx.shadowBlur = 14;
+        ctx.shadowBlur = blur(14);
         ctx.moveTo(samples[0].x, samples[0].y);
         for (let s = 1; s < samples.length; s++) {
           ctx.lineTo(samples[s].x, samples[s].y);
@@ -740,7 +761,7 @@ const App: React.FC = () => {
         ctx.globalAlpha = currentLife;
         ctx.fillStyle = p.color;
         ctx.shadowColor = p.color;
-        ctx.shadowBlur = 10;
+        ctx.shadowBlur = blur(10);
         ctx.beginPath();
         ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
         ctx.fill();
@@ -798,7 +819,7 @@ const App: React.FC = () => {
         ctx.strokeStyle = isLeader ? '#ffd700' : item.entity.color;
         ctx.lineWidth = isLeader ? 2 : 1.5;
         ctx.shadowColor = item.entity.color;
-        ctx.shadowBlur = isLeader ? 18 : 12;
+        ctx.shadowBlur = blur(isLeader ? 18 : 12);
 
         ctx.beginPath();
         ctx.roundRect(badgeX, badgeY - bH / 2, bW, bH, 12);
@@ -845,7 +866,7 @@ const App: React.FC = () => {
       ctx.strokeStyle = scanGrad;
       ctx.lineWidth = 2;
       ctx.shadowColor = '#00f0ff';
-      ctx.shadowBlur = 18;
+      ctx.shadowBlur = blur(18);
       ctx.beginPath();
       ctx.moveTo(currentHeadX, chartTop);
       ctx.lineTo(currentHeadX, chartBottom);
@@ -876,7 +897,7 @@ const App: React.FC = () => {
         ctx.strokeStyle = activeDrama.color;
         ctx.lineWidth = 2;
         ctx.shadowColor = activeDrama.color;
-        ctx.shadowBlur = 20;
+        ctx.shadowBlur = blur(20);
 
         ctx.beginPath();
         ctx.roundRect(bannerX, bannerY, bannerW, bannerH, 16);
@@ -913,7 +934,7 @@ const App: React.FC = () => {
           ctx.lineWidth = Math.max(1, 8 * sw.alpha);
           ctx.globalAlpha = sw.alpha;
           ctx.shadowColor = sw.color;
-          ctx.shadowBlur = 24;
+          ctx.shadowBlur = blur(24);
           ctx.stroke();
           ctx.restore();
         }
@@ -944,7 +965,7 @@ const App: React.FC = () => {
 
           if (p.isMetallic) {
             ctx.shadowColor = p.color;
-            ctx.shadowBlur = 8;
+            ctx.shadowBlur = blur(8);
           }
 
           if (p.shape === 'strip') {
@@ -976,7 +997,7 @@ const App: React.FC = () => {
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.shadowColor = 'rgba(0, 240, 255, 0.2)';
-      ctx.shadowBlur = 10;
+      ctx.shadowBlur = blur(10);
       ctx.fillText(BRAND_NAME, W / 2, H - 200);
 
       ctx.fillStyle = 'rgba(255, 255, 255, 0.22)';

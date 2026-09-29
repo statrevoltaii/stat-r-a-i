@@ -72,8 +72,9 @@ async function capture() {
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
     page.on('pageerror', err => console.log('PAGE ERROR:', err.toString()));
 
-    console.log('Navigating to app at http://localhost:3000...');
-    await page.goto('http://localhost:3000', { waitUntil: 'domcontentloaded' });
+    console.log('Navigating to app at http://localhost:3000?headless=true...');
+    await page.goto('http://localhost:3000?headless=true', { waitUntil: 'domcontentloaded' });
+    await page.evaluate(() => { window.isExporting = true; });
     await new Promise(r => setTimeout(r, 2000));
 
     // Audio soundtrack selection

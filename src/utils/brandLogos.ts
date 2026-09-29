@@ -359,6 +359,12 @@ export function drawBrandAvatar(
 
   ctx.save();
 
+  const isHeadless = typeof window !== 'undefined' && (
+    Boolean(window.navigator.webdriver) ||
+    Boolean((window as any).isExporting) ||
+    window.location.search.includes('headless=true')
+  );
+
   // 1. Outer Glow Aura
   if (options?.glow !== false) {
     ctx.save();
@@ -366,7 +372,7 @@ export function drawBrandAvatar(
     ctx.arc(x, y, radius + 4, 0, Math.PI * 2);
     ctx.fillStyle = brandColor;
     ctx.shadowColor = brandColor;
-    ctx.shadowBlur = options?.isLeader ? 24 : 14;
+    ctx.shadowBlur = isHeadless ? 0 : (options?.isLeader ? 24 : 14);
     ctx.globalAlpha = 0.45;
     ctx.fill();
     ctx.restore();
@@ -405,7 +411,7 @@ export function drawBrandAvatar(
     ctx.save();
     ctx.fillStyle = '#ffd700';
     ctx.shadowColor = '#ffd700';
-    ctx.shadowBlur = 10;
+    ctx.shadowBlur = isHeadless ? 0 : 10;
     ctx.font = `700 ${Math.round(radius * 0.7)}px "Plus Jakarta Sans", sans-serif`;
     ctx.textAlign = 'center';
     ctx.fillText('👑', x, y - radius - 4);
