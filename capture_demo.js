@@ -98,39 +98,12 @@ async function capture() {
 
     console.log(`🎬 Deterministic Render: ${TOTAL_FRAMES} frames @ ${FPS} FPS (${DURATION_SEC}s race + ${HOLD_END_SEC}s hold)...`);
 
-    // Clean up old recording if exists
+    // Clean up old recording and frame cache
     if (fs.existsSync(FINAL_PATH)) fs.unlinkSync(FINAL_PATH);
+    const FRAMES_DIR = path.join(__dirname, 'temp_render_frames');
+    if (fs.existsSync(FRAMES_DIR)) fs.rmSync(FRAMES_DIR, { recursive: true, force: true });
+    fs.mkdirSync(FRAMES_DIR, { recursive: true });
 
-    // Spawn FFmpeg to read raw JPEG frames from stdin
-    const ffmpegArgs = [
-        '-y',
-        '-f', 'image2pipe',
-        '-vcodec', 'mjpeg',
-        '-r', String(FPS),
-        '-i', 'pipe:0'
-    ];
-
-    if (audioTrackPath && fs.existsSync(audioTrackPath)) {
-        ffmpegArgs.push('-stream_loop', '-1', '-i', audioTrackPath);
-        ffmpegArgs.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.1');
-        ffmpegArgs.push('-r', String(FPS));
-        ffmpegArgs.push('-b:v', '6500k', '-maxrate', '8000k', '-bufsize', '12000k');
-        ffmpegArgs.push('-g', '30', '-keyint_min', '30', '-sc_threshold', '0');
-        ffmpegArgs.push('-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-ac', '2');
-        ffmpegArgs.push('-map', '0:v:0', '-map', '1:a:0');
-        ffmpegArgs.push('-shortest');
-        ffmpegArgs.push('-movflags', '+faststart');
-    } else {
-        ffmpegArgs.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.1');
-        ffmpegArgs.push('-r', String(FPS));
-        ffmpegArgs.push('-b:v', '6500k');
-        ffmpegArgs.push('-g', '30', '-keyint_min', '30', '-sc_threshold', '0');
-        ffmpegArgs.push('-movflags', '+faststart');
-    }
-
-    ffmpegArgs.push(FINAL_PATH);
-
-    const ffmpegProcess = spawn(ffmpeg, ffmpegArgs, { stdio: ['pipe', 'inherit', 'inherit'] });
     const startTime = Date.now();
 
     // Stream frames in batches of 15 for fast IPC
@@ -158,31 +131,64 @@ async function capture() {
             return list;
         }, batchFrames);
 
-        for (const b64 of base64List) {
-            const buf = Buffer.from(b64, 'base64');
-            const canWrite = ffmpegProcess.stdin.write(buf);
-            if (!canWrite) {
-                await new Promise(r => ffmpegProcess.stdin.once('drain', r));
-            }
+        for (let i = 0; i < base64List.length; i++) {
+            const frameNum = f + i;
+            const filename = `frame_${String(frameNum).padStart(5, '0')}.jpg`;
+            fs.writeFileSync(path.join(FRAMES_DIR, filename), Buffer.from(base64List[i], 'base64'));
         }
 
         const pct = Math.round(((f + count) / TOTAL_FRAMES) * 100);
         process.stdout.write(`\rRendering progress: ${pct}% (${f + count}/${TOTAL_FRAMES} frames)...`);
     }
 
-    console.log('\nAll frames transmitted to FFmpeg. Finalizing MP4 encode...');
-    ffmpegProcess.stdin.end();
+    console.log('\nAll frames captured to disk. Closing browser to free CPU/RAM...');
+    await browser.close();
+
+    console.log('⚡ Encoding pristine 30 FPS MP4 with FFmpeg (-preset veryfast +faststart)...');
+    const framePattern = path.join(FRAMES_DIR, 'frame_%05d.jpg');
+    const ffmpegArgs = [
+        '-y',
+        '-r', String(FPS),
+        '-i', framePattern
+    ];
+
+    if (audioTrackPath && fs.existsSync(audioTrackPath)) {
+        ffmpegArgs.push('-stream_loop', '-1', '-i', audioTrackPath);
+        ffmpegArgs.push('-c:v', 'libx264', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.1');
+        ffmpegArgs.push('-r', String(FPS));
+        ffmpegArgs.push('-b:v', '6500k', '-maxrate', '8000k', '-bufsize', '12000k');
+        ffmpegArgs.push('-g', '30', '-keyint_min', '30', '-sc_threshold', '0');
+        ffmpegArgs.push('-c:a', 'aac', '-b:a', '192k', '-ar', '44100', '-ac', '2');
+        ffmpegArgs.push('-map', '0:v:0', '-map', '1:a:0');
+        ffmpegArgs.push('-shortest');
+        ffmpegArgs.push('-movflags', '+faststart');
+    } else {
+        ffmpegArgs.push('-c:v', 'libx264', '-preset', 'veryfast', '-pix_fmt', 'yuv420p', '-profile:v', 'high', '-level', '4.1');
+        ffmpegArgs.push('-r', String(FPS));
+        ffmpegArgs.push('-b:v', '6500k');
+        ffmpegArgs.push('-g', '30', '-keyint_min', '30', '-sc_threshold', '0');
+        ffmpegArgs.push('-movflags', '+faststart');
+    }
+
+    ffmpegArgs.push(FINAL_PATH);
+
+    const ffmpegProcess = spawn(ffmpeg, ffmpegArgs, { stdio: 'inherit' });
 
     await new Promise((resolve, reject) => {
         ffmpegProcess.on('close', code => {
             if (code === 0) resolve();
             else reject(new Error(`FFmpeg exited with code ${code}`));
         });
+        ffmpegProcess.on('error', err => reject(err));
     });
+
+    // Cleanup temporary frame cache
+    if (fs.existsSync(FRAMES_DIR)) {
+        fs.rmSync(FRAMES_DIR, { recursive: true, force: true });
+    }
 
     const elapsedTotal = ((Date.now() - startTime) / 1000).toFixed(1);
     console.log(`✅ Pristine 30 FPS MP4 rendered in ${elapsedTotal} seconds!`);
-    await browser.close();
 
     const mp4SizeMb = (fs.statSync(FINAL_PATH).size / (1024 * 1024)).toFixed(2);
     console.log(`📊 Final MP4 Size: ${mp4SizeMb} MB`);
