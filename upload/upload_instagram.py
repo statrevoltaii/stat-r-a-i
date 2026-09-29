@@ -78,35 +78,15 @@ def upload_to_instagram(video_path, caption, is_story=False):
     print(f"[instagram] Caption length: {len(caption_limited)} characters")
     
     try:
-        # Step 1: Upload to tmpfiles.org to get public URL
-        print(f"[instagram] 📤 Step 1: Uploading to temporary hosting...")
-        
-        with open(video_path_obj, 'rb') as video_file:
-            files = {'file': ('video.mp4', video_file, 'video/mp4')}
-            temp_response = requests.post(
-                'https://tmpfiles.org/api/v1/upload',
-                files=files,
-                timeout=180
-            )
-        
-        if temp_response.status_code != 200:
-            error_msg = f"Failed to upload to temporary hosting: {temp_response.status_code}"
-            print(f"[instagram] ❌ {error_msg}")
-            print(f"[instagram] Response: {temp_response.text[:200]}")
-            raise Exception(error_msg)
-        
-        temp_data = temp_response.json()
-        if temp_data.get('status') != 'success':
-            error_msg = f"Temporary hosting failed: {temp_data}"
-            print(f"[instagram] ❌ {error_msg}")
-            raise Exception(error_msg)
-        
-        # tmpfiles.org returns URL in format: https://tmpfiles.org/12345
-        # We need direct download link: https://tmpfiles.org/dl/12345
-        temp_url = temp_data.get('data', {}).get('url', '')
-        video_url = temp_url.replace('tmpfiles.org/', 'tmpfiles.org/dl/')
-        
-        print(f"[instagram] ✅ Temporary URL created: {video_url}")
+        # Step 1: Upload to reliable temporary hosting to get public URL
+        print(f"[instagram] 📤 Step 1: Uploading to direct public hosting...")
+        try:
+            from upload.video_host import get_public_video_url
+        except ImportError:
+            from video_host import get_public_video_url
+
+        video_url = get_public_video_url(video_path_obj)
+        print(f"[instagram] ✅ Direct video URL ready: {video_url}")
         
         if not user_id or user_id == 'None' or user_id == '***':
              # Note: logic for '***' added to handle placeholders in logs

@@ -33,3 +33,5 @@ recording*
 thumb_*
 concat_list.txt
 .env
+__pycache__/
+*.pyc
