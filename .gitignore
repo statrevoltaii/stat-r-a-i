@@ -26,5 +26,9 @@ dist-ssr
 # Video/Temp files
 *.mp4
 *.webm
+*.png
 temp_*
+recording*
+thumb_*
+concat_list.txt
 .env

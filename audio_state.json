@@ -1,5 +1,6 @@
 {
-  "total_tracks": 128,
+  "last_index": 85,
+  "total_tracks": 126,
   "tracks": [
     "track_1.mp3",
     "track_2.mp3",
@@ -84,7 +85,6 @@
     "track_81.mp3",
     "track_82.mp3",
     "track_83.mp3",
-    "track_84.mp3",
     "track_85.mp3",
     "track_86.mp3",
     "track_87.mp3",
@@ -101,7 +101,6 @@
     "track_98.mp3",
     "track_99.mp3",
     "track_100.mp3",
-    "track_101.mp3",
     "track_102.mp3",
     "track_103.mp3",
     "track_104.mp3",
@@ -129,6 +128,5 @@
     "track_126.mp3",
     "track_127.mp3",
     "track_128.mp3"
-  ],
-  "last_index": 95
+  ]
 }
