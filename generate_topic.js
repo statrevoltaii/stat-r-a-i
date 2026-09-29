@@ -8,7 +8,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 dotenv.config({ path: path.join(__dirname, '.env') });
 
 const API_KEY = process.env.POLLINATIONS_API_KEY;
-const MODEL = process.env.AI_MODEL || 'openai'; // Use .env model or fallback to openai for free tier
+const MODEL = process.env.AI_MODEL || 'openai/gpt-5.4-nano';
 const TOPIC_FILE = path.join(__dirname, 'current_topic.json');
 const HISTORY_FILE = path.join(__dirname, 'history.json');
 
@@ -95,12 +95,17 @@ Generate a viral "Timeline Comparison" dataset for a video visualization.
     `;
 
     try {
-        const response = await fetch('https://gen.pollinations.ai/v1/chat/completions', {
+        const apiUrl = API_KEY 
+            ? `https://gen.pollinations.ai/v1/chat/completions?key=${encodeURIComponent(API_KEY)}` 
+            : 'https://gen.pollinations.ai/v1/chat/completions';
+        const headers = { 'Content-Type': 'application/json' };
+        if (API_KEY) {
+            headers['Authorization'] = `Bearer ${API_KEY}`;
+        }
+
+        const response = await fetch(apiUrl, {
             method: 'POST',
-            headers: {
-                'Authorization': `Bearer ${API_KEY}`,
-                'Content-Type': 'application/json'
-            },
+            headers: headers,
             body: JSON.stringify({
                 model: MODEL,
                 messages: [
@@ -110,6 +115,12 @@ Generate a viral "Timeline Comparison" dataset for a video visualization.
                 response_format: { type: 'json_object' }
             })
         });
+
+        if (!response.ok) {
+            const errText = await response.text();
+            console.error(`❌ Pollinations API Error (${response.status}):`, errText);
+            throw new Error(`Pollinations API HTTP ${response.status}: ${errText}`);
+        }
 
         const data = await response.json();
 
