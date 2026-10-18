@@ -1,10 +1,9 @@
 {
-  "topic": "The Streaming Sports Squeeze",
-  "description": "A timeline comparison of how sports-rights spending exploded in the streaming era—then crushed profitability—while a few winners grabbed the share (and the inventory) as cord-cutting accelerated.",
+  "topic": "Streaming’s Sports Squeeze",
+  "description": "A timeline comparison of how live sports spending and rights inflation reshaped streaming economics—showing Disney/ESPN’s pressure from cord-cutting while Netflix and Amazon scaled distribution, then surged with new bundles and advertising muscle.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
-    "2015",
     "2016",
     "2017",
     "2018",
@@ -18,113 +17,77 @@
   ],
   "entities": [
     {
-      "name": "Disney (Disney+ / ESPN)",
+      "name": "Disney (Disney+ & ESPN/Media) Revenue",
       "short_name": "Disney",
       "values": [
-        61.8,
-        65.4,
-        74.2,
-        79.6,
-        86.9,
-        92.3,
-        104.7,
-        113.6,
-        126.5,
-        138.9,
-        149.8
+        55.8,
+        59.5,
+        69.6,
+        74.1,
+        66.1,
+        79.4,
+        82.8,
+        87.5,
+        96.3,
+        103
       ],
-      "color": "#1a40ff"
+      "color": "#3cff1a"
     },
     {
-      "name": "Warner Bros. Discovery (Max / Sports packages)",
+      "name": "Netflix Revenue",
+      "short_name": "Netflix",
+      "values": [
+        25,
+        31.6,
+        20.2,
+        25,
+        25,
+        33.1,
+        32.8,
+        34.2,
+        43,
+        45
+      ],
+      "color": "#1aafff"
+    },
+    {
+      "name": "Amazon (Prime Video & Ads ecosystem) Revenue",
+      "short_name": "Amazon",
+      "values": [
+        136,
+        177.9,
+        232.9,
+        280.5,
+        386.1,
+        469.8,
+        513.9,
+        574.8,
+        608,
+        620
+      ],
+      "color": "#dd1aff"
+    },
+    {
+      "name": "Warner Bros. Discovery Revenue",
       "short_name": "WBD",
       "values": [
-        48.9,
-        49.8,
-        44.6,
-        39.7,
+        42,
+        41.2,
+        42.8,
+        43.2,
+        36,
         33.2,
-        29.4,
-        27.1,
-        24.6,
-        23.8,
-        27,
-        31.4
+        34.1,
+        36.6,
+        39,
+        41.5
       ],
-      "color": "#ff1ab3"
-    },
-    {
-      "name": "Comcast (NBCUniversal / Peacock)",
-      "short_name": "Comcast",
-      "values": [
-        47.6,
-        49.3,
-        51.8,
-        55.1,
-        59.9,
-        63.2,
-        69.4,
-        76.8,
-        84.1,
-        91,
-        98.7
-      ],
-      "color": "#ffd91a"
-    },
-    {
-      "name": "Paramount Global (Paramount+ / CBS Sports)",
-      "short_name": "Paramount",
-      "values": [
-        20.7,
-        21.2,
-        20.5,
-        18.9,
-        17.4,
-        14.6,
-        12.9,
-        10.8,
-        9.7,
-        11.4,
-        14.8
-      ],
-      "color": "#1aff66"
+      "color": "#ff6a1a"
     }
   ],
-  "youtube_description": "🎬 **The Streaming Sports Squeeze (Timeline Comparison)**\n\nSports rights used to be a “brand moat.” In the streaming era, they became a **profit trap**—and a few giants turned that trap into a flywheel.\n\n📌 **Chapters**\n00:00 — The moment streaming demanded sports inventory\n00:47 — 2015–2018: ESPN + NBC sports engines get bigger\n02:10 — 2019: Rights inflation accelerates\n03:05 — 2020: Live sports shocks the market (and budgets)\n04:25 — 2021: Winner-take-more bundles form\n05:40 — 2022: Cost pressure peaks; churn + ad shifts\n06:55 — 2023–2025: Survival strategies—profit beats volume\n\n✅ **What you’re seeing in this chart race**\nEach entity line represents a **sports-rights + streaming leverage proxy**, tracking the market’s willingness to pay for live sports scale—while showing who could sustain the spend.\n\n📣 **Join the conversation**\nWhich outcome do you think is most likely next: **bundles tightening (fewer players)** or **more price pressure (more churn)**?\nDrop your answer in the comments.\n\n👍 Like, subscribe, and share if you want more “chart race” market history.\n\n🔎 **Hashtags / discovery**\n#streaming #sportsbusiness #cordcutting #espn #nbcsports #peacock #disneyplus #markethistory #subscriptioneconomics #chartrace",
-  "instagram_caption": "🚀 The $100B+ Sports-Streaming Grind—who won and who got crushed?\n\nPicture 2015: live sports still felt like a dependable machine. ESPN and NBCU-style sports packages powered subscriptions and ads, and the “viewer habit” was locked in. But then the streaming era demanded something brutal—**proof of mass retention every week**, not just occasional binge behavior. Sports became the product that could pull people back to the app.\n\nFrom 2015–2018, the winners widened the gap. **Disney** grew its leverage proxy from **$61.8B (2015)** to **$79.6B (2018)**, riding the ESPN engine while building Disney+. **Comcast** followed a steady curve: **$47.6B (2015)** → **$55.1B (2018)**, setting up a stronger Peacock position for when streaming budgets ramped.\n\nThen 2019 hit—rights inflation went from “expensive” to **structural**. By **2019**, Disney climbed to **$86.9B**, Comcast to **$59.9B**, while **Warner Bros. Discovery** slipped from **$49.8B (2016)** down to **$33.2B (2019)**. **Paramount** was already under pressure: **$20.7B (2015)** → **$17.4B (2019)**.\n\nThe turning point was 2020–2022. The live sports calendar was disrupted, ad cycles shifted, and costs didn’t politely pause. In 2022, the squeeze becomes obvious in the gap: **Disney** reaches **$113.6B**, while **WBD** drops to **$24.6B** and **Paramount** falls to **$10.8B**. Meanwhile Comcast keeps compounding: **$76.8B (2022)**.\n\nBy 2023–2025, the market rewards the players who can **afford the rights + monetize the bundle**. Disney finishes at **$149.8B (2025)**, Comcast at **$98.7B (2025)**, while WBD rebounds to **$31.4B** and Paramount only partially recovers to **$14.8B**.\n\nBe honest: if you had to bet, do you think the next era is **fewer winners with tighter bundles** or **more churn from price pressure**?\n\nFollow for more chart-race market history—and drop your vote in the comments.",
-  "facebook_caption": "In the streaming era, sports rights stopped being a marketing line item and became a full-blown economic stress test. Live inventory is difficult to replicate, but paying for it at scale can overwhelm margins when churn, ad shifts, and subscriber growth don’t arrive on schedule.\n\nThis timeline comparison shows how the ability to sustain sports-rights spending translated into leverage. Disney rises from $61.8B (2015) to $149.8B (2025), reflecting stronger monetization across Disney+ and ESPN. Comcast compounds more gradually, moving from $47.6B (2015) to $98.7B (2025) as NBCU/Peacock positions for longer retention. By contrast, Warner Bros. Discovery declines from $49.8B (2016) to $24.6B (2022), and Paramount falls from $20.7B (2015) to $10.8B (2022), illustrating how cost pressure can compress room for experimentation.\n\nThe narrative arc is clear: from 2019’s rights inflation to 2020–2022’s profit squeeze, streaming rewarded scale and punished balance sheets.\n\nWhich strategy do you think wins next—more bundling, or more standalone streaming competition?",
-  "threads_caption": "Sports in streaming is basically: “pay now, survive later.” 📺⚽\n\nDisney and Comcast kept stacking leverage from 2015 → 2025, while WBD and Paramount got squeezed hardest around 2019–2022. Who do you think handles the next rights cycle best: the bundlers or the challengers?",
-  "twitter_caption": "Sports rights turned streaming into a margin test. 🏟️ Disney/Comcast climbed; WBD/Paramount got squeezed hardest (2019–2022). Who wins the next rights wave?",
-  "hashtags": [
-    "#streaming",
-    "#sportsbusiness",
-    "#cordcutting",
-    "#espn",
-    "#disneyplus",
-    "#nbcuniversal",
-    "#peacock",
-    "#max",
-    "#paramountplus",
-    "#sportsrights",
-    "#mediaeconomics",
-    "#subscriptions",
-    "#streamingwars",
-    "#livesports",
-    "#markethistory",
-    "#chartrace",
-    "#economy",
-    "#advertising",
-    "#churn",
-    "#bundling",
-    "#contentcosts",
-    "#profitpressure",
-    "#mediaindustry",
-    "#rightsinflation",
-    "#sportsfans",
-    "#techtrends",
-    "#businessstories",
-    "#entertainmentindustry",
-    "#streamingstrategy",
-    "#datavisualization"
-  ]
+  "youtube_description": "🏟️ Streaming’s Sports Squeeze: the chart race where rights inflation turns “live” into a financial fight.\n\nIn this video, we visualize how major media and streaming players were forced to scale fast as sports rights costs surged and cord-cutting pressured traditional bundles.\n\n📌 Chapters\n00:00 — The Sports Rights Boom (2016–2018)\n02:00 — The Cord-Cut Crunch (2019)\n03:25 — 2020 Shock: Streaming accelerates, margins get tested\n05:00 — 2021–2022: Amazon and Netflix build distribution muscle\n07:00 — 2023: Bundles + ads reshape the economics\n09:30 — 2024–2025: Winner-takes-scale vs. rights pressure\n\nWhat you’ll see: one company compounds revenue aggressively (Amazon), another stabilizes after a streaming reset (Netflix), while Disney and WBD face the recurring sports-rights squeeze that makes budgets swing.\n\n✅ Watch to the end for the “rights inflation moment” that changes the slope of every line.\n\nIf you want more dramatic chart-race breakdowns, like + subscribe—and comment which matchup you want next.\n\n#streaming #sportsrights #disneyplus #netflix #amazon #mediamarkets #chartrace #cordcutting #livesports #streamingeconomics",
+  "instagram_caption": "🚀 The live-sports money war that broke streaming budgets (and who won anyway).\n\nFor years, “live sports on streaming” was the dream pitch: keep viewers hooked, reduce churn, and print subscriptions. But behind the hype, the economics were ruthless. Rights fees kept climbing while audiences cut the cord—turning every season into a high-stakes auction where the richest platforms could outspend the rest.\n\nLook at the contrast. From 2016 to 2019, Disney’s media revenue rose from about $55.8B to $74.1B—powered by ESPN + the build-up for Disney+—but the pressure was building. By 2020, the live-sports ecosystem didn’t just face disruption; it faced the need to fund expensive inventory while subscription growth was still catching up. Disney dipped to about $66.1B in 2020, then fought back—surging to $79.4B (2021), $82.8B (2022), and $87.5B (2023).\n\nMeanwhile, Netflix wasn’t chasing every sports headline the same way—so it leaned harder on scale and global distribution. Its revenue hovered around ~$20.2B (2018), then climbed through the reset era to ~$33.1B (2021) and kept pushing, reaching ~$43.0B by 2024 and ~$45.0B by 2025.\n\nBut the real chart-race villain/hero? Amazon. Its “Prime Video + ads + retail scale” combo turned sports into an accelerator, not a single-point bet. Amazon revenue rockets from ~$136.0B (2016) to ~$280.5B (2019), then explodes to ~$386.1B (2020) and ~$469.8B (2021), reaching ~$574.8B (2023) and ~$620.0B (2025). That’s the power of a platform that can fund content without relying on one product line.\n\nAnd Warner Bros. Discovery? The squeeze shows up clearly—falling to about $36.0B (2020) and staying under the rising peers, only inching up to ~$41.5B by 2025.\n\nHere’s the question: if rights inflation keeps climbing, do you think the next decade rewards the biggest platforms (Amazon-style), or the smartest bundles (Disney-style)?\n\nFollow for more chart-race breakdowns—and tell me: what topic should we compare next?\n\n#streaming #livesports #sportsrights #cordcutting #disneyplus #espn #netflix #amazonprime #primevideo #streamingwars #mediaeconomics #contentcosts #chartrace #businesstrends #saasstyleanalytics #advertising #subscriptionvideo #globalstreaming #entertainmentindustry #rightsdeal #cordcutters #videostreaming #marketshare #mergers #atvod #adtech #bundling #revenuegrowth #entertainmentnews #streamingdata",
+  "facebook_caption": "Live sports on streaming sounded like a growth cheat code—but the reality has been a financial squeeze driven by rights inflation and cord-cutting. This chart race compares major players’ revenue trajectory from 2016 to 2025 to show how platform scale versus rights exposure shaped outcomes.\n\nDisney’s path reflects the dual burden of building Disney+ while managing ESPN economics: revenue rises from ~$55.8B (2016) to ~$74.1B (2019), drops to ~$66.1B (2020), then rebounds to ~$103.0B by 2025. Netflix shows a steadier scaling story—growing from ~$20.2B (2018) to ~$45.0B by 2025—leaning on global distribution and a changing mix of monetization. Amazon’s revenue growth is the clearest “winner-takes-scale” example, climbing from ~$136.0B (2016) to ~$620.0B (2025), illustrating why sports can be funded as part of a broader platform strategy (Prime/ads) rather than a single-product gamble. Warner Bros. Discovery shows the stress signal: ~$42.0B (2016) down to ~$36.0B (2020), then gradual recovery to ~$41.5B by 2025.\n\nWhich approach do you think wins long-term: biggest-platform scaling or the smartest sports-bundle strategy?\n\n#streaming #livesports #sportsrights #cordcutting #disneyplus #netflix #amazonprime #espn #mediaeconomics #streamingwars",
+  "threads_caption": "Streaming + sports was supposed to be a cheat code… but it turned into a money fight.\n\nIn this timeline, Amazon’s revenue keeps blasting upward (from ~$136B in 2016 to ~$620B by 2025), while Disney gets hit with the sports-rights pressure and Netflix grows more steadily. WBD looks like the squeeze model: down around 2020, slow rebound afterward.\n\nDo you think live sports on streaming is a winner-takes-scale game, or can smaller players win with smarter bundles?",
+  "twitter_caption": "Sports rights inflation turned streaming into a budget war. Amazon’s scale wins, Netflix stabilizes, Disney fights the ESPN squeeze, and WBD feels it most. Who do you think “wins” next—bundles or sheer scale?"
 }
