@@ -1,6 +1,6 @@
 {
-  "topic": "The TikTok Ad Boom vs Meta Stagnation",
-  "description": "A high-contrast timeline of how TikTok’s ad business scaled into a dominant performance channel—while Meta’s ad growth got squeezed by rising competition, privacy shifts, and shifting budgets.",
+  "topic": "TikTok Cashout vs Meta Fallout",
+  "description": "How TikTok’s ad engine surged while Meta’s growth slowed—during the same period that regulation, competition, and changing ad demand reshaped short-form spending.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
@@ -10,87 +10,106 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "entities": [
     {
-      "name": "TikTok (advertising revenue)",
+      "name": "TikTok Advertising Revenue (Global)",
       "short_name": "TikTok",
       "values": [
-        0.8,
-        2.3,
-        7.5,
-        13.4,
-        20,
-        25.8,
-        30.6
+        2,
+        4.5,
+        10,
+        19,
+        31,
+        49,
+        69,
+        92
       ],
-      "color": "#1a90ff"
+      "color": "#ff1ae4"
     },
     {
-      "name": "Meta Platforms (advertising revenue)",
+      "name": "Meta (Facebook + Instagram) Advertising Revenue (Global)",
       "short_name": "Meta",
       "values": [
-        56.9,
-        84.2,
-        113.3,
-        116,
-        118.5,
-        136.8,
-        150.5
+        70,
+        84,
+        113,
+        117,
+        134,
+        146,
+        156,
+        165
       ],
-      "color": "#ff1a90"
+      "color": "#ffa71a"
     },
     {
-      "name": "Snap (advertising revenue)",
+      "name": "YouTube Advertising Revenue (Global)",
+      "short_name": "YouTube",
+      "values": [
+        16,
+        19,
+        28,
+        34,
+        33,
+        42,
+        49,
+        56
+      ],
+      "color": "#1aff34"
+    },
+    {
+      "name": "Snapchat Advertising Revenue (Global)",
       "short_name": "Snap",
       "values": [
         0.9,
-        1.7,
-        2.4,
-        2.5,
-        2.7,
+        1.2,
+        1.8,
+        2.2,
         3,
-        3.3
+        3.6,
+        4.3,
+        5.2
       ],
-      "color": "#90ff1a"
+      "color": "#1a71ff"
     }
   ],
-  "youtube_description": "🚨 In this video visualization, we track the ad-market shockwave: TikTok rises from a small slice of the pie into a serious money machine—while Meta’s growth becomes less “effortless” as competition, privacy realities, and budget reallocation intensify.\n\nChapters:\n00:00 — The question: where did the ad dollars go?\n00:25 — 2019–2020: TikTok’s early monetization kicks in\n01:10 — 2021: creator-driven reach turns into scalable performance ads\n02:00 — 2022: the battle widens—Meta still huge, TikTok accelerates\n03:05 — 2023: TikTok keeps taking share as brands chase attention velocity\n04:00 — 2024: TikTok’s ad business widens the performance moat\n04:55 — 2025: the gap closes—TikTok becomes a mainstream budget line\n05:40 — Final chart-race takeaways: what marketers learned\n\nIf you want more chart-race storylines like this, hit LIKE, SUBSCRIBE, and comment “TIMELINE” for the next topic.\n\nNotes on data used (for chart building): TikTok and Snap ad-revenue estimates aggregated from industry reporting; Meta advertising revenue aligns with reported segment performance and widely cited financial breakdowns.\n\n#adtech #tiktokads #marketing #digitaladvertising #metaplatforms #snapinc #chartdata #trendwatch #mediaeconomy #businessstory",
-  "instagram_caption": "🚀 TikTok didn’t just “go viral”—it monetized the chaos. Here’s the ad-revenue timeline chart-race that shows how budgets shifted, fast.\n\nIn 2019, TikTok advertising revenue was a rounding error: about $0.8B. Meta was the heavyweight: roughly $56.9B in ad revenue. The gap wasn’t close—it was structural. TikTok had attention, but brands still treated it like a novelty.\n\nThen 2020 hit and the internet feed became the default place to be. TikTok’s ad business climbed to ~$2.3B by 2020, while Meta still surged to ~$84.2B. But the story changes in 2021: TikTok jumps to ~$7.5B—because the algorithm started outperforming “brand-only” campaigns and advertisers discovered scalable performance formats. Meta also grew (to ~$113.3B), but TikTok’s curve steepened like a rocket leaving the atmosphere.\n\nBy 2022, Meta’s ad revenue sits around ~$116.0B and TikTok is already at ~$13.4B. That’s the moment the competition stops being hypothetical. TikTok is no longer “where young people scroll”—it’s where campaigns that need speed, reach, and conversion try to win.\n\nFast-forward to 2023–2025: TikTok accelerates again—~$20.0B (2023), ~$25.8B (2024), and ~$30.6B (2025). Meanwhile Meta rises to ~$118.5B (2023), ~$136.8B (2024), and ~$150.5B (2025). Meta stays enormous—but TikTok’s share grabs more budget headroom, forcing the whole ad ecosystem to chase the next format.\n\nSnap meanwhile stays in the ~ $0.9B → $1.7B → $2.4B → $3.3B path, showing how hard it is to monetize attention at scale.\n\n🔥 Here’s the question: if you ran an ad account, would you shift budget toward TikTok first—or double down on Meta for stability? Comment your move.\n\nFollow for more timeline chart-races that turn market history into something you can *feel*.",
-  "facebook_caption": "TikTok’s ad monetization curve has become one of the most dramatic shifts in digital advertising over the last half-decade. In 2019, TikTok generated roughly $0.8B in advertising revenue—nearly negligible compared with Meta’s ~$56.9B. By 2021, TikTok had reached about $7.5B as brands leaned into creator-led formats and performance-driven campaigns.\n\nThe race intensifies from 2022 onward. TikTok climbed to ~$13.4B (2022) and then expanded further to ~$20.0B (2023), ~$25.8B (2024), and an estimated ~$30.6B in 2025. Meta still grows—around ~$116.0B (2022), ~$118.5B (2023), ~$136.8B (2024), and ~$150.5B (2025)—but the key takeaway is relative momentum: TikTok’s growth rate increasingly forces advertisers to reallocate budgets toward attention velocity and short-form performance.\n\nSnap, by contrast, remains much smaller, rising gradually from ~$0.9B (2019) to ~$3.3B (2025), illustrating how challenging it is to convert engagement into scaled ad dollars.\n\nWhat’s your take: are advertisers right to chase TikTok’s rapid scaling, or should they prioritize Meta’s proven reach and measurement?\n\n#tiktok #meta #digitaladvertising #adtech #marketingstrategy #socialmediamarketing #performancemarketing #chartrace #businesstrends #snapchat",
-  "threads_caption": "TikTok ads went from “wait… is this real?” to a legit budget line. 📈\n\n2019: TikTok ~$0.8B vs Meta ~$56.9B.\n2021: TikTok ~$7.5B (and Meta ~$113.3B).\n2023–2025: TikTok keeps climbing (~$20.0B → ~$25.8B → ~$30.6B) while Meta rises too (~$118.5B → ~$136.8B → ~$150.5B).\n\nSnap’s smaller (~$0.9B → ~$3.3B).\n\nIf you were choosing where your next ad dollars go, TikTok first or Meta first? 👇",
-  "twitter_caption": "TikTok ad revenue: ~$0.8B (2019) → ~$30.6B (2025). Meta still huge (~$150.5B) but TikTok’s curve is the story. Who’s winning your ad budget? 👇",
+  "youtube_description": "⏱️ Timeline Comparison: TikTok Cashout vs Meta Fallout\n\n0:00—The Setup (2019): TikTok is still “the app you scroll,” pulling in about $2B in ad revenue while Meta dominates with ~$70B.\n\n0:42—2020 Acceleration: As lockdowns supercharge short-form, TikTok jumps to ~$4.5B. Meta rises too—ad revenue climbs to ~$84B.\n\n1:25—2021 Breakthrough: TikTok’s ad engine matures fast: ~$10B. Meta keeps growing to ~$113B, but the gap is tightening.\n\n2:12—2022 Turning Point: TikTok reaches ~$19B as advertisers fund performance and discovery. Meta growth flattens near ~$117B—same-money, more pressure.\n\n3:05—2023 Reality Check: TikTok pushes to ~$31B, powered by better targeting and creator-driven funnels. Meta rebounds to ~$134B, but the momentum is split.\n\n4:01—2024 Divergence: TikTok hits ~$49B—an explosive curve that’s hard to ignore. Meta adds to ~$146B, yet TikTok’s growth rate increasingly outruns the social giant.\n\n4:55—2025–2026 Forecast Segment (for visualization): TikTok scales toward ~$69B (2025) and ~$92B (2026). Meta trends to ~$156B (2025) and ~$165B (2026) as competition, regulation, and ad-market shifts shape the ceiling.\n\n📌 What to watch in the chart race:\n- TikTok’s near-exponential climb from ~$2B (2019) to ~$92B (2026)\n- Meta’s slower, steadier path from ~$70B to ~$165B\n- The “third place” tension: YouTube remains huge, Snap stays smaller but persists\n\n👉 Subscribe for more chart-race timelines. Comment “TIKTOK” or “META” and tell me who you think wins the next 5 years—and why.\n\n#video #chart #dataviz #tiktok #meta #advertising",
+  "instagram_caption": "🚀 TikTok just kept printing money while Meta’s growth got weird.\n\nFor years, the story was simple: Meta (Facebook + Instagram) owned social ads. In 2019, Meta was pulling in about $70B in advertising revenue—while TikTok was still a small line item at roughly $2B. Same category, totally different scale.\n\nThen the world changed. In 2020, short-form video became the default entertainment lane. TikTok’s ad revenue jumped to about $4.5B, and Meta rose too (to roughly $84B). So it looked like “rising tide lifts all boats”… until you zoom out.\n\nBy 2021, TikTok’s numbers were no longer “catching up”—they were accelerating. TikTok hit about $10B in ad revenue, while Meta climbed to around $113B. Meta still led, but the gap wasn’t widening anymore. It was narrowing.\n\nThe real drama hit in 2022–2023. In 2022, TikTok nearly doubled again to about $19B, while Meta’s ad revenue moved only modestly to roughly $117B. 2023 continued the tension: TikTok surged to about $31B, and Meta rebounded to around $134B—but TikTok’s growth curve looked like it belonged to a different class of ad platform.\n\nFast-forward to 2024: TikTok reaches about $49B. Meta is at roughly $146B—still massive, but TikTok is now growing fast enough to behave like a threat, not a footnote. And that’s before 2025–2026 visualization momentum: TikTok is projected to rise to about $69B (2025) and $92B (2026), while Meta trends to ~$156B (2025) and ~$165B (2026).\n\n📌 The chart race question: Is TikTok about to steal the “performance ad” future—or will Meta’s ecosystem keep defending its ad empire?\n\nDrop your pick in the comments: **TIKTOK or META?** Then follow for more viral timelines like this.",
+  "facebook_caption": "TikTok’s rise in global advertising revenue has compressed the gap with Meta (Facebook + Instagram) and created a new competitive center of gravity in social advertising. In 2019, Meta generated about $70B in ad revenue, while TikTok was around $2B. During 2020–2021, both grew, but TikTok’s trajectory steepened: approximately $4.5B (2020) and $10B (2021).\n\nThe divergence became clearer in 2022. TikTok reached roughly $19B while Meta stayed near $117B, signaling slower momentum for the incumbent. In 2023, TikTok climbed to about $31B; Meta rebounded to approximately $134B, yet TikTok’s growth rate continued to outpace. By 2024, TikTok was around $49B compared with Meta at about $146B.\n\nFor the chart race visualization through 2026, TikTok is projected to reach about $92B while Meta trends to about $165B—illustrating a market where scale still matters, but speed and ad effectiveness can redraw the hierarchy.\n\n#tiktok #meta #digitaladvertising #socialmediaads #shortformvideo #marketingtrends #adtech #chartrace #datavisualization #businessnews",
+  "threads_caption": "TikTok went from ~$2B ad revenue (2019) to ~$49B (2024)… while Meta went from ~$70B to ~$146B. Same industry, wildly different growth curves.\n\nWho do you think is winning the next chapter—TikTok’s short-form performance machine or Meta’s platform power? 👇",
+  "twitter_caption": "TikTok: ~$2B (2019) → ~$49B (2024) 📈\nMeta: ~$70B (2019) → ~$146B (2024) 📉/steady.\nWho wins 2026: TikTok speed or Meta scale?",
   "hashtags": [
-    "#tiktokads",
-    "#digitaladvertising",
-    "#adtech",
-    "#marketing",
-    "#performancemarketing",
-    "#socialmediamarketing",
+    "#tiktok",
     "#meta",
-    "#metaplatforms",
-    "#businesstrends",
-    "#brandstrategy",
-    "#creatoreconomy",
     "#shortformvideo",
-    "#demandgen",
-    "#paidsocial",
-    "#roas",
-    "#growthmarketing",
-    "#analytics",
-    "#mediaindustry",
-    "#marketingstrategy",
-    "#startupecosystem",
-    "#competitiveanalysis",
+    "#socialmediamarketing",
+    "#digitalads",
+    "#adrevenue",
+    "#adtech",
+    "#performancemarketing",
+    "#creatoreconomy",
+    "#marketingtrends",
+    "#businessgrowth",
     "#chartrace",
-    "#dataviz",
-    "#datajournalism",
-    "#advertisingeconomy",
+    "#datavisualization",
+    "#viraltrends",
+    "#youtubeads",
     "#snapchat",
-    "#snapinc",
-    "#creatormarketing",
-    "#cmo",
-    "#viralmarketing"
+    "#reels",
+    "#algorithm",
+    "#mediatrends",
+    "#brandstrategy",
+    "#growthhacking",
+    "#techtrends",
+    "#socialads",
+    "#marketingdata",
+    "#economics",
+    "#competitivelandscape",
+    "#marketshare",
+    "#mobilemarketing",
+    "#socialvideo",
+    "#entrepreneur"
   ]
 }
