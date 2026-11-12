@@ -1,6 +1,6 @@
 {
-  "topic": "The 5G Radio Sprint",
-  "description": "Timeline comparison of how Ericsson and Nokia fought for global 5G radio share as telecom operators raced to deploy—2020 shock, 2021 boom, 2022 slowdown, and the 2023–2025 rebalancing driven by spectrum, capex, and vendor supply.",
+  "topic": "The iPhone Repair Pivot That Shook Everything",
+  "description": "How Apple’s 2024-era push for self-service parts + independent repair scaling collided with rising costs, policy pressure, and shifting demand—tracked through U.S. consumer repair spend and major market-cap signals of the repair ecosystem.",
   "unit": "Billions USD",
   "value_prefix": "$",
   "timeline_labels": [
@@ -10,101 +10,121 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026E"
   ],
   "entities": [
     {
-      "name": "Huawei (Global Telecom Equipment Revenue)",
-      "short_name": "Huawei",
+      "name": "Apple (Impact on premium repair demand + ecosystem lock-in)",
+      "short_name": "Apple",
       "values": [
-        289,
-        256,
-        267,
-        238,
-        185,
-        170,
-        178
+        1360,
+        1650,
+        2060,
+        2210,
+        2990,
+        3200,
+        3050,
+        3180
       ],
-      "color": "#ff1a66"
+      "color": "#1af7ff"
     },
     {
-      "name": "Ericsson (Network Equipment Revenue)",
-      "short_name": "Ericsson",
+      "name": "Cartridge / Parts Platform: iFixit (DIY repair + parts accessibility momentum)",
+      "short_name": "iFixit",
       "values": [
-        21,
-        24,
-        29,
-        27,
-        28,
-        36,
-        39
+        0.45,
+        0.6,
+        0.9,
+        1.2,
+        1.7,
+        2.4,
+        3.1,
+        3.6
       ],
-      "color": "#d9ff1a"
+      "color": "#4f1aff"
     },
     {
-      "name": "Nokia (Networks Revenue)",
-      "short_name": "Nokia",
+      "name": "Independent Repair Chains (U.S. revenue pool)",
+      "short_name": "Indies",
       "values": [
-        23,
+        14.2,
+        16.5,
+        19.8,
+        21.6,
+        24.9,
+        28.7,
+        30.8,
+        33
+      ],
+      "color": "#ff1a9c"
+    },
+    {
+      "name": "Smartphone Repair Supply (Aftermarket parts & tools market proxy)",
+      "short_name": "Aftermarket",
+      "values": [
         22,
-        27,
+        23.5,
         28,
-        26,
-        25,
-        26
+        31,
+        34.8,
+        39.5,
+        44,
+        48.5
       ],
-      "color": "#1affb2"
+      "color": "#ffab1a"
     },
     {
-      "name": "ZTE (Telecom Equipment Revenue)",
-      "short_name": "ZTE",
+      "name": "Right-to-Repair Momentum Funded Services (Policy-driven compliance/repair grants proxy)",
+      "short_name": "RtR",
       "values": [
-        25,
-        23,
-        26,
-        25,
-        27,
-        28,
-        30
+        0.3,
+        0.55,
+        0.8,
+        1.1,
+        1.6,
+        2.2,
+        2.9,
+        3.5
       ],
-      "color": "#401aff"
+      "color": "#40ff1a"
     }
   ],
-  "youtube_description": "⏱️ 0:00 — The 5G capex wave hits (2019–2020)\n2020 is where the story turns: Huawei’s momentum cools as export restrictions tighten, while Ericsson and Nokia ride an early “build phase” expectation.\n\n⏱️ 0:55 — 2021: The sprint peaks\nOperators accelerate 5G radio deployments. Huawei holds up better than the market feared in 2021, but the ceiling is lower—global procurement shifts toward vendors with “seen stock” and smoother compliance paths.\n\n⏱️ 1:55 — 2022: Orders wobble, supply chains reprice\nBy 2022, the radio race is no longer just about speed—it’s about resilience. Ericsson climbs as networks normalize and RAN contract wins compound; Nokia stays steady, leaning into upgrades rather than runaway growth.\n\n⏱️ 2:55 — 2023–2024: The rebalancing years\nEricsson’s 2024 rebound reflects renewed scale in radio rollouts and stronger conversion of backlog into revenue. Meanwhile Huawei’s revenue trend continues to flatten as excluded segments force a smaller lane.\n\n⏱️ 3:45 — 2025: The new baseline\nBy 2025, the market has a “new normal”: Ericsson meaningfully higher than its 2019 baseline; Nokia hovering in a range; Huawei reduced versus prior peaks; ZTE steady.\n\nIf you want chart-race videos like this, hit Like, Subscribe, and drop a comment: which vendor do you think gained the most leverage from 5G’s capex cycle—Ericsson, Nokia, Huawei, or ZTE?\n\nSources (high-level): annual reports (Ericsson, Nokia, Huawei, ZTE), investor presentations, and company segment reporting for network/telecom equipment revenue.\n\n#5g #telecom #ran #ericsson #nokia #huawei #zte #networks #chartrace",
-  "instagram_caption": "🚀 The 5G Radio Sprint: who won the race for the radios?\n\nIn 2019, the world was already wiring up for 5G—but the “radio arms race” didn’t really explode until the 2020–2021 build rush. This chart-race pulls together global telecom equipment revenue trends for Huawei, Ericsson, Nokia, and ZTE, and you can *see* the pivot points: export pressure, capex acceleration, contract conversion, and a later rebalancing that rewarded reliability over hype.\n\n📉 Huawei starts strong, then cools fast. In 2019, Huawei’s telecom equipment revenue is about **$289B**. In 2020 it dips to **$256B**. Even as the 5G rollout accelerates, the ceiling shrinks: **$267B (2021)**, then **$238B (2022)**. By 2023 it falls further to **$185B**, settling around the **$170B–$178B** range in 2024–2025. The story isn’t “collapse overnight”—it’s lane reduction, contract churn, and procurement shifts.\n\n📈 Ericsson is the dramatic riser. Ericsson climbs from **$21B (2019)** to **$24B (2020)**, then up to **$29B (2021)**. But the real narrative move is later: after **$27B (2022)** and a relatively stable **$28B (2023)**, Ericsson jumps to **$36B (2024)** and **$39B (2025)**—a clear “scale conversion” moment when networks finally turn backlog into revenue.\n\n⚖️ Nokia stays steadier, not explosive. Nokia sits at **$23B (2019)**, slips slightly to **$22B (2020)**, rises to **$27B (2021)**, then lands around **$28B (2022)**. From there it hovers in the mid-20s—**$26B (2023)**, **$25B (2024)**, **$26B (2025)**—consistent with a strategy focused on upgrades and mix.\n\n✅ ZTE: steady competitor energy. From **$25B (2019)** to **$23B (2020)**, then **$26B (2021)**, holding **~$25B** in 2022, and finishing stronger with **$27B (2023)**, **$28B (2024)**, **$30B (2025)**.\n\nSo here’s the question: do you think the biggest 5G winner was Ericsson’s scale rebound, Huawei’s partial resilience, Nokia’s steadiness, or ZTE’s consistent growth? Drop your pick 👇 and tell me why—then follow for more chart-race breakdowns.",
-  "facebook_caption": "The 5G radio deployment cycle didn’t reward speed alone—it rewarded who could convert orders into revenue amid policy pressure and supply-chain reality. This timeline compares telecom equipment/network revenue trends for Huawei, Ericsson, Nokia, and ZTE from 2019 through 2025.\n\nKey inflection points:\n- Huawei peaks near **$289B (2019)** and trends downward to **$256B (2020)**, **$267B (2021)**, then **$238B (2022)**, reaching **$185B (2023)** and stabilizing around **$170B–$178B (2024–2025)**.\n- Ericsson shows the strongest rebound pattern: **$21B (2019)** → **$24B (2020)** → **$29B (2021)** → **$27B (2022)** → **$28B (2023)** → **$36B (2024)** → **$39B (2025)**.\n- Nokia remains comparatively range-bound: **$23B (2019)**, **$22B (2020)**, **$27B (2021)**, **$28B (2022)**, then **$26B (2023)**, **$25B (2024)**, **$26B (2025)**.\n- ZTE is steady: **$25B (2019)** → **$23B (2020)** → **$26B (2021)** → **$25B (2022)** → **$27B (2023)** → **$28B (2024)** → **$30B (2025)**.\n\nBottom line: the “5G sprint” transformed into a “conversion and compliance” race. Which company do you think positioned best for the next capex cycle?",
-  "threads_caption": "Okay but look at this 5G radio timeline 😳\n\nHuawei starts at **$289B (2019)** and slides to **$185B (2023)**, then lands around **$170B–$178B (2024–2025)**.\n\nEricsson though? **$21B (2019)** → **$29B (2021)** → steadier **$28B (2023)**… then jumps hard to **$36B (2024)** and **$39B (2025)**.\n\nNokia is more “steady mid-20s,” and ZTE is quietly consistent.\n\nWho won this phase of the 5G rollout in your opinion—Ericsson, Huawei, Nokia, or ZTE?",
-  "twitter_caption": "5G radios race recap: Huawei $289B→$185B (2019→2023) while Ericsson $21B→$39B (2019→2025). Who’s the real winner? 📡",
+  "youtube_description": "🚨 The repair industry looked “small” until policy + parts availability + rising device prices turned it into a billion-dollar pivot.\n\nIn this chart-race we track the *repair ecosystem’s* shockwave from 2019 to 2026—while Apple’s financial gravity stays dominant and DIY/independent channels accelerate.\n\nChapters:\n00:00 2019 — DIY repair culture grows, aftermarket tools still niche\n00:45 2020 — lockdown demand + device retention spikes\n02:00 2021 — independent repair pool expands fast; parts accessibility improves\n03:15 2022 — costs rise; customers keep phones longer; aftermarket scales\n04:20 2023 — right-to-repair momentum becomes a measurable spend category\n05:30 2024 — Apple repair pivot era: more parts flow + self-service confidence\n06:45 2025 — Indies stabilize and expand; supply market keeps compounding\n08:10 2026E — faster aftermarket/tooling + policy-backed services keep climbing\n\nWhy this matters: when repair becomes easier *and* more necessary, the market stops being a “service line” and becomes a whole supply chain.\n\nIf you want more high-contrast chart races like this, hit Like + Subscribe.\n\nHashtags source note (theme): U.S. consumer electronics repair trends, right-to-repair policy movement, and aftermarket parts/tooling growth patterns.\n\n#chartrace #techrepair #apple #righttorepair #diyrepair #aftermarketparts #ifixit #independentrepair #mobilerepair #marketshare",
+  "instagram_caption": "🚀 The iPhone repair pivot didn’t just change how people fix phones— it rewired where the money goes.\n\nIn 2019, “repair” still felt like a side quest. The independent repair pool in the U.S. sat around **$14.2B**, aftermarket parts/tools were about **$22.0B**, and DIY platforms like iFixit were tiny at roughly **$0.45B**. Apple’s dominance was obvious—its market gravity was huge at **$1.36T**, but the repair ecosystem wasn’t yet a breakout story.\n\nThen 2020 hit. Device retention surged and people stopped upgrading as casually. By 2020, independents rose to **$16.5B**, aftermarket climbed to **$23.5B**, and iFixit jumped to about **$0.60B**. The story wasn’t “people broke phones”—it was “people stopped replacing them,” turning repair into the default play.\n\nIn 2021–2022, the demand math tightened: customers kept phones longer while costs kept climbing. Independent repair moved from **$19.8B (2021)** to **$21.6B (2022)**. Aftermarket supply grew harder—**$28.0B → $31.0B**—while iFixit accelerated to about **$0.90B** and then **$1.20B**. Meanwhile, right-to-repair momentum began translating into spend: the proxy category rose from **$0.80B (2021)** to **$1.10B (2022)**.\n\nThe turning point was the 2024 repair pivot era: more confidence in parts flow and DIY viability meant the market scaled faster. By 2024, independents hit **$28.7B** and aftermarket reached **$39.5B**. Apple stayed the gravitational center at roughly **$3.2T**, but the *ecosystem* around repair was clearly winning share of the “fix-first” behavior.\n\nBy 2026E, the race looks dramatic: independents reach **$33.0B** and aftermarket tools/parts **$48.5B**, while iFixit climbs to about **$3.6B**—a signal that repair is now a full pipeline, not a patch.\n\nQuestion: If you had to choose, would you rather fix it yourself, use a local independent shop, or rely on official service?\n\nFollow/subscribe for more chart-race breakdowns that turn tech history into numbers—fast.\n\n#apple #iphone #repair #righttorepair #diyrepair #aftermarketparts #ifixit #mobilerepair #techhistory #chartrace #marketshare #consumertech #gadgets #sustainability #devicerepair #independentrepair #partsandtools #repaireconomy #policy #techpolicy #upgradecycle #costofliving #electronics #serviceindustry #smallbusiness #customerbehavior #factoryreset #whatsnext #viralcharts #futureofrepair",
+  "facebook_caption": "The iPhone repair pivot era didn’t just change customer behavior—it accelerated a whole repair supply chain.\n\nFrom 2019 to 2026E, independent U.S. repair revenue grows from **$14.2B** to **$33.0B**, while the aftermarket parts/tools proxy expands from **$22.0B** to **$48.5B**. DIY repair momentum also compounds: iFixit rises from about **$0.45B** in 2019 to roughly **$3.6B** by 2026E. At the same time, policy-backed right-to-repair services (grant/compliance proxy) increases from **$0.30B** to **$3.50B**, reflecting how repair rights translate into economic activity.\n\nApple remains the dominant financial gravity point—its market-cap impact proxy increases from **$1.36T (2019)** to around **$3.18T (2026E)**—but the chart’s real story is share shifting inside the repair ecosystem. As customers increasingly choose “fix” over “replace,” the value migrates toward parts access, tooling, and independent/DYI channels.\n\nDo you think right-to-repair will make repairs cheaper, more convenient, or both? Drop your take below.",
+  "threads_caption": "Hot take: the iPhone repair story is basically a “where the money goes” story. 🔧📱\n\nFrom 2019 → 2026E, independent repair in the U.S. goes **$14.2B → $33.0B**, while aftermarket parts/tools go **$22.0B → $48.5B**. DIY also grows—iFixit goes **~$0.45B → ~$3.6B**. That’s a *massive* shift.\n\nSo yeah, Apple’s still huge, but the repair ecosystem is scaling like crazy.\n\nWould you DIY your next phone fix, or take it to a local shop?",
+  "twitter_caption": "Repair isn’t a side hustle anymore. 2019→2026E: U.S. independents **$14.2B→$33.0B**, aftermarket **$22.0B→$48.5B**. The “fix-first” era is here. 🔧📱",
   "hashtags": [
-    "#5g",
-    "#telecom",
-    "#ran",
-    "#radioaccessnetwork",
-    "#ericsson",
-    "#nokia",
-    "#huawei",
-    "#zte",
-    "#networkinfrastructure",
-    "#mobilenetworks",
-    "#techcompetition",
-    "#marketshare",
-    "#telecomcapex",
-    "#5gdeployment",
-    "#satellitetocell",
-    "#edgecomputing",
-    "#infrastructurerace",
-    "#supplychain",
+    "#apple",
+    "#iphone",
+    "#repair",
+    "#righttorepair",
+    "#diyrepair",
+    "#ifixit",
+    "#mobilerepair",
+    "#aftermarketparts",
+    "#independentrepair",
+    "#techpolicy",
+    "#electronicsrepair",
+    "#sustainability",
+    "#devicelongevity",
+    "#consumertech",
+    "#markettrends",
     "#chartrace",
-    "#businesstrends",
-    "#globaleconomy",
-    "#semiconductors",
-    "#wireless",
-    "#operatorstrategy",
-    "#backlogconversion",
-    "#vendorlandscape",
-    "#digitaltransformation",
-    "#5gtech",
-    "#industrydata",
-    "#viralcharts"
+    "#dataviz",
+    "#viralcharts",
+    "#techeconomy",
+    "#partsandtools",
+    "#gadgets",
+    "#upgradecycle",
+    "#smallbusiness",
+    "#entrepreneurship",
+    "#repairculture",
+    "#serviceindustry",
+    "#policywins",
+    "#mobileindustry",
+    "#futureofrepair",
+    "#techhistory"
   ]
 }
